@@ -1,4 +1,4 @@
-# Artefy Frontend
+# Art FE
 
 ### Stack
 
@@ -15,13 +15,7 @@
 ## Getting started
 
 - Clone this repository
-  ```sh
-  git clone https://github.com/nonceblox/artefy-frontend.git
-  ```
-- Navigate to `artefy-frontend`
-  ```sh
-  cd artefy-frontend
-  ```
+
 - Install dependencies
   ```sh
   yarn
