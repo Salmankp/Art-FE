@@ -1,0 +1,177 @@
+.Signup {
+  background: #000;
+  margin-top: 100px;
+  padding-top: 50px;
+}
+.innerwrap {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  position: relative;
+
+  .headingText {
+    position: relative;
+    h2 {
+      color: #fff;
+      font-size: 42px;
+      text-align: center;
+      font-family: 'Marcellus', sans-serif;
+      span {
+        color: #609db5;
+        font-size: 54px;
+        font-family: 'Marcellus', sans-serif;
+      }
+    }
+  }
+  .gridprice {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .gridItem {
+      color: #fff;
+      width: 33.3%;
+      padding: 40px 0;
+      @media (max-width: 960px) {
+        width: 50%;
+      }
+      @media (max-width: 575px) {
+        width: 100%;
+      }
+      h3 {
+        text-align: center;
+        font-size: 34px;
+        padding-bottom: 20px;
+        font-family: 'Marcellus', sans-serif;
+        font-weight: normal;
+      }
+      img {
+        width: 270px;
+        height: 330px;
+        margin-bottom: 25px;
+        border-radius: 20px;
+        object-fit: fill;
+        @media (max-width: 768px) {
+          width: 230px;
+          height: 270px;
+        }
+        .playerIconButton {
+          width: 270px;
+          height: 3px !important;
+          margin-bottom: 25px;
+          border-radius: 20px;
+          object-fit: fill;
+        }
+      }
+      .gridDescription {
+        text-align: center;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #31a3d0;
+        height: 65px;
+        @media (max-width: 1200px) {
+          height: auto;
+        }
+      }
+      .availble {
+        color: #31d0c6;
+        display: flex;
+        justify-content: right;
+        text-align: right;
+        padding-top: 10px;
+      }
+      .gridinner {
+        padding: 0 60px;
+        @media (max-width: 768px) {
+          padding: 0 38px;
+          text-align: center;
+        }
+        .videowrap {
+          margin-top: 0rem;
+          overflow: hidden;
+          :global {
+            .video-react-big-play-button {
+              width: 100px !important;
+              height: 100px !important;
+              border-radius: 50%;
+              position: absolute;
+              top: 40%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              border: 8px solid #686868;
+            }
+            .video-react .video-react-poster {
+              background-position: 0% 4% !important;
+            }
+            .video-react {
+              padding-top: 128.625% !important;
+            }
+            .video-react-has-started .video-react-control-bar {
+              display: none;
+            }
+            .video-react .video-react-video {
+              position: absolute;
+              top: 0;
+              left: 0;
+              border-radius: 1rem;
+              width: 270px !important;
+              height: 330px !important;
+              margin-bottom: 25px !important;
+              border-radius: 20px !important;
+              object-fit: fill !important;
+            }
+            .video-react-big-play-button::before {
+              top: 23% !important;
+              color: #686868;
+              font-size: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.HeaderMain {
+  background-size: cover;
+  .headerLogoSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .frazettaWrap {
+      width: 15%;
+      .frazettalogo {
+        width: 100%;
+      }
+    }
+  }
+  .flexWrapper {
+    display: flex;
+    padding: 3rem 0rem;
+  }
+}
+.headingText h2::after {
+  position: absolute;
+  content: '';
+  width: 30%;
+  background: #fff;
+  height: 1px;
+  right: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+  top: 50%;
+  @media (max-width: 575px) {
+    display: none;
+  }
+}
+.headingText h2::before {
+  position: absolute;
+  content: '';
+  width: 30%;
+  background: #fff;
+  height: 1px;
+  left: 0;
+  z-index: 1;
+  transform: translateY(-50%);
+  top: 50%;
+  @media (max-width: 575px) {
+    display: none;
+  }
+}

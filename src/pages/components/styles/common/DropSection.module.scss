@@ -1,0 +1,220 @@
+@mixin common-background($value) {
+  background: linear-gradient(
+    $value,
+    #ffdd15 0%,
+    #ffd915 3.83%,
+    #fdce17 7.3%,
+    #fbbc19 10.64%,
+    #f8a21c 13.88%,
+    #f6921e 15.52%,
+    #f68e1f 20.65%,
+    #f48321 25.3%,
+    #f27124 29.76%,
+    #f05a28 33.69%,
+    #f05628 38.27%,
+    #ef4b27 42.42%,
+    #ee3926 46.41%,
+    #ec1f24 50.27%,
+    #ec1c24 50.67%,
+    #e81e27 54.36%,
+    #dd2531 57.7%,
+    #cb3040 60.91%,
+    #b14057 64.05%,
+    #8f5573 67.12%,
+    #666e97 70.15%,
+    #368cbf 73.09%,
+    #00adee 75.97%,
+    #01a9eb 80.68%,
+    #059ee3 84.95%,
+    #0c8cd5 89.05%,
+    #1672c2 93.05%,
+    #2251a9 96.93%,
+    #2e3191 100%
+  );
+}
+
+.DropSection {
+  max-width: 100vw;
+  @include common-background(55deg);
+  .Main {
+    @media (min-width: 1600px) {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    @media (max-width: 1100px) {
+      display: none;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem 9rem;
+    .timeSection {
+      font-style: 'Poppins', sans-serif;
+      .heading {
+        color: #fff;
+        font-weight: bold;
+        font-size: 38px;
+        margin: 0;
+      }
+
+      .dataSection {
+        display: flex;
+        align-items: flex-end;
+        margin-top: -1rem;
+        .Item {
+          display: flex;
+          align-items: baseline;
+          margin-right: 0.8rem;
+          .left {
+            margin-right: 0.8rem;
+            p {
+              margin: 0;
+              color: #fff;
+              font-weight: bold;
+              text-align: center;
+              font-size: 30px;
+              &:last-of-type {
+                font-size: 12px;
+                color: #3fb5f5;
+                font-family: 'Open Sans', sans-serif;
+              }
+            }
+          }
+          .img {
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .EverscapesTitle {
+      div {
+        @include common-background(90deg);
+        height: 3px;
+        width: 100%;
+        margin-top: 0.1rem;
+      }
+    }
+    .aboutText {
+      font-size: 37px;
+      margin: 0;
+      line-height: 34px;
+      margin-left: 3rem;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+    }
+    .viewbtn {
+      border: none;
+      background: #434751;
+      padding: 0.2rem 1.25rem;
+      font-family: 'Poppins', sans-serif;
+      font-size: 30px;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 15px;
+    }
+  }
+  .mobileDropSection {
+    max-width: 100vw;
+    @media (min-width: 1100px) {
+      display: none;
+    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 1.8rem 0.8rem;
+    .topContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .timeSection {
+        font-style: 'Poppins', sans-serif;
+        .heading {
+          color: #fff;
+          font-weight: bold;
+          font-size: 18px;
+          margin: 0;
+          text-align: center;
+        }
+
+        .dataSection {
+          display: flex;
+          align-items: flex-end;
+          margin-top: -1rem;
+          margin-left: 0.1rem;
+          .Item {
+            display: flex;
+            align-items: baseline;
+            margin-right: 0rem;
+            .left {
+              margin-right: 0rem;
+              p {
+                margin: 0.16rem;
+                color: #fff;
+                font-weight: bold;
+                text-align: center;
+                font-size: 18px;
+                &:last-of-type {
+                  font-size: 7px;
+                  color: #3fb5f5;
+                  font-family: 'Open Sans', sans-serif;
+                  font-weight: 700;
+                }
+              }
+            }
+            .img {
+              font-size: 17px;
+              margin: 0 0rem;
+              margin-top: 0.7rem;
+              color: white;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      .EverscapesTitle {
+        width: auto;
+        flex: 0.7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+          width: 100%;
+        }
+        div {
+          @include common-background(90deg);
+          height: 3px;
+          width: 100%;
+          margin-top: 0.1rem;
+        }
+      }
+    }
+    .bottomContainer {
+      width: 90vw;
+      text-align: center;
+      .aboutText {
+        font-size: 18px;
+        margin: 0.8rem 0;
+        line-height: 32px;
+        margin-right: 1rem;
+        font-weight: bold;
+        color: #fff;
+      }
+      .viewDropBtn {
+        border: none;
+        outline: none;
+        margin: 0 auto;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 28px;
+        padding: 0.28rem 4.4rem;
+        margin-right: 1rem;
+        margin-top: 0.8rem;
+        border-radius: 20px;
+      }
+    }
+  }
+}

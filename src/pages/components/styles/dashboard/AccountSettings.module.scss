@@ -1,0 +1,328 @@
+.detailsModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .detailModalwrap {
+    background: linear-gradient(180deg, #363636 0%, #111111 100%);
+    padding: 2rem;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 20px;
+    .heading {
+      font-size: 23px;
+      color: #fcfcfd;
+      font-weight: 700;
+      font-family: 'Open Sans';
+      padding-left: 12px;
+      padding-bottom: 10px;
+    }
+    .headingTwo {
+      font-size: 14px;
+      color: #fcfcfd;
+      font-weight: 700;
+      font-family: 'Open Sans';
+      padding-left: 12px;
+      padding-bottom: 10px;
+    }
+    .detailwrap {
+      .line {
+        .inputwrap {
+          input {
+            background-color: transparent;
+            border: 2px solid white;
+            border-radius: 20px;
+            width: 100%;
+            font-size: 14px;
+            height: 35px;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            padding-left: 1rem;
+            color: white;
+          }
+        }
+        .qr {
+          text-align: center;
+        }
+        .buttonwrap {
+          display: flex;
+          justify-content: flex-end;
+          button.clear {
+            background-color: transparent;
+            font-size: 12px;
+            font-weight: 400;
+            color: #979797;
+            border-radius: 20px;
+            border: 0px;
+            height: 30px;
+            max-width: 120px;
+            font-weight: 'Open Sans';
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            text-transform: uppercase;
+          }
+          button.save {
+            background-color: #3fb5f5;
+            font-size: 12px;
+            font-weight: 700;
+            color: white;
+            border-radius: 20px;
+            border: 0px;
+            height: 30px;
+            max-width: 120px;
+            font-weight: 'Open Sans';
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            text-transform: uppercase;
+          }
+        }
+        .resendTwoFA {
+          margin: 0.5rem 0rem;
+          font-size: 14px;
+          color: #fcfcfd;
+          font-weight: 700;
+          font-family: 'Open Sans';
+          padding-left: 12px;
+          padding-bottom: 10px;
+          display: flex;
+          button {
+            background-color: #3d3d3d;
+            font-size: 12px;
+            font-weight: 700;
+            color: white;
+            border-radius: 20px;
+            border: 0px;
+            height: 30px;
+            max-width: 120px;
+            font-weight: 'Open Sans';
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
+.wrap {
+  padding: 3rem;
+  .prtwrap {
+    display: flex;
+    margin-bottom: 2rem;
+    .fieldname {
+      width: 45%;
+      font-size: 18px;
+      font-weight: 600;
+      font-family: 'Poppins';
+      color: #fcfcfd;
+      .subcontent {
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Open Sans';
+        color: white;
+        margin-top: 1rem;
+        max-width: 230px;
+      }
+    }
+    .fieldwrap {
+      width: 55%;
+      max-width: 516px;
+      .dividerr {
+        width: 100%;
+        height: 1px;
+        background-color: #494949;
+        margin: 2rem 0rem;
+      }
+      .subwrap {
+        .hdng {
+          color: #fcfcfd;
+          font-size: 18px;
+          font-weight: 600;
+          font-family: 'Poppins';
+        }
+        .subb {
+          display: flex;
+          margin-top: 1.5rem;
+          .switch {
+            width: 80px;
+          }
+          .cntnt {
+            width: calc(100% - 80px);
+          }
+        }
+      }
+      .title {
+        color: #3fb5f5;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: 'Open Sans';
+        text-transform: uppercase;
+        margin-bottom: 0.75rem;
+      }
+      .inputwrap {
+        position: relative;
+        max-width: 516px;
+        margin-bottom: 0.8rem;
+        select {
+          option {
+            color: #111111;
+          }
+        }
+        input {
+          background-color: transparent;
+          border: 2px solid #e6e8ec;
+          box-sizing: border-box;
+          width: 100%;
+          border-radius: 20px;
+          height: 39px;
+          color: #e6e8ec;
+          font-size: 12px;
+          font-weight: 400;
+          font-family: 'Open Sans';
+          padding: 0rem 1rem;
+        }
+        select {
+          height: 34px;
+          background: url(https://artefy.io/assets/images/selectarrows.svg)
+            no-repeat right;
+          -webkit-appearance: none;
+          background-position-x: 97%;
+          background-color: transparent;
+          border: 2px solid #e6e8ec;
+          box-sizing: border-box;
+          width: 100%;
+          border-radius: 20px;
+          height: 39px;
+          color: #e6e8ec;
+          font-size: 12px;
+          font-weight: 400;
+          font-family: 'Open Sans';
+          padding: 0rem 1rem;
+        }
+        button {
+          cursor: pointer;
+          padding: 0px;
+          font-size: 0px;
+          background: transparent;
+          position: absolute;
+          right: 4px;
+          top: 5px;
+          border: 0px;
+          img {
+            max-width: 30px;
+          }
+        }
+      }
+    }
+    .upbutton {
+      background-color: #3fb5f5;
+      font-size: 12px;
+      font-weight: 700;
+      color: white;
+      border-radius: 20px;
+      border: 0px;
+      height: 30px;
+      max-width: 160px;
+      font-weight: 'Open Sans';
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+    .buttonwrap {
+      display: flex;
+      justify-content: flex-end;
+      max-width: 516px;
+      margin-top: 1.5rem;
+      button.clear {
+        background-color: transparent;
+        font-size: 12px;
+        font-weight: 400;
+        color: #979797;
+        border-radius: 20px;
+        border: 0px;
+        height: 30px;
+        max-width: 120px;
+        font-weight: 'Open Sans';
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+      button.save {
+        background-color: #3d3d3d;
+        font-size: 12px;
+        font-weight: 700;
+        color: white;
+        border-radius: 20px;
+        border: 0px;
+        height: 30px;
+        max-width: 120px;
+        font-weight: 'Open Sans';
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+      button.saveTwo {
+        background-color: #3fb5f5;
+        font-size: 12px;
+        font-weight: 700;
+        color: white;
+        border-radius: 20px;
+        border: 0px;
+        height: 30px;
+        max-width: 120px;
+        font-weight: 'Open Sans';
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .wrap {
+    padding: 2.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrap {
+    padding: 2rem;
+    .prtwrap {
+      flex-direction: column;
+      margin-bottom: 1rem;
+      .fieldname {
+        font-weight: 400;
+        margin-bottom: 1rem;
+        width: 100%;
+      }
+      .fieldwrap {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrap {
+    padding: 0.5rem 0rem;
+  }
+}

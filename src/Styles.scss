@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('./fonts/Gotham-Black.woff') format('woff'),
+    url('./fonts/Gotham-Black.woff2') format('woff2'),
+    url('./fonts/Gotham-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham Book';
+  src: url('./fonts/Gotham-Book.woff') format('woff'),
+    url('./fonts/Gotham-Book.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Gotham Light';
+  src: url('./fonts/Gotham-Light.woff') format('woff'),
+    url('./fonts/Gotham-Light.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Gotham Light';
+  src: url('./fonts/Gotham-Light.woff') format('woff'),
+    url('./fonts/Gotham-Light.woff2') format('woff2');
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  --background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(18, 18, 85) 100%
+  );
+  --background-white: linear-gradient(180deg, #222, #444);
+  --background-inv-white: linear-gradient(180deg, #444, #222);
+  --background-white-inv: linear-gradient(0deg, #111, #333);
+  --blue-text: #00e6f0;
+  --blue-dark: #17bbc4;
+  --gray: #303030;
+  --green: rgb(92, 179, 96);
+  --darkgreen: rgba(48, 123, 2, 1);
+  --purple: #b35aff;
+  --white: #fff;
+  --font: 'Open Sans';
+}
+
+.indexWraper {
+  margin: 13rem 25rem;
+  border: 3px solid #5e347a;
+  padding: 1%;
+  color: white;
+  border-radius: 10px;
+  @media screen and (max-width: 1025px) {
+    font-size: 11px !important;
+  }
+}
+.oflineText {
+  display: flex;
+  @media screen and (max-width: 991px) {
+    font-size: 12px;
+  }
+}
+.longText {
+  @media screen and (max-width: 1025px) {
+    display: none !important;
+  }
+}
+.tryAgainButton {
+  display: flex;
+  flex-direction: row-reverse;
+  .trybutton {
+    border: none;
+    outline: none;
+    padding: 0.4rem 2.8rem;
+    background: #9e5fc9;
+    border-radius: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    cursor: pointer;
+    color: 'white';
+    @media screen and (max-width: 1025px) {
+      display: none !important;
+    }
+  }
+}

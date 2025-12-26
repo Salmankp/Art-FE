@@ -1,0 +1,363 @@
+.DropDetailsCard {
+  background: linear-gradient(180deg, #363636 0%, #111111 100%);
+  .Main {
+    display: flex;
+    padding: 6rem 9rem;
+    align-items: flex-start;
+    max-width: 1300px;
+    margin: 0 auto;
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+    .leftContainer {
+      margin-right: 5rem;
+      display: flex;
+      flex-direction: column;
+      width: 35rem;
+      align-items: flex-end;
+      img {
+        width: 100%;
+        height: 704px;
+      }
+      .subData {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        .collection {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          margin-right: 2.1rem;
+          margin-top: 15px;
+          p {
+            font-size: 16px;
+            color: #a69a9a;
+            font-weight: 300;
+            &:last-of-type {
+              font-weight: 700;
+              color: #fff;
+            }
+          }
+          .divider {
+            height: 1.1vh;
+            width: 1px;
+            background-color: #a69a9a;
+            margin: 0 0.4rem;
+            margin-left: 13px;
+            margin-right: 13px;
+          }
+        }
+        .imageContainer {
+          display: flex;
+          align-items: center;
+          color: #fcfcfd;
+          margin-top: 15px;
+          text-transform: uppercase;
+          img {
+            height: 1rem;
+            margin-right: 0.8rem;
+          }
+        }
+      }
+    }
+    .rightContainer {
+      max-width: 510px;
+      height: 704px;
+      position: relative;
+      .saleTypeContainer {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 0.8rem;
+        .title {
+          color: #a69a9a;
+          font-weight: 600;
+          font-size: 16px;
+        }
+        .border {
+          height: 2.5vh;
+          width: 1.8px;
+          background-color: #a69a9a;
+          margin: 0 0.7rem;
+        }
+        .saleText {
+          display: flex;
+          p {
+            color: #fff;
+            font-weight: 600;
+          }
+          img {
+            margin-bottom: 1rem;
+            margin-left: 0.4rem;
+          }
+        }
+      }
+      .NameContainer {
+        color: #fcfcfd;
+        .author {
+          font-size: 35px;
+          line-height: 54px;
+          margin-bottom: 0rem;
+        }
+        .nftName {
+          font-size: 48px;
+          font-weight: 700;
+          margin: 0;
+          margin-top: -0.8rem;
+        }
+        .extraData {
+          color: #fff;
+          width: 80%;
+          font-size: 25px;
+          line-height: 27px;
+          margin-top: 2.1rem;
+        }
+      }
+      .aboutDetailsContainer {
+        overflow-y: hidden;
+        position: absolute;
+        bottom: 0px;
+        // margin-top: 10rem;
+        // bottom: 0px;
+        height: 75px;
+        .navContainer {
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #a69a9a;
+          p {
+            color: #a69a9a;
+            font-size: 14px;
+            font-weight: bold;
+            padding-bottom: 7px;
+          }
+          p:hover {
+            color: white;
+          }
+          .activeNav {
+            color: #fff;
+            font-weight: bold;
+          }
+          .borderLine {
+            height: 1.8vh;
+            width: 1px;
+            background-color: #a69a9a;
+            margin: 0 1rem;
+          }
+        }
+        .dataContainer {
+          color: #fff;
+          font-size: 14px;
+          width: 25rem;
+          margin-top: 0.8rem;
+          line-height: 18px;
+          overflow-x: scroll;
+          height: auto;
+          max-height: 200px;
+        }
+      }
+    }
+  }
+}
+
+.timeContainer {
+  display: flex;
+  align-items: center;
+  margin-top: -0.17rem;
+  .headerContainer {
+    margin-right: 1rem;
+    p {
+      margin: 0;
+      color: #3fb5f5;
+      font-weight: bold;
+      line-height: 18px;
+    }
+  }
+}
+
+.liveText {
+  color: #61bb07;
+  font-weight: bold;
+  margin: 0;
+  margin-top: -0.1rem;
+}
+
+.finishedText {
+  color: #ef0000;
+  font-weight: bold;
+  margin: 0;
+  margin-top: -0.1rem;
+}
+
+.Item {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  .left {
+    p {
+      margin: 0;
+      font-size: 18px;
+      color: #fff;
+      font-weight: bold;
+      &:last-of-type {
+        font-size: 8px;
+        margin-top: -0.1rem;
+      }
+    }
+  }
+  .img {
+    margin: 0 0.5rem;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+
+.UniqueAuctionTypeContainer {
+  .topContainer {
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .headerText {
+      color: #f6921e;
+      font-size: 14px;
+      flex: 1;
+      font-weight: 600;
+    }
+    .closingTime {
+      display: flex;
+      align-content: center;
+      margin-left: 5rem;
+      .header {
+        margin-right: 0.8rem;
+        p {
+          margin: 0;
+          line-height: 18px;
+          font-size: 13px;
+          color: #fff;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+.OtherAuctionTypeContainer {
+  margin-top: 7rem;
+  .editionText {
+    color: #f6921e;
+    font-weight: bold;
+    margin: 0;
+  }
+  .priceContainer {
+    border-top: 1px solid #e2dede;
+    border-bottom: 1px solid #e2dede;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    padding: 0.8rem 0;
+    margin-top: 1.7rem;
+    p {
+      margin: 0;
+    }
+    .dollarText {
+      color: #fcfcfd;
+      font-weight: 600;
+      font-size: 21px;
+    }
+    .borderLine {
+      height: 2.4vh;
+      width: 1px;
+      background-color: #e2dede;
+      margin: 0 auto;
+    }
+    .maticText {
+      color: #e2dede;
+      font-weight: 600;
+      font-size: 12px;
+    }
+  }
+}
+
+.NormalBtn {
+  background-color: #3fb5f5;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  margin-top: 3rem;
+}
+
+.FinishedBtn {
+  background-color: #ef0000;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  color: #111;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 30px;
+  margin-top: 3rem;
+}
+
+.buttonSectionLive {
+  display: flex;
+  // padding-right: 150px;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-top: 2.4rem;
+  button {
+    margin: 0;
+  }
+  .bidValue {
+    p {
+      margin: 0;
+      font-size: 20px;
+      line-height: 33px;
+      color: #fff;
+    }
+    .price {
+      margin-top: -0.4rem;
+      font-size: 30px;
+      font-weight: 700;
+      color: #f6921e;
+    }
+  }
+  input {
+    background-color: transparent;
+    border: 1px solid #aea3a3;
+    width: 30%;
+    margin-left: 2.4rem;
+    padding: 0.18rem 0;
+    text-align: center;
+    color: #fcfcfd;
+    font-size: 24px;
+    &::placeholder {
+      color: #fcfcfd;
+    }
+    border-radius: 20px;
+  }
+}
+
+.buttonSectionFinished {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  .bidValue {
+    p {
+      margin: 0;
+      font-size: 20px;
+      line-height: 33px;
+      color: #fff;
+    }
+    .price {
+      margin-top: -0.4rem;
+      font-size: 30px;
+      font-weight: 700;
+      color: #f6921e;
+    }
+  }
+}

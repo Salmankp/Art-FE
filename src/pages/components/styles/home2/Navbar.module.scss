@@ -1,0 +1,74 @@
+@import "src/Styles.scss";
+
+.root {
+  background: linear-gradient(180deg, #363636 0%, #111111 100%);
+  width: 100%;
+
+  .appbar {
+    height: 101px;
+    max-width: 1150px;
+    display: flex;
+    // padding-right: 10px;
+    // padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (max-width: 768px) {
+    .appbar {
+      width: 750px;
+    }
+  }
+  @media (max-width: 992px) {
+    .appbar {
+      width: 770px;
+    }
+  }
+  @media (max-width: 1200px) {
+    .appbar {
+      width: 1150px;
+    }
+  }
+
+  .image {
+    align-self: center;
+  }
+
+  .navigation {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    max-width: 840px;
+    .links_container {
+      align-self: center;
+      list-style-type: none;
+      float: right;
+      color: white;
+      text-align: center;
+    }
+    #firstChild {
+      border-left: none;
+    }
+    li {
+      display: inline;
+      padding: 5px 20px;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 16px;
+      border-left: 2px solid #4b4b4b;
+      justify-content: center;
+      cursor: pointer;
+      user-select: none;
+      display: inline-block;
+      span {
+        display: inline-block;
+      }
+    }
+
+    span:hover {
+      color: grey;
+      transform: scale(1.08);
+    }
+  }
+}

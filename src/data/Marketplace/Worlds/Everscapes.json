@@ -1,0 +1,11 @@
+{
+  "filters": [
+    "Rarity",
+    "Artist",
+    "Collection",
+    "Minting",
+    "Genre",
+    "Media",
+    "Sale type"
+  ]
+}

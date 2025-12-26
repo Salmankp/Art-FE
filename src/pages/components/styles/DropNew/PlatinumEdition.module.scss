@@ -1,0 +1,69 @@
+.platinumSection {
+  background: linear-gradient(180deg, #363636 0%, #111111 100%);
+  padding: 2rem 0;  
+  .platinumContainer {
+    @media (max-width: 1050px) {
+      text-align: center;
+      padding-top: 2rem;
+    }
+    .platinumWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media (max-width: 1050px) {
+        flex-direction: column;
+      }
+      .leftWrap {
+        .platinumText {
+          font-family: 'Poppins', sans-serif;
+          font-size: 40px;
+          line-height: 39px;
+          font-weight: 500;
+          color: #fff;
+          .colorSpan {
+            font-weight: 300;
+            color: #fdce17;
+          }
+        }
+        .platinumDesc {
+          font-size: 22px;
+          font-weight: 400;
+          line-height: 28px;
+          color: #fff;
+          padding: 3rem 0rem;
+        }
+        .platinumtextimg {
+          @media (max-width: 768px) {
+            max-width: 100%;
+          }
+        }
+      }
+      .oneOfOne {
+        @media (max-width: 768px) {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+.platinumRightImg {
+  position: relative;
+  .leftBadge {
+    position: absolute;
+    left: 20px;
+    bottom: -20px;
+    width: 160px;
+    @media (max-width: 575px) {
+      width: 110px;
+    }
+  }
+  .rightBadge {
+    right: 0px;
+    position: absolute;
+    width: 160px;
+    bottom: -20px;
+    @media (max-width: 575px) {
+      width: 110px;
+    }
+  }
+}

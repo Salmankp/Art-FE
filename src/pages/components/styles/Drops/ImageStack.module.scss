@@ -1,0 +1,15 @@
+.ImageStack {
+  display: flex;
+  img {
+    width: 16.667%;
+    height: 48vh;
+    @media (min-width: 2300px) {
+      height: 60vh;
+    }
+    flex-wrap: wrap;
+    height: 48vh;
+    @media screen and (min-width: 2300px) {
+      height: 60vh;
+    }
+  }
+}

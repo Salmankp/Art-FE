@@ -1,0 +1,42 @@
+/* base base style  */
+.baseButton:active:enabled {
+	position: relative;
+	top: 2px;
+}
+
+/* primarybutton base style */
+.primaryButton {
+	background: #f68e1f !important;
+	transition: 0.3s background-color ease-in-out;
+	&:hover:enabled {
+		background: darken(#f68e1f, 10%) !important;
+		cursor: pointer;
+	}
+}
+
+/* secondary button base style */
+.secondaryButton {
+	background: #3fb5f5 !important;
+	transition: 0.3s background-color ease-in-out;
+	&:hover:enabled {
+		background: darken(#3fb5f5, 10%) !important;
+		cursor: pointer;
+	}
+}
+
+/* ternary Button base style*/
+.ternaryButton {
+	background: #a69a9a !important;
+	transition: 0.3s background-color ease-in-out;
+	&:hover:enabled {
+		background: darken(#a69a9a, 10%) !important;
+		cursor: pointer;
+	}
+}
+
+/* utility btn classses */
+.disabled {
+	background: grey !important;
+	color: rgb(206, 197, 197) !important;
+	cursor: default;
+}

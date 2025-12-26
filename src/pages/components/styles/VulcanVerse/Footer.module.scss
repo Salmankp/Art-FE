@@ -1,0 +1,133 @@
+.innerwrap {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  position: relative;
+}
+
+.Signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  position: relative;
+  flex-direction: column;
+  @media (max-width: 1280px) {
+    padding: 1rem 0;
+  }
+  @media (max-width: 1029px) {
+    flex-direction: column;
+  }
+  background: #000;
+  .Ftlink {
+    width: 100%;
+    background: #232323;
+    padding: 50px 0;
+    margin-top: 80px;
+    @media (max-width: 1200px) {
+      padding: 30px 0;
+    }
+    .linkdiv {
+      text-align: center;
+      @media (max-width: 575px) {
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+      }
+      a {
+        color: #fff;
+        padding: 0 70px;
+        font-size: 18px;
+        text-decoration: none;
+        @media (max-width: 1200px) {
+          font-size: 16px;
+          padding: 0 40px;
+        }
+        @media (max-width: 768px) {
+          font-size: 14px;
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+  .ftdescription {
+    margin-top: 30px;
+    p {
+      color: #fff;
+      text-align: center;
+      font-size: 10px;
+    }
+  }
+}
+.btnDraw {
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 90px;
+  border-bottom: 1px solid #5c5c5c;
+  .drawButton {
+    color: #fff;
+    background-color: #31a3d0;
+    border-radius: 5rem;
+    padding: 0.5rem 4rem;
+    font-size: 31px;
+    font-weight: 400;
+    font-family: Marcellus;
+    @media (max-width: 575px) {
+      padding: 0.7rem 2rem;
+      font-size: 16px;
+    }
+  }
+}
+.wrriorLogo {
+  text-align: center;
+  margin-top: 50px;
+  h3 {
+    color: #fac968;
+    font-weight: normal;
+  }
+  .wlogo {
+    display: flex;
+    align-items: center;
+    column-gap: 100px;
+    margin-top: 70px;
+    flex-wrap: wrap;
+    @media (max-width: 1200px) {
+      column-gap: 60px;
+      justify-content: center;
+    }
+    @media (max-width: 575px) {
+      flex-direction: column;
+      row-gap: 50px;
+    }
+    .flogo {
+      width: 150px;
+      height: 130px;
+      @media (max-width: 1200px) {
+        width: 100px;
+        height: 90px;
+      }
+    }
+    .logo1 {
+      width: 210px;
+      height: 100px;
+      @media (max-width: 1200px) {
+        width: 140px;
+        height: 60px;
+      }
+    }
+    .logo2 {
+      width: 254px;
+      height: 80px;
+      @media (max-width: 1200px) {
+        width: 190px;
+        height: 50px;
+      }
+    }
+    .vlogo {
+      width: 240px;
+      @media (max-width: 1200px) {
+        width: 160px;
+      }
+    }
+  }
+}

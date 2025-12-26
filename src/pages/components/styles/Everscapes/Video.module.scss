@@ -1,0 +1,89 @@
+.outerwrap {
+  background: black;
+  .wrap {
+    max-width: 1120px;
+    margin: auto;
+    padding: 3rem 4rem;
+    box-sizing: border-box;
+    .headingwrap {
+      text-align: center;
+      .heading {
+        font-size: 36px;
+        color: white;
+        font-family: DM Sans;
+        font-weight: 400;
+        img {
+          @media (max-width: 460px) {
+            width: 100%;
+          }
+        }
+      }
+      .content {
+        margin-top: 1rem;
+        font-size: 24px;
+        color: white;
+        font-weight: 400;
+      }
+    }
+    .videowrap {
+      border-radius: 20px;
+      margin-top: 2rem;
+      overflow: hidden;
+      position: relative;
+      margin: 2rem auto;
+      :global {
+        .video-react-big-play-button {
+          width: 60px !important;
+          height: 60px !important;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        .video-react-big-play-button::before {
+          top: 12% !important;
+        }
+      }
+      .playerIconButton {
+        position: absolute;
+        top: 35%;
+        left: 45%;
+        width: 80px;
+        @media (max-width: 380px) {
+          top: 30% !important;
+          left: 40% !important;
+          width: 65px !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .outerwrap {
+    .wrap {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .outerwrap {
+    .wrap {
+      margin-left: 30px;
+      margin-right: 30px;
+      padding: 3rem 0rem;
+      .headingwrap {
+        .heading {
+          font-size: 26px;
+          text-align: center;
+        }
+        .content {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

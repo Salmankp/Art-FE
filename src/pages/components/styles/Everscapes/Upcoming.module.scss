@@ -1,0 +1,475 @@
+.Upcoming {
+  background: linear-gradient(0deg, #363636 0%, #111111 100%);
+  .Main {
+    @media (min-width: 1600px) {
+      max-width: 1540px;
+      margin: 0 auto;
+      padding: 2rem 0rem 0rem 0rem;
+    }
+    margin: 0 auto;
+    h1 {
+      font-size: 36px;
+      max-width: 1120px;
+      @media (max-width: 1200px) {
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+      @media (max-width: 767px) {
+        margin-left: 30px !important;
+        margin-right: 30px;
+      }
+      margin: auto;
+      margin-bottom: 4rem;
+      margin-top: 0;
+      padding-top: 4rem;
+      color: #fcfcfd;
+      letter-spacing: -0.01rem;
+      font-weight: 300;
+      font-family: 'Gotham Book', sans-serif;
+      span {
+        color: yellow;
+        font-family: 'Gotham Book', sans-serif;
+      }
+      @media (min-width: 1640px) {
+        margin-left: 11%;
+      }
+      @media (min-width: 746px) and (max-width: 1200px) {
+        text-align: center;
+      }
+      @media (max-width: 745px) {
+        font-size: 36px;
+        margin-bottom: 1.4rem;
+        padding-top: 2.1rem;
+        text-align: center;
+        margin-left: 0;
+      }
+    }
+
+    .UpcomingContainer {
+      @media (min-width: 1640px) {
+        width: 93%;
+        margin: 0 auto;
+      }
+      .sectionContainers {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 8rem;
+        margin-bottom: 4rem;
+        &:last-of-type {
+          .DesktopItem {
+            &:first-of-type {
+              margin-right: 3.7rem;
+              @media (max-width: 1300px) {
+                margin: 0;
+              }
+              @media (min-width: 1469px) and (max-width: 1500px) {
+                margin-right: 6%;
+                margin-left: 1rem;
+              }
+              @media (min-width: 1500px) and (max-width: 1600px) {
+                margin-right: 9%;
+              }
+              @media (min-width: 1601px) and (max-width: 1651px) {
+                margin-right: 10%;
+              }
+            }
+            &:last-of-type {
+              margin-left: 4rem;
+              @media (min-width: 1404px) and (max-width: 1464px) {
+                margin-right: 1%;
+                margin-left: 4rem;
+              }
+              @media (max-width: 1300px) {
+                margin: 0;
+              }
+            }
+          }
+        }
+        @media (max-width: 1360px) {
+          flex-direction: column;
+          width: 41%;
+          margin: 0 auto;
+          .verticalBorder {
+            display: none;
+          }
+        }
+        &:last-of-type {
+          .verticalBorder {
+            margin-left: 1.8rem;
+            @media (min-width: 1469px) and (max-width: 1500px) {
+              margin-right: 6%;
+              margin-left: 1rem;
+            }
+          }
+        }
+        .verticalBorder {
+          height: 50vh;
+          max-height: 345px;
+          min-height: 315px;
+          width: 1px;
+          background: linear-gradient(
+            0deg,
+            #ffdd15 0%,
+            #ffd915 3.83%,
+            #fdce17 7.3%,
+            #fbbc19 10.64%,
+            #f8a21c 13.88%,
+            #f6921e 15.52%,
+            #f68e1f 20.65%,
+            #f48321 25.3%,
+            #f27124 29.76%,
+            #f05a28 33.69%,
+            #f05628 38.27%,
+            #ef4b27 42.42%,
+            #ee3926 46.41%,
+            #ec1f24 50.27%,
+            #ec1c24 50.67%,
+            #e81e27 54.36%,
+            #dd2531 57.7%,
+            #cb3040 60.91%,
+            #b14057 64.05%,
+            #8f5573 67.12%,
+            #666e97 70.15%,
+            #368cbf 73.09%,
+            #00adee 75.97%,
+            #01a9eb 80.68%,
+            #059ee3 84.95%,
+            #0c8cd5 89.05%,
+            #1672c2 93.05%,
+            #2251a9 96.93%,
+            #2e3191 100%
+          );
+        }
+      }
+    }
+
+    .CarouselContainer {
+      margin-left: auto;
+      margin: 0 auto;
+      @media (min-width: 900px) and (max-width: 1448px) {
+        width: 84%;
+      }
+      .dotClass {
+        color: white;
+      }
+    }
+    .DropNextContainer {
+      padding: 1rem 0rem 1rem 0rem;
+      text-align: center;
+      .dropNext {
+        font-size: 41px;
+        font-weight: 700;
+        color: #fff;
+        @media (max-width: 544px) {
+          font-size: 38px;
+          font-weight: 700;
+        }
+      }
+      .timeSection {
+        font-style: 'Poppins', sans-serif;
+        display: flex;
+        justify-content: space-around;
+        .heading {
+          color: #3fb5f5;
+          font-size: 16px;
+          font-weight: 700;
+          width: 35%;
+        }
+      }
+    }
+
+    .DesktopItemsContainer {
+      display: flex;
+      max-width: 1200px;
+      @media (max-width: 1200px) {
+        margin-left: 40px;
+        margin-right: 40px;
+        justify-content: center;
+      }
+      @media (max-width: 767px) {
+        margin-left: 30px;
+        margin-right: 30px;
+      }
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin: 0 auto;
+      align-items: baseline;
+      .DesktopItemMain {
+        display: flex;
+        padding-bottom: 2rem;
+        border-radius: 1rem;
+        @media (max-width: 1200px) {
+          flex-wrap: wrap;
+          justify-content: center;
+          flex-direction: column;
+          width: 100%;
+          margin-bottom: 0rem;
+        }
+        @media (max-width: 650px) {
+          align-items: center;
+        }
+        padding-bottom: 2rem;
+      }
+    }
+
+    .DesktopItem {
+      padding: 2rem 6rem 2rem 2rem;
+      @media (max-width: 400px) {
+        padding: 2rem 0rem 2rem 0rem;
+      }
+      .dropText {
+        font-size: 25px;
+        line-height: 48px;
+        font-weight: 700;
+        color: #f6921e;
+        padding-bottom: 0.5rem;
+      }
+      .dropTextLive {
+        font-size: 31px;
+        line-height: 48px;
+        font-weight: 700;
+        color: #04d700;
+        padding-bottom: 0.5rem;
+      }
+      .dropTextEnded {
+        font-size: 31px;
+        line-height: 48px;
+        font-weight: 700;
+        color: red;
+        padding-bottom: 0.5rem;
+      }
+      .DropNextContainer {
+        display: flex;
+        align-items: center;
+        padding: 1rem 0rem 3rem 0rem;
+        .dropNext {
+          font-size: 41px;
+          font-weight: 700;
+          color: #fff;
+          @media (max-width: 544px) {
+            font-size: 22px;
+            font-weight: 700;
+            padding: 0rem 1rem;
+          }
+        }
+        .timeSection {
+          font-style: 'Poppins', sans-serif;
+          display: flex;
+          justify-content: space-around;
+          .heading {
+            color: #3fb5f5;
+            font-size: 16px;
+            font-weight: 700;
+            width: 35%;
+          }
+        }
+      }
+      .imageContainer {
+        display: flex;
+        position: relative;
+        flex-wrap: nowrap;
+        @media (max-width: 650px) {
+          flex-direction: column;
+        }
+        .mainImage {
+          @media (max-width: 767px) {
+            width: 100%;
+          }
+        }
+      }
+      .dataContainer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex: 0 0 50%;
+        @media (max-width: 1360px) {
+          margin-bottom: 3rem;
+        }
+        @media (max-width: 650px) {
+          align-items: center;
+        }
+
+        .leftItem {
+          padding: 0rem 0rem 0rem 2rem;
+          @media (max-width: 650px) {
+            padding: 0rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          @media (max-width: 420px) {
+            margin-bottom: 1rem;
+          }
+          .nameImage {
+            width: 80%;
+          }
+          .heading {
+            color: #fff;
+            font-weight: 500;
+            font-family: 'Poppins', sans-serif;
+            font-size: 34px;
+            @media (max-width: 767px) {
+              font-size: 20px;
+              width: 100%;
+              line-height: 25px;
+            }
+            width: 100%;
+            line-height: 35px;
+            margin: 0;
+            span {
+              font-family: 'Poppins', sans-serif;
+              font-size: 29px;
+              font-weight: 500;
+            }
+          }
+          .rightItem {
+            @media (max-width: 767px) {
+              margin-left: 2rem;
+              width: 155px;
+            }
+            @media (max-width: 650px) {
+              margin: 0rem;
+            }
+            .dataText {
+              color: #3fb5f5;
+              font-weight: 800;
+              font-size: 20px;
+              @media (max-width: 767px) {
+                font-size: 18px;
+              }
+              margin: 0;
+            }
+            ul {
+              padding: 0;
+              text-align: left;
+              li {
+                color: #fff;
+                font-size: 16px;
+                margin-bottom: 0.26rem;
+                @media (max-width: 767px) {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+        }
+        .ItemBtn2 {
+          padding: 0.8rem 2.5rem;
+          @media (max-width: 767px) {
+            padding: 0.5rem 1.5rem;
+          }
+          background-color: #3fb5f5;
+          border-radius: 2rem;
+          border: none;
+          font-size: 16px;
+          font-weight: bold;
+          transition: 0.7s;
+          margin-top: 1.8rem;
+          margin-left: 1rem;
+          &:hover {
+            transform: scale(1.08);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .MobileItem {
+      width: 96%;
+      margin: 0 auto;
+      position: relative;
+      margin-left: 0.5rem;
+      background-color: none;
+      border: none;
+      box-shadow: none;
+      @media (min-width: 900px) {
+        margin-bottom: 1rem;
+      }
+
+      @media (min-width: 1447px) {
+        display: none;
+      }
+      .imageContainer {
+        display: flex;
+        padding: 0 0.4rem;
+        img {
+          height: 7rem;
+          width: 100%;
+          &:last-of-type {
+            width: 100%;
+          }
+        }
+      }
+      .topContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: 1.8rem;
+        padding: 0 0.4rem;
+        p {
+          color: #fff;
+          font-size: 24px;
+          font-family: 'Poppins', sans-serif;
+          font-weight: 500;
+          margin: 0;
+        }
+        .dateText {
+          color: #3fb5f5;
+          font-weight: 800;
+          font-size: 15px;
+          line-height: 12px;
+          margin-top: 1rem;
+        }
+      }
+      .bottomContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 1.8rem;
+        ul {
+          padding: 0;
+          text-align: left;
+          margin: 0;
+          margin-left: 6%;
+          li {
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 0.26rem;
+          }
+        }
+        .ItemBtn {
+          padding: 0.6rem 1.4rem;
+          background-color: #f68e1f;
+          border-radius: 20px;
+          border: none;
+          font-size: 16px;
+          font-weight: bold;
+          transition: 0.7s;
+          &:hover {
+            transform: scale(1.08);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .customDots {
+      background-color: #c4c4c4;
+      margin-top: 3rem;
+      height: 6px;
+      width: 6px;
+      border-radius: 100%;
+      li {
+        margin: 0;
+      }
+    }
+
+    .activeDots {
+      background-color: #fff;
+      margin-top: 2.9rem;
+      height: 9px;
+      width: 9px;
+      border-radius: 100%;
+    }
+  }
+}

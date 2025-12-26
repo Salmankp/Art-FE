@@ -1,0 +1,658 @@
+.border {
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #ffdd15 0%,
+    #ffd915 3.83%,
+    #fdce17 7.3%,
+    #fbbc19 10.64%,
+    #f8a21c 13.88%,
+    #f6921e 15.52%,
+    #f68e1f 20.65%,
+    #f48321 25.3%,
+    #f27124 29.76%,
+    #f05a28 33.69%,
+    #f05628 38.27%,
+    #ef4b27 42.42%,
+    #ee3926 46.41%,
+    #ec1f24 50.27%,
+    #ec1c24 50.67%,
+    #e81e27 54.36%,
+    #dd2531 57.7%,
+    #cb3040 60.91%,
+    #b14057 64.05%,
+    #8f5573 67.12%,
+    #666e97 70.15%,
+    #368cbf 73.09%,
+    #00adee 75.97%,
+    #01a9eb 80.68%,
+    #059ee3 84.95%,
+    #0c8cd5 89.05%,
+    #1672c2 93.05%,
+    #2251a9 96.93%,
+    #2e3191 100%
+  );
+}
+
+.wrap {
+  max-width: 1120px;
+  margin: 1rem auto 3rem;
+  .gridwrap {
+    display: flex;
+    margin-left: -1.6rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    .griditem {
+      margin-top: 2rem;
+      margin-left: 1.6rem;
+      width: 200px !important;
+      text-align: center;
+      .img {
+        overflow: hidden;
+        position: relative;
+        height: 270px !important;
+        font-size: 0px;
+        border-radius: 15px;
+        &:hover {
+          .overlay {
+            display: flex;
+          }
+        }
+        .overlay {
+          cursor: pointer;
+          box-sizing: border-box;
+          background: #242424de;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          // border-radius: 15px;
+          padding: 1rem 5px;
+          display: flex;
+          display: none;
+          flex-direction: column;
+          justify-content: space-between;
+          .title1 {
+            font-family: 'Open Sans';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 26px;
+            letter-spacing: 0px;
+            text-align: center;
+            color: #ffffff;
+          }
+          .title2 {
+            font-family: 'Open Sans';
+            font-size: 27px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 26px;
+            letter-spacing: 0px;
+            text-align: center;
+            color: #ffffff;
+          }
+          .edition {
+            font-family: 'Open Sans';
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 23px;
+            letter-spacing: 0px;
+            text-align: center;
+            color: #ffffff;
+            margin: 0.5rem 0rem;
+          }
+          .title3 {
+            font-family: 'Open Sans';
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 21px;
+            letter-spacing: 0px;
+            text-align: center;
+            color: #ed1c24;
+          }
+        }
+        img {
+          height: 100%;
+          width: 200px !important;
+          // border-radius: 10px;
+          object-fit: cover;
+        }
+        .badge {
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          background-color: #111111b8;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: 5px;
+          left: 18px;
+          border-radius: 50%;
+          padding: 3px;
+          img {
+            width: 14px;
+            height: 14px;
+          }
+        }
+      }
+      button {
+        margin: auto;
+        margin-top: 1.5rem;
+        font-family: 'Open Sans';
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #111111;
+        background-color: #f6921e;
+        height: 33px;
+        width: 145px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 20px;
+        border: 0px;
+      }
+    }
+  }
+
+  // Class For Header conditional rendering (By Usama Mehmood)
+  .mainWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 1050px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    .scifiText2 {
+      font-family: 'Open Sans';
+      font-size: 37px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 42px;
+      letter-spacing: -1px;
+      color: #f8a21c;
+      flex: 0 0 58%;
+      @media (max-width: 690px) {
+        margin-top: 1rem;
+        text-align: center;
+        margin-right: 0rem;
+      }
+      div {
+        color: #ffffff;
+      }
+      .text2 {
+        color: #f8a21c;
+      }
+    }
+  }
+
+  // end class
+
+  .NFTWrap.NFT3d {
+    padding: 0px;
+    height: 550px;
+    padding-top: 3rem;
+    background-image: none !important;
+    margin-top: unset;
+    iframe {
+      border: 0px;
+    }
+  }
+  .NFTWrap {
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    margin-top: 3rem;
+    padding: 4.5rem;
+    flex-wrap: unset;
+    @media (max-width: 1005px) {
+      height: 700px;
+    }
+    .scifiText {
+      font-family: 'Open Sans';
+      font-size: 37px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 42px;
+      letter-spacing: -1px;
+      color: #fff;
+      margin-right: 4rem;
+      @media (max-width: 690px) {
+        margin-top: 1rem;
+        text-align: center;
+        margin-right: 0rem;
+      }
+      div {
+        color: #ffffff;
+      }
+    }
+
+    .text {
+      font-family: 'Open Sans';
+      font-size: 37px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 42px;
+      letter-spacing: -1px;
+      text-align: right;
+      color: #f8a21c;
+      div {
+        color: #ffffff;
+      }
+      margin-right: 4rem;
+    }
+    .img {
+      img {
+        max-width: 450px;
+        width: 100%;
+      }
+    }
+  }
+  .NFTWrap2 {
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    margin-top: 3rem;
+    padding: 4.5rem;
+    flex-wrap: unset;
+    border: 12px solid #545454;
+    @media (max-width: 1005px) {
+      height: 700px;
+    }
+    @media (max-width: 575px) {
+      height: 320px;
+    }
+    @media (max-width: 420px) {
+      padding: 1rem;
+    }
+    .scifiText {
+      font-family: 'Open Sans';
+      font-size: 37px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 42px;
+      letter-spacing: -1px;
+      color: #fff;
+      margin-right: 4rem;
+      @media (max-width: 690px) {
+        margin-top: 1rem;
+        text-align: center;
+        margin-right: 0rem;
+      }
+      div {
+        color: #ffffff;
+      }
+    }
+
+    .text {
+      font-family: 'Open Sans';
+      font-size: 37px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 42px;
+      letter-spacing: -1px;
+      text-align: right;
+      color: #f8a21c;
+      div {
+        color: #ffffff;
+      }
+      margin-right: 4rem;
+    }
+    .img {
+      img {
+        max-width: 450px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.wrap2 {
+  max-width: 1300px;
+  margin: 1rem auto 3rem;
+  .gridwrap {
+    display: flex;
+    margin-left: -1.6rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    .griditem {
+      margin-top: 2rem;
+      margin-left: 1rem;
+      width: 200px !important;
+      text-align: center;
+      .img {
+        overflow: hidden;
+        position: relative;
+        height: 270px !important;
+        font-size: 0px;
+        border-radius: 15px;
+        &:hover {
+          .overlay {
+            display: flex;
+          }
+        }
+        .overlay {
+          cursor: pointer;
+          box-sizing: border-box;
+          background: #242424de;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          // border-radius: 15px;
+          padding: 1rem 5px;
+          display: flex;
+          display: none;
+          flex-direction: column;
+          justify-content: space-between;
+          .title1 {
+            font-family: 'Open Sans';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 26px;
+            letter-spacing: 0px;
+            text-align: center;
+            color: #ffffff;
+          }
+          .title2 {
+            font-family: 'Open Sans';
+            font-size: 27px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 26px;
+            letter-spacing: 0px;
+            text-align: center;
+            color: #ffffff;
+          }
+          .edition {
+            font-family: 'Open Sans';
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 23px;
+            letter-spacing: 0px;
+            text-align: center;
+            color: #ffffff;
+            margin: 0.5rem 0rem;
+          }
+          .title3 {
+            font-family: 'Open Sans';
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 21px;
+            letter-spacing: 0px;
+            text-align: center;
+            color: #ed1c24;
+          }
+        }
+        img {
+          height: 100%;
+          width: 200px !important;
+          // border-radius: 10px;
+          object-fit: cover;
+        }
+        .badge {
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          background-color: #111111b8;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          top: 5px;
+          left: 18px;
+          border-radius: 50%;
+          padding: 3px;
+          img {
+            width: 14px;
+            height: 14px;
+          }
+        }
+      }
+      button {
+        margin: auto;
+        margin-top: 1.5rem;
+        font-family: 'Open Sans';
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: #111111;
+        background-color: #f6921e;
+        height: 33px;
+        width: 145px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 20px;
+        border: 0px;
+      }
+    }
+  }
+
+  // Class For Header conditional rendering (By Usama Mehmood)
+  .mainWrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 1050px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    .scifiText2 {
+      font-family: 'Open Sans';
+      font-size: 37px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 42px;
+      letter-spacing: -1px;
+      color: #f8a21c;
+      flex: 0 0 18%;
+      @media (max-width: 690px) {
+        margin-top: 1rem;
+        text-align: center;
+        margin-right: 0rem;
+      }
+      div {
+        color: #ffffff;
+      }
+      .text2 {
+        color: #f8a21c;
+      }
+    }
+    .infiniteText {
+      font-family: 'Open Sans';
+      font-size: 37px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 42px;
+      letter-spacing: -1px;
+      color: #f8a21c;
+      flex: 0 0 32%;
+      @media (max-width: 690px) {
+        margin-top: 1rem;
+        text-align: center;
+        margin-right: 0rem;
+      }
+      div {
+        color: #ffffff;
+      }
+      .text2 {
+        color: #f8a21c;
+      }
+    }
+  }
+
+  // end class
+
+  .NFTWrap.NFT3d {
+    padding: 0px;
+    height: 550px;
+    padding-top: 3rem;
+    background-image: none !important;
+    margin-top: unset;
+    iframe {
+      border: 0px;
+    }
+  }
+  .NFTWrap {
+    height: 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-size: cover;
+    margin-top: 3rem;
+    padding: 4.5rem;
+    flex-wrap: unset;
+    @media (max-width: 1005px) {
+      height: 700px;
+    }
+    .scifiText {
+      font-family: 'Open Sans';
+      font-size: 37px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 42px;
+      letter-spacing: -1px;
+      color: #fff;
+      margin-right: 4rem;
+      @media (max-width: 690px) {
+        margin-top: 1rem;
+        text-align: center;
+        margin-right: 0rem;
+      }
+      div {
+        color: #ffffff;
+      }
+    }
+
+    .text {
+      font-family: 'Open Sans';
+      font-size: 37px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 42px;
+      letter-spacing: -1px;
+      text-align: right;
+      color: #f8a21c;
+      div {
+        color: #ffffff;
+      }
+      margin-right: 4rem;
+    }
+    .img {
+      img {
+        max-width: 450px;
+        width: 100%;
+      }
+    }
+  }
+  .NFTWrap2 {
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    margin-top: 3rem;
+    padding: 4.5rem;
+    flex-wrap: unset;
+    border: 12px solid #545454;
+    @media (max-width: 1005px) {
+      height: 700px;
+    }
+    @media (max-width: 575px) {
+      height: 320px;
+    }
+    @media (max-width: 420px) {
+      padding: 1rem;
+    }
+    .scifiText {
+      font-family: 'Open Sans';
+      font-size: 37px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 42px;
+      letter-spacing: -1px;
+      color: #fff;
+      margin-right: 4rem;
+      @media (max-width: 690px) {
+        margin-top: 1rem;
+        text-align: center;
+        margin-right: 0rem;
+      }
+      div {
+        color: #ffffff;
+      }
+    }
+
+    .text {
+      font-family: 'Open Sans';
+      font-size: 37px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 42px;
+      letter-spacing: -1px;
+      text-align: right;
+      color: #f8a21c;
+      div {
+        color: #ffffff;
+      }
+      margin-right: 4rem;
+    }
+    .img {
+      img {
+        max-width: 450px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wrap {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 1005px) {
+  .wrap {
+    .NFTWrap {
+      flex-direction: column;
+      justify-content: center;
+      padding: 3rem 2rem;
+      align-items: center;
+      text-align: center;
+      .text {
+        margin-right: 0px;
+        text-align: center;
+        font-size: 30px;
+        line-height: 35px;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrap {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}

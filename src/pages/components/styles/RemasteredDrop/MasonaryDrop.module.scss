@@ -1,0 +1,285 @@
+.masonaryContainer {
+  margin: 2rem auto 0;
+  .gridContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    .gridItem {
+      width: 31%;
+      @media (max-width: 991px) {
+        width: 47%;
+      }
+      @media (max-width: 670px) {
+        width: 100%;
+      }
+      .masonaryImage {
+        height: 465px;
+        object-fit: cover;
+        &:hover + .infoButton {
+          display: block;
+        }
+      }
+      &:nth-child(5n + 4) {
+        width: 47%;
+        @media (max-width: 670px) {
+          width: 100%;
+        }
+        .masonaryImage {
+          height: 380px;
+        }
+      }
+      &:nth-child(5n) {
+        width: 47%;
+        @media (max-width: 670px) {
+          width: 100%;
+        }
+        .masonaryImage {
+          height: 380px;
+        }
+      }
+      .rarityBadge {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 2.5%;
+        left: 2%;
+        z-index: 2;
+
+        .orangeLogo {
+          width: 16px;
+          background: rgba(58, 62, 72, 0.9);
+          padding: 6px;
+          border-radius: 50%;
+          position: relative;
+        }
+        .extraordinaryText {
+          font-size: 8px;
+          padding: 3px 8px;
+          color: #ffffff;
+          background: rgba(58, 62, 72, 0.9);
+          border-top-right-radius: 1rem;
+          border-bottom-right-radius: 1rem;
+          position: absolute;
+          left: 25px;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+      }
+      .infoButton {
+        display: none;
+        bottom: 0;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        color: #fff;
+        opacity: 0.8;
+        background: #0c0c0c;
+        padding: 1rem;
+        border-radius: 15px;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        &:hover {
+          display: block;
+        }
+        .btnText {
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 25px;
+        }
+      }
+      .detailsWrapper {
+        margin-top: 10px;
+
+        .nameEditionWrap {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 2px;
+          .collectionWrap {
+            flex: 2;
+            .artistName {
+              font-size: 16px;
+              line-height: 18px;
+              font-weight: 300;
+              color: #fff;
+            }
+            .collection {
+              font-size: 18px;
+              line-height: 21px;
+              font-weight: 700;
+              color: #fff;
+            }
+            .name {
+              font-size: 14px;
+              line-height: 18px;
+              font-weight: 700;
+              color: #fff;
+            }
+          }
+          .editionWrap {
+            flex: 1;
+            text-align: end;
+            color: #f68e1f;
+            font-size: 17px;
+            font-weight: 400;
+          }
+        }
+
+        .currencyPrice {
+          text-align: end;
+          font-size: 30px;
+          line-height: 42px;
+          font-weight: 600;
+          color: #fff;
+          .curreny {
+            font-size: 12px;
+            margin-left: 5px;
+          }
+          .price {
+            font-size: 27px;
+          }
+        }
+        .cardTopInfo {
+          min-height: 100px;
+        }
+
+        .collMaster {
+          color: #a69a9a;
+          font-size: 15px;
+          line-height: 21px;
+          font-weight: 600;
+          margin: 10px 0 40px;
+        }
+        .btnWrapper {
+          display: flex;
+          gap: 10px;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          align-items: center;
+          margin: 20px 0 10px;
+          .leftWrap {
+            .previewNft {
+              background-color: #3fb5f5;
+              width: 140px;
+              height: 35px;
+              cursor: pointer;
+              border-radius: 20px;
+              text-align: center;
+              font-size: 16px;
+              font-weight: 700;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-transform: capitalize;
+            }
+            .platinumBtn {
+              margin-top: 10px;
+              background-color: #aea3a3;
+              width: 140px;
+              height: 27px;
+              cursor: pointer;
+              border-radius: 20px;
+              text-align: center;
+              font-size: 14px;
+              font-weight: 700;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+          .rightWrap {
+            .buynowBtn {
+              font-size: 17px;
+              background-color: #f68e1f;
+              width: 148px;
+              cursor: pointer;
+              height: 35px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 20px;
+              font-weight: 700;
+              letter-spacing: 0;
+              color: #000000;
+            }
+            .comingSoon {
+              font-size: 17px;
+              color: black;
+              background-color: #f68e1f;
+              width: 148px;
+              cursor: pointer;
+              height: 35px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 20px;
+              font-weight: 700;
+              letter-spacing: 0;
+            }
+          }
+        }
+
+        .tabswrap {
+          padding: 1rem 1rem;
+          .headwrap {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #a69a9a;
+            padding-bottom: 6px;
+            .head {
+              cursor: pointer;
+              font-size: 14px;
+              font-weight: 400;
+              font-family: 'Open Sans';
+              color: #a69a9a;
+              text-align: center;
+            }
+            .head.active {
+              color: #ffff;
+              font-weight: 700;
+            }
+            .divider {
+              width: 1px;
+              height: 30px;
+              background-color: #a69a9a;
+              margin: 0rem 1rem;
+            }
+          }
+          .bodywrap {
+            font-family: 'Open Sans';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #ffffff;
+            margin-top: 1rem;
+            max-height: 100px;
+            overflow-y: auto;
+            padding-right: 5px;
+            /* width */
+            &::-webkit-scrollbar {
+              width: 3px;
+            }
+            /* Track */
+            &::-webkit-scrollbar-track {
+              background: transparent;
+            }
+            /* Handle */
+            &::-webkit-scrollbar-thumb {
+              background: #888;
+              border-radius: 20px;
+            }
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+              background: #555;
+            }
+          }
+        }
+      }
+    }
+  }
+}

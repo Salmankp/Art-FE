@@ -1,0 +1,285 @@
+$color: linear-gradient(
+  90deg,
+  #ffdd15 0%,
+  #ffd915 3.83%,
+  #fdce17 7.3%,
+  #fbbc19 10.64%,
+  #f8a21c 13.88%,
+  #f6921e 15.52%,
+  #f68e1f 20.65%,
+  #f48321 25.3%,
+  #f27124 29.76%,
+  #f05a28 33.69%,
+  #f05628 38.27%,
+  #ef4b27 42.42%,
+  #ee3926 46.41%,
+  #ec1f24 50.27%,
+  #ec1c24 50.67%,
+  #e81e27 54.36%,
+  #dd2531 57.7%,
+  #cb3040 60.91%,
+  #b14057 64.05%,
+  #8f5573 67.12%,
+  #666e97 70.15%,
+  #368cbf 73.09%,
+  #00adee 75.97%,
+  #01a9eb 80.68%,
+  #059ee3 84.95%,
+  #0c8cd5 89.05%,
+  #1672c2 93.05%,
+  #2251a9 96.93%,
+  #2e3191 100%
+);
+.SearchBar {
+  height: 30px;
+  width: 25%;
+  display: flex;
+  margin-left: auto;
+  background-color: #b9b9b9;
+  color: #ffffff;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+}
+.FilterSortSection {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 9rem;
+  @media (max-width: 1024px) {
+    padding: 1rem 4rem;
+  }
+
+  @media (max-width: 600px) {
+    padding: 1rem;
+  }
+
+  .Main {
+    .headerStyles {
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 0.4rem;
+    }
+    .filterSection {
+      .labelSection {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width: 699px) {
+          align-items: initial;
+          flex-direction: column;
+        }
+        p {
+          min-width: 5rem;
+          font-size: 1.1rem;
+        }
+        .infoImg {
+          margin-left: -2.1rem;
+          margin-bottom: 0.7rem;
+          @media (min-width: 900px) and (max-width: 1400px) {
+            margin-left: -0.24rem;
+          }
+        }
+        div {
+          height: 1px;
+          width: 90%;
+          background: $color;
+        }
+      }
+      .filterItemsSection {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 1.3rem;
+        .items {
+          display: flex;
+          flex-wrap: wrap;
+          // align-items: center;
+          @media (max-width: 699px) {
+            flex-direction: column;
+          }
+          .filterSelectWrap {
+            margin: 0 1rem 1rem 0;
+          }
+          .filterItemWrap {
+            p {
+              margin: 0 0 0.3rem 0rem;
+              color: #fff;
+              font-size: 0.85rem;
+            }
+          }
+          .filterItem {
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 20px;
+            font-size: 14px;
+            padding: 0.3rem;
+            width: 15rem;
+            // height: 1.9rem;
+            border-radius: 0.3rem;
+            border: 2px solid #353945;
+            margin: 0 1rem 1rem 0;
+            cursor: pointer;
+            .filterIcon {
+              padding: 0.24rem 0.6rem;
+              border-radius: 100%;
+              border: 2px solid #353945;
+            }
+          }
+        }
+
+        .filterBtnWrap {
+          button {
+            border: none;
+            background: linear-gradient(180deg, #3fb5f5 0%, #b35aff 100%);
+            padding: 0.1rem 1.4rem;
+            font-size: 0.9rem;
+            color: #fff;
+            font-weight: bold;
+            line-height: 24px;
+            height: 2.5rem;
+            border-radius: 3rem;
+            cursor: pointer;
+            margin-bottom: 1rem;
+          }
+        }
+      }
+    }
+    .sortSection {
+      .labelSection {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 0.3rem;
+        @media (max-width: 699px) {
+          align-items: initial;
+          flex-direction: column;
+        }
+        p {
+          min-width: 5rem;
+          font-size: 1.1rem;
+        }
+        div {
+          height: 1px;
+          width: 90%;
+          background: $color;
+        }
+      }
+      .sortItemsSection {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        .leftContainer {
+          display: flex;
+          @media (max-width: 699px) {
+            flex-direction: column;
+          }
+          .sortItem {
+            cursor: pointer;
+            margin-right: 3rem;
+            .heading {
+              color: #b1b5c3;
+              margin: 0;
+              font-size: 0.82rem;
+              font-weight: bolder;
+              svg {
+                font-size: 0.8rem;
+                position: relative;
+                left: 0.4rem;
+                top: 0.2rem;
+              }
+            }
+            .divider {
+              background-color: #fff;
+              height: 1px;
+              width: 80px;
+              margin: 0.4rem 0;
+            }
+            p {
+              margin: 0;
+            }
+            .options {
+              display: flex;
+              color: #fff;
+              align-items: flex-end;
+              p {
+                &:last-of-type {
+                  transform: rotate(180deg);
+                  font-size: 14px;
+                  margin-left: 1rem;
+                }
+              }
+            }
+            .sortName {
+              font-size: 0.8rem;
+              color: #b1b5c3;
+              &.active {
+                color: white;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+
+        .ownedListedWraper {
+          display: flex;
+          .ownedIndicatorWrapper {
+            display: flex;
+            align-items: center;
+            .ownedIndicatorCircle {
+              width: 10px;
+              height: 15px;
+              background-color: #61ff00;
+              border-radius: 50%;
+              padding-right: 5px;
+            }
+            .ownedIndicatorText {
+              padding-left: 8px;
+              color: white;
+              font-weight: bold;
+            }
+          }
+
+          .listedWrapper {
+            display: flex;
+            align-items: center;
+            padding-left: 30px;
+
+            .listedIndicatorCircle {
+              width: 10px;
+              height: 15px;
+              background-color: #f68d20;
+              border-radius: 50%;
+              padding-right: 5px;
+            }
+
+            .listedIndicatorText {
+              padding-left: 8px;
+              color: white;
+              font-weight: bold;
+            }
+          }
+        }
+
+        .rightContainer {
+          width: 230px;
+          padding-right: 1rem;
+          @media (max-width: 700px) {
+            width: 90%;
+            margin: 2rem auto 1rem auto;
+          }
+          .price {
+            color: #b1b5c3;
+            font-size: 0.9rem;
+            margin: -0.7rem 0 0.8rem -0.7rem;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

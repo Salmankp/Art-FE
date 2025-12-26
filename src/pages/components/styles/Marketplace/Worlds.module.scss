@@ -1,0 +1,446 @@
+$color: linear-gradient(
+  90deg,
+  #ffdd15 0%,
+  #ffd915 3.83%,
+  #fdce17 7.3%,
+  #fbbc19 10.64%,
+  #f8a21c 13.88%,
+  #f6921e 15.52%,
+  #f68e1f 20.65%,
+  #f48321 25.3%,
+  #f27124 29.76%,
+  #f05a28 33.69%,
+  #f05628 38.27%,
+  #ef4b27 42.42%,
+  #ee3926 46.41%,
+  #ec1f24 50.27%,
+  #ec1c24 50.67%,
+  #e81e27 54.36%,
+  #dd2531 57.7%,
+  #cb3040 60.91%,
+  #b14057 64.05%,
+  #8f5573 67.12%,
+  #666e97 70.15%,
+  #368cbf 73.09%,
+  #00adee 75.97%,
+  #01a9eb 80.68%,
+  #059ee3 84.95%,
+  #0c8cd5 89.05%,
+  #1672c2 93.05%,
+  #2251a9 96.93%,
+  #2e3191 100%
+);
+
+@mixin left-overlay-text {
+  margin: 0;
+  color: #aea3a3;
+  font-weight: bold;
+}
+.SearchBar {
+  height: 45px !important;
+  width: 25%;
+  display: flex !important;
+  margin-left: 65%;
+  background-color: transparent !important;
+  color: #fff !important;
+  border: 2px solid #353945;
+  border-radius: 25px !important;
+  outline: none !important;
+  ::placeholder {
+    color: #ffffff !important;
+  }
+  input {
+    color: white !important;
+  }
+}
+
+.Worlds {
+  background: linear-gradient(180deg, #363636 0%, #111111 100%);
+  @media (max-width: 700px) {
+    background: linear-gradient(0deg, #363636 0%, #111111 100%);
+  }
+  .NextDropContainer {
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.4rem 8rem;
+    background: linear-gradient(
+      60deg,
+      #ffdd15 0%,
+      #ffd915 3.83%,
+      #fdce17 7.3%,
+      #fbbc19 10.64%,
+      #f8a21c 13.88%,
+      #f6921e 15.52%,
+      #f68e1f 20.65%,
+      #f48321 25.3%,
+      #f27124 29.76%,
+      #f05a28 33.69%,
+      #f05628 38.27%,
+      #ef4b27 42.42%,
+      #ee3926 46.41%,
+      #ec1f24 50.27%,
+      #ec1c24 50.67%,
+      #e81e27 54.36%,
+      #dd2531 57.7%,
+      #cb3040 60.91%,
+      #b14057 64.05%,
+      #8f5573 67.12%,
+      #666e97 70.15%,
+      #368cbf 73.09%,
+      #00adee 75.97%,
+      #01a9eb 80.68%,
+      #059ee3 84.95%,
+      #0c8cd5 89.05%,
+      #1672c2 93.05%,
+      #2251a9 96.93%,
+      #2e3191 100%
+    );
+    .nextDropText {
+      color: #363636;
+      font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+      .bold {
+        margin: 0;
+        font-size: 47px;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        p {
+          margin: 0;
+          font-size: 25px;
+        }
+        .divider {
+          height: 1.4rem;
+          width: 4px;
+          background-color: #363636;
+          margin: 0 0.4rem;
+        }
+      }
+    }
+    .timeSection {
+      display: flex;
+      text-align: center;
+      .time {
+        margin-right: 2.4rem;
+        &:last-of-type {
+          margin-right: 0;
+        }
+        p {
+          color: #fff;
+          font-size: 48px;
+          margin: 0;
+          &:last-of-type {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            color: #363636;
+            font-weight: bolder;
+          }
+        }
+      }
+    }
+    .viewDropbtn {
+      border: none;
+      outline: none;
+      font-size: 30px;
+      line-height: 30px;
+      color: #fff;
+      background-color: #4c9ae4;
+      border-radius: 10px;
+      padding: 0.8rem 1rem;
+      font-weight: bold;
+      margin-left: -2.4rem;
+    }
+  }
+  .searchContainer {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 9rem 0rem 9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    @media (max-width: 1024px) {
+      padding: 3rem 4rem 0rem 4rem;
+    }
+
+    @media (max-width: 767px) {
+      justify-content: center;
+    }
+
+    @media (max-width: 600px) {
+      padding: 3rem 1rem 0rem 1rem;
+    }
+    .titleContainer {
+      display: flex;
+      align-items: flex-start;
+      @media (max-width: 767px) {
+        justify-content: center;
+      }
+      .leftContainer {
+        .border {
+          height: 3px;
+          width: 100%;
+          background: linear-gradient(
+            90deg,
+            #ffdd15 0%,
+            #ffd915 3.83%,
+            #fdce17 7.3%,
+            #fbbc19 10.64%,
+            #f8a21c 13.88%,
+            #f6921e 15.52%,
+            #f68e1f 20.65%,
+            #f48321 25.3%,
+            #f27124 29.76%,
+            #f05a28 33.69%,
+            #f05628 38.27%,
+            #ef4b27 42.42%,
+            #ee3926 46.41%,
+            #ec1f24 50.27%,
+            #ec1c24 50.67%,
+            #e81e27 54.36%,
+            #dd2531 57.7%,
+            #cb3040 60.91%,
+            #b14057 64.05%,
+            #8f5573 67.12%,
+            #666e97 70.15%,
+            #368cbf 73.09%,
+            #00adee 75.97%,
+            #01a9eb 80.68%,
+            #059ee3 84.95%,
+            #0c8cd5 89.05%,
+            #1672c2 93.05%,
+            #2251a9 96.93%,
+            #2e3191 100%
+          );
+        }
+      }
+      .buttonSection {
+        border: none;
+        outline: none;
+        font-size: 17px;
+        background: linear-gradient(180deg, #363636 0%, #111111 100%);
+        color: #fff;
+        padding: 0.4rem 1rem;
+        margin-top: -0.1rem;
+        border-radius: 40px;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+    .collectorLogo {
+      width: 300px;
+      @media (max-width: 767px) {
+        margin-top: 1rem;
+      }
+      @media (max-width: 576px) {
+        width: 200px !important;
+      }
+    }
+    .rightContainer {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      border: 2px solid #353945;
+      width: 40%;
+      justify-content: space-between;
+      padding: 0.4rem 1rem;
+      border-radius: 12px;
+      input {
+        border: none;
+        outline: none;
+        background: transparent;
+        width: 80%;
+        color: #fff;
+      }
+      div {
+        padding: 0.3rem 0.8rem;
+        border-radius: 100%;
+        border: 2px solid #353945;
+        cursor: pointer;
+      }
+      @media (max-width: 991px) {
+        margin-top: 1rem;
+        width: 100%;
+      }
+    }
+  }
+  .FilterSortSection {
+    padding: 1rem 8rem;
+    .filterSection {
+      .labelSection {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .infoImg {
+          margin-left: -2.1rem;
+          margin-bottom: 0.7rem;
+        }
+        div {
+          height: 1px;
+          width: 90%;
+          background: $color;
+        }
+      }
+      .filterItemsSection {
+        display: flex;
+        justify-content: space-between;
+        .items {
+          display: flex;
+        }
+        button {
+          border: none;
+          background: linear-gradient(180deg, #3fb5f5 0%, #b35aff 100%);
+          border-radius: 12px;
+          padding: 0.8rem;
+          font-size: 16px;
+          color: #fff;
+          font-weight: bold;
+        }
+      }
+    }
+    .sortSection {
+      .labelSection {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1.8rem;
+        div {
+          height: 1px;
+          width: 90%;
+          background: $color;
+        }
+      }
+      .sortItemsSection {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.4rem;
+        .leftContainer {
+          display: flex;
+          .sortItem {
+            margin-right: 4rem;
+            .heading {
+              color: #b1b5c3;
+              margin: 0;
+              font-size: 12px;
+              font-weight: bolder;
+            }
+            .divider {
+              background-color: #fff;
+              height: 1px;
+              width: 80%;
+              margin: 0.4rem 0;
+            }
+            p {
+              margin: 0;
+            }
+            .options {
+              display: flex;
+              color: #fff;
+              align-items: flex-end;
+              p {
+                &:last-of-type {
+                  transform: rotate(180deg);
+                  font-size: 14px;
+                  margin-left: 1rem;
+                }
+              }
+            }
+          }
+        }
+        .rightContainer {
+          width: 20%;
+          p {
+            color: #b1b5c3;
+            font-size: 12px;
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+  .CardsSection {
+    padding: 0 9rem;
+    margin-top: 3rem;
+    @media (min-width: 1600px) {
+      max-width: 1250px;
+      margin: 0 auto;
+      margin-top: 3rem;
+    }
+    @media (max-width: 1024px) {
+      padding: 1rem 4rem;
+    }
+
+    @media (max-width: 600px) {
+      padding: 1rem;
+    }
+    .flexCardContainer {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    .gridCardContainer {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: repeat(auto-fit, 18rem);
+      @media (min-width: 1600px) {
+        gap: 1rem;
+      }
+      @media (max-width: 1500px) {
+        grid-template-columns: repeat(auto-fit, 15rem);
+        gap: 2.8rem;
+      }
+      @media (max-width: 1235px) {
+        grid-template-columns: repeat(auto-fit, 24rem);
+        gap: 2.4rem;
+      }
+      @media (max-width: 1085px) {
+        grid-template-columns: repeat(auto-fit, 17rem);
+      }
+    }
+  }
+  .paginationContainer {
+    margin-top: 1.5rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+  }
+  .noPaginationSpace {
+    margin-top: 1.5rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.filterItem {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding: 0.4rem 0.7rem;
+  width: 7rem;
+  border: 2px solid #353945;
+  margin-right: 1rem;
+  p {
+    margin: 0;
+  }
+  .filterIcon {
+    padding: 0.24rem 0.6rem;
+    border-radius: 100%;
+    border: 2px solid #353945;
+  }
+}

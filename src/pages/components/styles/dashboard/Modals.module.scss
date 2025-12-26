@@ -1,0 +1,335 @@
+.ModalWrapper {
+}
+.artist {
+  margin: 0.3rem 20px;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Open Sans';
+  font-size: 16px;
+  margin-bottom: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0rem 3rem 0rem 0rem;
+}
+.modalTitle {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: -0.32px;
+  color: #fffffff5;
+  margin-bottom: 1rem;
+  @media screen and (max-width: 600px) {
+    font-size: 1.3rem;
+  }
+  img {
+    width: 0.85rem;
+    height: 0.85rem;
+    position: relative;
+    top: -1rem;
+    left: 0.4rem;
+  }
+
+  .tooltipWrapper {
+    display: none;
+  }
+
+  .infoIcon:hover + .tooltipWrapper {
+    display: block;
+    background: rgba(85, 81, 81, 0.712);
+    padding: 1rem 1rem;
+
+    display: block;
+    position: absolute;
+    right: -202px;
+    top: -25px;
+    width: 360px;
+    border-radius: 8px;
+    text-align: justify;
+    p {
+      color: white;
+      font-size: 11px;
+      font-weight: 500;
+      strong {
+        font-weight: bolder;
+      }
+    }
+  }
+}
+
+.crossCircle,
+.nftViewCrossCircle {
+  border: 2px solid #353945;
+  box-sizing: border-box;
+  border-radius: 3rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  position: absolute;
+  &:hover {
+    cursor: pointer;
+  }
+  svg {
+    position: relative;
+    left: 7.5px;
+  }
+}
+.crossCircle {
+  right: 1.2rem;
+  top: 1.2rem;
+}
+
+.nftViewCrossCircle {
+  right: 0.9rem;
+  top: 0.9rem;
+}
+
+.nftViewWrap {
+  height: 80%;
+}
+.itemDetails {
+  display: flex;
+  justify-content: space-between;
+  .imgWrap {
+    display: flex;
+    img {
+      margin-right: 1.6rem;
+      max-height: 200px;
+      @media screen and (max-width: 600px) {
+        margin-right: 0.6rem;
+        width: 6rem;
+        height: 7rem;
+      }
+    }
+    .player {
+      margin-right: 1.6rem;
+      width: 150px !important;
+      height: 200px !important;
+      max-height: 200px;
+      div {
+        width: 150px !important;
+        height: 200px !important;
+      }
+      video {
+        border-radius: 15px;
+      }
+    }
+    .details {
+      padding-right: 3.4rem;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 0.84rem;
+      line-height: 1.5rem;
+      color: #ffffff;
+      .name {
+        font-size: 1.1rem;
+        margin-block: 0.45rem;
+        line-height: 1.5rem;
+        @media screen and (max-width: 600px) {
+          margin-block: 0.2rem;
+        }
+      }
+      .collectionName {
+        margin-bottom: 0.6rem;
+      }
+      .number,
+      .count {
+        margin-block: 0.3rem;
+        font-weight: 600;
+        font-size: 1.3rem;
+      }
+      @media screen and (max-width: 600px) {
+        padding-right: 0rem;
+      }
+    }
+  }
+  .purchaseWrap,
+  .purchaseWrapMobile {
+    .purchaseTitle {
+      margin-top: 0.5rem;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1.1rem;
+      line-height: 2rem;
+      color: #ffffff;
+    }
+    .purchaseAmount {
+      margin-top: 0.6rem;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 1.5rem;
+      line-height: 0.8rem;
+      text-transform: uppercase;
+      color: #3fb5f5;
+    }
+
+    @media screen and (max-width: 600px) {
+      .purchaseTitle {
+        font-size: 0.8rem;
+        margin-top: 0rem;
+      }
+      .purchaseAmount {
+        font-size: 1.2rem;
+        margin-top: 0rem;
+      }
+    }
+  }
+}
+.purchaseWrap {
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+}
+.purchaseWrapMobile {
+  @media screen and (min-width: 601px) {
+    display: none;
+  }
+}
+
+.buyPriceWrap {
+  margin: 1.3rem 0 0 0;
+  display: flex;
+  align-items: center;
+  .iconCircle {
+    margin-right: 0.8rem;
+    background: #f68e1f;
+    border-radius: 2.5rem;
+    width: 3.7rem;
+    height: 3.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  .content {
+    width: calc(100% - 4rem);
+    .titleWrap {
+      display: flex;
+      justify-content: space-between;
+      h6 {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        color: #fcfcfd;
+        img {
+          width: 0.85rem;
+          height: 0.85rem;
+          position: relative;
+          top: -0.3rem;
+          left: 0.4rem;
+        }
+      }
+    }
+    .subheading {
+      margin-top: 0.4rem;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #777e91;
+    }
+  }
+}
+
+.listingWrap {
+  margin: 0.5rem 0 1.2rem 0;
+  ul {
+    padding-left: 0;
+    li {
+      padding: 0.5rem 0.1rem;
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #353945;
+      .key,
+      .value {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.4rem;
+      }
+      .key {
+        color: #777e91;
+      }
+      .value {
+        color: #fcfcfd;
+        .input {
+          background: transparent;
+          border: 1px solid #ffffff96;
+          border-radius: 5px;
+          color: white;
+          caret-color: white;
+          padding: 5px;
+          max-width: 100px;
+          margin-right: 1rem;
+          @media screen and (max-width: 600px) {
+            // max-width: 70px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.actions {
+  .listedButton {
+    outline: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 1.3rem;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    cursor: pointer;
+    @media screen and (max-width: 600px) {
+      width: 48%;
+    }
+  }
+  .listButton {
+    border: none;
+    background: #f68e1f;
+  }
+  .listedButton {
+    border: none;
+    background: #50b5f5;
+  }
+  .cancelButton {
+    border: 1.3px solid #777e90;
+    background: transparent;
+    color: white;
+  }
+  .cancelButton,
+  .listButton {
+    outline: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    border-radius: 1.3rem;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    cursor: pointer;
+    @media screen and (max-width: 600px) {
+      width: 48%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,90 @@
+.HeaderMain {
+  background: url(https://artefy.io/assets/images/headermainBG.png);
+  background-size: cover;
+  .headerLogoSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #5c5c5c;
+    @media (max-width: 480px) {
+      flex-direction: column;
+    }
+    .escapelogo {
+      @media (max-width: 768px) {
+        width: 200px;
+      }
+    }
+    .verselogo {
+      @media (max-width: 768px) {
+        width: 100px;
+      }
+    }
+    .frazettaWrap {
+      width: 15%;
+      .frazettalogo {
+        width: 100%;
+      }
+    }
+  }
+  .flexWrapper {
+    display: flex;
+    padding: 3rem 0rem;
+    @media (max-width: 960px) {
+      flex-direction: column;
+      align-items: center;
+      row-gap: 40px;
+    }
+    .leftWrapper {
+      text-align: center;
+      .silverTextWrap {
+        display: flex;
+        flex-direction: column;
+        .silvertext {
+          margin: 12px 0px 0px 0px;
+        }
+        .text {
+          font-size: 35px;
+          line-height: 35px;
+          font-weight: 400;
+          color: #31a3d0;
+          letter-spacing: -1px;
+          font-family: 'Marcellus', serif;
+          padding: 0rem 0rem 1rem 0rem;
+        }
+        .silertext {
+          @media (max-width: 575px) {
+            width: 100%;
+          }
+        }
+      }
+      .vulcanMainText {
+        font-size: 26px;
+        line-height: 35px;
+        font-weight: 400;
+        font-family: 'Marcellus', serif;
+        color: #ffffff;
+        display: block;
+        padding: 0rem 5rem 0rem 5rem;
+      }
+      .drawButton {
+        color: #fff;
+        background-color: #31a3d0;
+        border-radius: 2rem;
+        padding: 1rem 4rem;
+        font-size: 31px;
+        font-weight: 400;
+        line-height: 36px;
+        font-family: 'Marcellus', serif;
+        margin-top: 2rem;
+      }
+    }
+    .rightWrapper {
+      padding: 0 20px;
+      img {
+        @media (max-width: 575px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

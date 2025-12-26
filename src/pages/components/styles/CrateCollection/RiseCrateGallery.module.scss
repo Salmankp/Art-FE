@@ -1,0 +1,52 @@
+.riseGalleryMain {
+  background-image: url(https://artefy.io/assets/images/risecratenew.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  //   height: 100vh;
+  .wrap {
+    max-width: 970px;
+    /* margin: auto; */
+    padding: 6rem 4rem 2rem 0rem;
+    box-sizing: border-box;
+    @media (max-width: 768px) {
+      padding: 0rem;
+    }
+    .videowrap {
+      //   margin-top: 2rem;
+      overflow: hidden;
+
+      :global {
+        .video-react-big-play-button {
+          width: 100px !important;
+          height: 100px !important;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border: 8px solid #686868;
+        }
+        .video-react-big-play-button::before {
+          top: 23% !important;
+          color: #686868;
+          font-size: 60px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wrap {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrap {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 3rem 0rem;
+  }
+}

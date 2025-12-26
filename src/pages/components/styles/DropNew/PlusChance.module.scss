@@ -1,0 +1,65 @@
+.pluschanceSection {
+  background: linear-gradient(0deg, #363636 0%, #111111 100%);
+  padding-bottom: 2rem;
+  .plusChanceContainer {
+    .plusChanceWrapper {
+      text-align: center;
+      .plusyourchance {
+        @media (max-width: 992px) {
+          width: 100%;
+        }
+      }
+      .plusmainimg {
+        width: 100%;
+      }
+    }
+    .infoWrapper {
+      .headWrapper {
+        background-color: #bc172a;
+        color: #fff;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 26px;
+        padding: 0.5rem 2.5rem;
+      }
+      .unorderListWrap {
+        list-style: none;
+        padding: 0;
+        width: 80%;
+        @media (max-width: 992px) {
+          width: 100%;
+        }
+        li {
+          font-size: 24px;
+          color: #fff;
+          padding: 10px 0px 10px 0px;
+          border-bottom: 1px solid #bc172a;
+        }
+      }
+    }
+
+    .buttonBox {
+      text-align: center;
+      .infoButton {
+        background: #bc172a;
+        color: #fff;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 32px;
+        padding: 12px 60px;
+        border-radius: 2rem;
+        margin-top: 1rem;
+        @media (max-width: 585px) {
+          font-size: 24px;
+        }
+        @media (max-width: 475px) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}
+
+.pluslink {
+  color: #fff;
+}

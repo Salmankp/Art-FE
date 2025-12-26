@@ -1,0 +1,188 @@
+.bannerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.banner {
+  height: 100%;
+  max-width: 481px;
+  background: linear-gradient(180deg, #111111 0%, #363636 100%);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 10px 10px;
+  padding-bottom: 100px;
+  @media screen and (max-width: 1280px) {
+    padding-bottom: 40px;
+  }
+}
+
+.logoTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  @media screen and (max-width: 1280px) {
+    flex-direction: column;
+  }
+  img {
+    height: 50px;
+  }
+  p {
+    margin: 0;
+    font-family: "Gotham Light";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #fcfcfd;
+    margin-left: 20px;
+    @media screen and (max-width: 1280px) {
+      margin-left: 0px;
+      margin-top: 10px;
+    }
+  }
+}
+
+.mobileContent {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  margin-top: 30px;
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+  & p.content {
+    margin-top: 20px;
+    width: 90%;
+  }
+}
+
+.sectionTitle {
+  @media screen and (max-width: 1280px) {
+    display: none;
+  }
+  font-family: "Gotham Light";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -0.01em;
+  color: #fcfcfd;
+  width: 100%;
+  padding-left: 60px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.info {
+  @media screen and (max-width: 1280px) {
+    display: none;
+  }
+  margin: 0 30px;
+  margin-top: 30px;
+  h4 {
+    font-family: "Gotham Light";
+    font-style: normal;
+    font-weight: 100;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.01em;
+    color: #fcfcfd;
+    margin-bottom: 10px;
+  }
+  p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+  }
+  &:nth-child(3) {
+    margin-top: 40px;
+  }
+  &:nth-child(4) {
+    margin-top: 20px;
+  }
+}
+
+.list {
+  @media screen and (max-width: 1280px) {
+    display: none;
+  }
+  margin-top: 21px;
+  width: 100%;
+  p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: -0.01em;
+    margin: 15px 0;
+    color: white;
+    span {
+      color: #3fb5f5;
+      font-weight: bold;
+    }
+  }
+}
+
+.carouselContainer {
+  @media screen and (max-width: 1280px) {
+    display: none;
+  }
+  width: 87%;
+  .CardItem {
+    width: 18rem;
+    img {
+      border-radius: 10px;
+      height: 23rem;
+      width: 100%;
+    }
+    .text {
+      font-family: "Gotham", sans-serif;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      margin-top: 1.8rem;
+      width: 100%;
+      color: #fff;
+    }
+  }
+}
+
+.customDots {
+  background-color: #c4c4c4;
+  margin-top: 3rem;
+  height: 6px;
+  width: 6px;
+  border-radius: 100%;
+  li {
+    margin: 0;
+  }
+}
+
+.activeDots {
+  background-color: #fff;
+  margin-top: 2.9rem;
+  height: 9px;
+  width: 9px;
+  border-radius: 100%;
+}

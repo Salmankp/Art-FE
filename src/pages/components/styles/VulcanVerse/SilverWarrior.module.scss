@@ -1,0 +1,334 @@
+.innerwrap {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  position: relative;
+}
+
+.Signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5rem 0;
+  position: relative;
+  @media (max-width: 1280px) {
+    padding: 1rem 0;
+  }
+  @media (max-width: 1029px) {
+    flex-direction: column;
+  }
+  background: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.warriorimg {
+  text-align: center;
+  margin-top: 50px;
+  padding: 40px;
+  img {
+    @media (max-width: 960px) {
+      width: 100%;
+    }
+  }
+  .wrap {
+    max-width: 1400px;
+    margin: auto;
+    padding: 0rem 4rem 4rem 4rem;
+    box-sizing: border-box;
+    @media (max-width: 768px) {
+      padding: 0rem;
+    }
+    .videowrap {
+      margin-top: 2rem;
+      overflow: hidden;
+      position: relative;
+      :global {
+        .video-react-big-play-button {
+          width: 100px !important;
+          height: 100px !important;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border: 8px solid #686868;
+        }
+        .video-react-big-play-button::before {
+          top: 23% !important;
+          color: #686868;
+          font-size: 60px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .outerwrap {
+      .wrap {
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .outerwrap {
+      .wrap {
+        margin-left: 30px;
+        margin-right: 30px;
+        padding: 3rem 0rem;
+      }
+    }
+  }
+}
+.EnterDraw {
+  margin-top: 50px;
+  .heading {
+    color: #609db5;
+    font-size: 42px;
+    text-align: center;
+    font-family: 'Marcellus', sans-serif;
+    @media (max-width: 480px) {
+      padding: 0 20px;
+    }
+  }
+  .gridSystem {
+    display: flex;
+    padding-top: 60px;
+
+    @media (max-width: 960px) {
+      flex-wrap: wrap;
+    }
+    .gridItem {
+      width: 25%;
+      text-align: center;
+      @media (max-width: 960px) {
+        width: 50%;
+        margin-bottom: 40px;
+      }
+      @media (max-width: 480px) {
+        width: 100%;
+      }
+      .gridHead {
+        border: 3px solid #31a3d0;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        border-radius: 10px;
+        padding-bottom: 15px;
+        justify-content: center;
+        margin: 0 auto;
+
+        .steps {
+          font-size: 16px;
+          text-align: center;
+          color: #888888;
+          border-bottom: 4px solid #31a3d0;
+          padding: 10px 0;
+          font-family: 'Marcellus', sans-serif;
+        }
+        .stepbuy {
+          font-size: 26px;
+          color: #fff;
+          text-align: center;
+          padding-top: 5px;
+          font-family: 'Marcellus', sans-serif;
+        }
+      }
+      .description {
+        color: #fff;
+        padding: 20px 40px 0;
+        font-size: 15px;
+        font-family: 'Open Sans';
+      }
+    }
+  }
+  .gridButton {
+    text-align: center;
+    margin-top: 20px;
+    @media (max-width: 960px) {
+      padding: 0 20px;
+    }
+    .drawButton {
+      color: #fff;
+      background-color: #31a3d0;
+      border-radius: 3rem;
+      padding: 0.6rem 6rem;
+      font-size: 30px;
+      font-weight: 400;
+      font-family: 'Marcellus', sans-serif;
+      margin-top: 2rem;
+      @media (max-width: 960px) {
+        padding: 1rem 4rem;
+        font-size: 24px;
+      }
+      @media (max-width: 768px) {
+        padding: 1rem 2rem;
+        font-size: 18px;
+      }
+    }
+  }
+}
+.vulcanNft {
+  padding: 50px 0;
+  display: flex;
+  column-gap: 70px;
+  position: relative;
+  @media (max-width: 960px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .vulcanNftgrid {
+    display: flex;
+    column-gap: 50px;
+    width: 50%;
+    justify-content: space-between;
+    @media (max-width: 960px) {
+      width: 65%;
+      margin-bottom: 50px;
+    }
+    @media (max-width: 575px) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+    .gridImg {
+      img {
+        width: 270px;
+        @media (max-width: 1200px) {
+          width: 200px;
+        }
+      }
+    }
+    .medDetails {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 150px;
+        position: relative;
+        left: -15px;
+      }
+      .medName {
+        color: #fff;
+        font-size: 20px;
+        text-align: center;
+      }
+      .drawButton {
+        color: #fff;
+        background-color: #31a3d0;
+        border-radius: 2rem;
+        padding: 1.2rem 3rem;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        font-family: 'Marcellus', sans-serif;
+        margin-top: 1.5rem;
+        @media (max-width: 1200px) {
+          padding: 1rem 2rem;
+        }
+      }
+      .medentry {
+        color: #fff;
+        padding-top: 10px;
+        font-size: 22px;
+        text-align: center;
+        font-family: 'Marcellus', sans-serif;
+      }
+      .medavailable {
+        color: #31d0c6;
+        font-size: 16px;
+        margin-top: 10px;
+        text-align: center;
+      }
+    }
+  }
+}
+.gridMain {
+  position: relative;
+  margin-top: 70px;
+  padding: 0 10px;
+}
+.gridMain::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 90%;
+  background: #fff;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  top: 55%;
+  @media (max-width: 960px) {
+    display: none;
+  }
+}
+.vulcanNft::before {
+  position: absolute;
+  content: '';
+  width: 90%;
+  height: 1px;
+  background: #fff;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 0;
+}
+.goldRow {
+  max-width: 1080px;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+  .imgGold {
+    img {
+      width: 280px;
+    }
+  }
+  .goldDetail {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    img {
+      position: relative;
+      left: -25px;
+    }
+    .medName {
+      color: #fff;
+    }
+    .drawButton {
+      color: #fff;
+      background-color: #31a3d0;
+      border-radius: 2rem;
+      padding: 1.2rem 4rem;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      font-family: Marcellus;
+      margin-top: 1.5rem;
+    }
+    .medavailable {
+      color: #31d0c6;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+  }
+  .medentry {
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    .entrymed {
+      font-size: 42px;
+      color: #fff;
+      font-family: 'Marcellus', sans-serif;
+    }
+  }
+}

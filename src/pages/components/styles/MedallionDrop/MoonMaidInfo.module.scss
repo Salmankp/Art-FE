@@ -1,0 +1,100 @@
+.moonMaidInfoWrapper {
+  padding: 50px 0;
+  background: linear-gradient(180deg, #083216 0%, #02220d 100%);
+  .infoCardItem {
+    height: 470px;
+    width: 350px;
+    position: relative;
+    .bottomInfoWrapper {
+      position: absolute;
+      bottom: 20px;
+      width: 100%;
+    }
+    .cardTitle {
+      font-size: 30px;
+      background: linear-gradient(
+        180deg,
+        #ffffff 20.13%,
+        rgba(255, 255, 255, 0) 110.7%
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      font-family: Trajan Pro;
+    }
+    .descriptionText {
+      font-size: 16px;
+      color: #b7b7b7;
+      text-align: center;
+      font-family: Trajan Pro;
+    }
+    .vLogo {
+      height: 50px;
+      margin-top: 20px;
+    }
+  }
+  .blockDescription {
+    font-family: Trajan Pro;
+    font-weight: 400;
+    font-size: 42px;
+    text-align: right;
+    color: #ffffff;
+    margin-top: 50px;
+    line-height: 48px;
+  }
+  .bottomMetaInfo {
+    font-size: 15px;
+    text-align: right;
+    color: #ffffff;
+  }
+  .rightBlockTitle {
+    font-family: Trajan Pro;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 50px;
+  }
+  .rightBlockDescription {
+    color: #ffffff;
+    font-size: 20px;
+  }
+  .gridImgContainer {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    flex-wrap: wrap;
+    .gridImg {
+      max-width: 100%;
+      height: 157px;
+    }
+  }
+  .addIconWrapper {
+    display: flex;
+    justify-content: center;
+    .addIcon {
+      font-size: 140px;
+      color: #60b573;
+      cursor: pointer;
+      line-height: 100px;
+    }
+  }
+  .bottomImgContainer {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+    .cardCaption {
+      text-align: center;
+      color: white;
+      font-size: 14px;
+    }
+    .imgItem {
+      height: 310px;
+    }
+  }
+}

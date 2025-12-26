@@ -1,0 +1,148 @@
+.launchGalleryWrap {
+  background: linear-gradient(180deg, #363636 0%, #111111 100%);
+  padding: 5rem 0rem 4rem 0rem;
+  .currateImgBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 992px) {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+    .waveImages {
+      flex: 0 0 65%;
+      padding-right: 15px;
+      .waveimg {
+        width: 100%;
+      }
+    }
+    .currateTextWrapper {
+      padding-bottom: 1rem;
+      .firstTextWrap {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 700;
+        color: #fff;
+      }
+      .borderBottom {
+        height: 3px;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 0.8rem;
+        margin-bottom: 0.8rem;
+        background: linear-gradient(
+          90deg,
+          #ffdd15 0%,
+          #ffd915 3.83%,
+          #fdce17 7.3%,
+          #fbbc19 10.64%,
+          #f8a21c 13.88%,
+          #f6921e 15.52%,
+          #f68e1f 20.65%,
+          #f48321 25.3%,
+          #f27124 29.76%,
+          #f05a28 33.69%,
+          #f05628 38.27%,
+          #ef4b27 42.42%,
+          #ee3926 46.41%,
+          #ec1f24 50.27%,
+          #ec1c24 50.67%,
+          #e81e27 54.36%,
+          #dd2531 57.7%,
+          #cb3040 60.91%,
+          #b14057 64.05%,
+          #8f5573 67.12%,
+          #666e97 70.15%,
+          #368cbf 73.09%,
+          #00adee 75.97%,
+          #01a9eb 80.68%,
+          #059ee3 84.95%,
+          #0c8cd5 89.05%,
+          #1672c2 93.05%,
+          #2251a9 96.93%,
+          #2e3191 100%
+        );
+      }
+    }
+  }
+  .exploreGalleryText {
+    font-size: 42px;
+    line-height: 54px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding: 3rem 0rem;
+    text-transform: uppercase;
+  }
+  .borderBottom {
+    height: 3px;
+    width: 66%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    background: linear-gradient(
+      90deg,
+      #ffdd15 0%,
+      #ffd915 3.83%,
+      #fdce17 7.3%,
+      #fbbc19 10.64%,
+      #f8a21c 13.88%,
+      #f6921e 15.52%,
+      #f68e1f 20.65%,
+      #f48321 25.3%,
+      #f27124 29.76%,
+      #f05a28 33.69%,
+      #f05628 38.27%,
+      #ef4b27 42.42%,
+      #ee3926 46.41%,
+      #ec1f24 50.27%,
+      #ec1c24 50.67%,
+      #e81e27 54.36%,
+      #dd2531 57.7%,
+      #cb3040 60.91%,
+      #b14057 64.05%,
+      #8f5573 67.12%,
+      #666e97 70.15%,
+      #368cbf 73.09%,
+      #00adee 75.97%,
+      #01a9eb 80.68%,
+      #059ee3 84.95%,
+      #0c8cd5 89.05%,
+      #1672c2 93.05%,
+      #2251a9 96.93%,
+      #2e3191 100%
+    );
+  }
+  .galleryWeb {
+    position: relative;
+  }
+  .lunchGalleryBg {
+    background: url(https://artefy.io/assets/images/launchgallerybg.png);
+    background-size: cover;
+    text-align: center;
+    padding: 15rem 0rem;
+    position: relative;
+    cursor: pointer;
+    .launchText {
+      font-size: 52px;
+      line-height: 56px;
+      font-weight: 700;
+      color: #fff;
+      background-color: #111111;
+      opacity: 0.9;
+      padding: 6rem 0rem;
+    }
+    iframe {
+      display: block;
+      margin: 0 auto;
+      border: 0;
+    }
+  }
+  .launchGalleryBottomText {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #fff;
+    padding-top: 2rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,114 @@
+@import 'src/Styles.scss';
+
+* {
+  font-family: var(--font), monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+.MuiTab-root {
+  width: 80px;
+  min-width: none;
+}
+
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  background-color: transparent;
+  color: #e6e8ec;
+  -webkit-text-fill-color: #e6e8ec;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.no-record-msg {
+  color: white;
+  text-align: center;
+  margin-block: 2rem;
+  p {
+    font-weight: bold !important;
+  }
+}
+
+.margin-block-5rem {
+  margin-block: 5rem;
+}
+
+.margin-block-10rem {
+  margin-block: 10rem;
+}
+
+.marketplace-listing-filters {
+  .select__dropdown-indicator {
+    padding: 3px !important;
+    border: 2px solid #353945 !important;
+    border-radius: 50% !important;
+  }
+
+  .select__value-container {
+    //display: none !important;
+  }
+  .select__single-value {
+    color: white !important;
+  }
+
+  .select__multi-value {
+    background-color: #6a6868;
+    color: white;
+    .select__multi-value__label {
+      color: white;
+    }
+  }
+  .select__menu {
+    right: 0;
+    background-color: #353535;
+    border-radius: 4px;
+    .select__option,
+    .select__option--is-focused,
+    .select__option--is-selected {
+      color: white;
+    }
+    .select__option--is-focused {
+      background-color: #7c7c7cc9;
+    }
+    .select__option--is-selected {
+      background-color: #565555;
+    }
+  }
+}
+
+.nf-view-frame {
+  html {
+    body {
+      div {
+        color: white;
+      }
+    }
+  }
+}
+
+.bg-black {
+  background: #000;
+}
+
+.react-player__preview {
+  border-radius: 12px !important;
+}
+
+.react-player__play-icon {
+  border: none !important;
+  margin-left: 0 !important;
+}
+

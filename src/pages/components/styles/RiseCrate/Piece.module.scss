@@ -1,0 +1,21 @@
+.pieceMain {
+  background: url(https://artefy.io/assets/images/pieceBG.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 50px 0;
+  .textInner {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 60px;
+    font-family: Open Sans;
+    color: #fff;
+    @media (max-width: 575px) {
+      font-size: 26px;
+      line-height: 45px;
+    }
+  }
+  span {
+    color: white;
+  }
+}

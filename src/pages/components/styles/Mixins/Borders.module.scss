@@ -1,0 +1,7 @@
+@import '../Variables/index.module.scss';
+
+@mixin gradient-border {
+  height: 0.2rem;
+  width: 100%;
+  background: $border-gradient;
+}

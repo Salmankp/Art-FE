@@ -1,0 +1,166 @@
+.root {
+  // background: linear-gradient(180deg, #363636 0%, #111111 100%);
+  //
+}
+.grid {
+  padding-left: 150px;
+  padding-right: 15px;
+}
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.gridButton {
+  width: 100%;
+  background: #ffa800;
+  border-radius: 20px;
+  margin-top: 23px;
+  border: 0px solid;
+  padding: 10px 0px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 16px;
+  /* or 89% */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -1px;
+  justify-content: center;
+
+  color: #000000;
+  text-align: center;
+}
+.imageContainer {
+  position: relative !important;
+  top: 0;
+  left: 0;
+  .tag {
+    display: flex;
+    align-items: center;
+    position: absolute !important;
+    top: 10px;
+    left: 7px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    letter-spacing: 0.02em;
+    height: 29px;
+    width: 138px;
+    background: rgba(53, 57, 69, 0.87);
+    border-radius: 20px;
+    color: #ffffff;
+    .circle {
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      border: 2px solid #b35aff;
+      margin-left: 5px;
+      margin-right: 10px;
+    }
+  }
+}
+.gridContainer {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  // justify-content: start;
+  gap: 1px;
+  .items {
+    display: flex;
+    justify-content: space-between;
+    .leftCol {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      /* or 171% */
+
+      color: #ffffff;
+    }
+    .available {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 24px;
+      /* identical to box height, or 141% */
+      text-align: right;
+
+      color: #f6921e;
+    }
+    .text {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 11px;
+      line-height: 12px;
+      /* identical to box height, or 109% */
+      text-align: right;
+      text-transform: uppercase;
+      transform: translateY((10px));
+      color: #3fb5f5;
+    }
+    .price {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 17px;
+      line-height: 12px;
+      /* or 71% */
+      text-align: right;
+      text-transform: uppercase;
+
+      color: #3fb5f5;
+    }
+  }
+}
+.upperText {
+  width: 100%;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 27px;
+  line-height: 32px;
+  /* or 119% */
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fcfcfd;
+  margin-top: 20px;
+  position: relative;
+  left: -80px;
+}
+.special {
+  color: #b35aff;
+}
+
+.row_button {
+  width: 100%;
+  background: #a764fe;
+  border-radius: 20px;
+  border: 0 solid;
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 68px;
+  span {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    /* or 133% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    color: #fcfcfd;
+  }
+}

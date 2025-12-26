@@ -1,0 +1,8 @@
+File from: [../src/assets/images/everscape.png]
+
+File to: [../src/assets/imagesCompress/everscape.png]
+
+Compression algorithm: [optipng]
+
+Description: Error: Command failed: /home/abhinavsri360/My place/Projectzzz/artefy-frontend/node_modules/optipng-bin/vendor/optipng --quality=20-50 -o -out ../src/assets/imagesCompress/everscape.png ../src/assets/images/everscape.png
+** Error: Unrecognized option: --quality=20-50

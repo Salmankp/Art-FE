@@ -1,0 +1,56 @@
+@import "src/Styles.scss";
+
+.root {
+  color: white;
+  gap: 30px;
+  padding: 75px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // background-color: rgb(44, 50, 58);
+  background: var(--background-white-inv);
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+  }
+  .grid {
+    max-width: 1230px;
+  }
+  .copy {
+    max-width: 1230px;
+    font-family: var(--font), monospace;
+    font-weight: 400;
+    font-size: 12px;
+    @media (max-width: 900px) {
+      font-size: 13px;
+    }
+  }
+  .button {
+    margin: 0 10px;
+    // max-width: 1230px;
+    // display: flex;
+    // justify-content: center;
+    font-family: var(--font), monospace;
+    text-align: center;
+    // margin-right: 42px; // ???
+    text-align: center;
+    @media (max-width: 900px) {
+      margin: 0;
+      font-size: 10px;
+      font-weight: 600;
+      padding-right: 10px;
+    }
+  }
+  .gridContainer {
+    max-width: 1250px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 90;
+  }
+  .icons {
+    margin-right: 70px;
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}

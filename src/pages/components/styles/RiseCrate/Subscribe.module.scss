@@ -1,0 +1,205 @@
+.innerwrap {
+  width: 100%;
+  position: relative;
+  }
+  .Signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 0;
+  position: relative;
+  @media (max-width: 1280px) {
+  padding: 1rem 0;
+  }
+  @media (max-width: 1029px) {
+  flex-direction: column;
+  }
+  background: #bc172b;
+  .buttonwrap {
+  max-width: 330px;
+  width: 100%;
+  margin-left: 2rem;
+  @media (max-width: 1280px) {
+  margin-left: 0rem;
+  margin-top: 1rem;
+  }
+  button {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: DM Sans;
+  max-width: 330px;
+  cursor: pointer;
+  width: 100%;
+  height: 50px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background-color: #fbbc19;
+  border: 0px;
+  }
+  }
+  .messageContainer {
+  color: #fcfcfd;
+  font-size: 26px;
+  font-weight: bold;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  .border {
+  max-width: 1120px;
+  background: linear-gradient(
+  90deg,
+  #ffdd15 0%,
+  #ffd915 3.83%,
+  #fdce17 7.3%,
+  #fbbc19 10.64%,
+  #f8a21c 13.88%,
+  #f6921e 15.52%,
+  #f68e1f 20.65%,
+  #f48321 25.3%,
+  #f27124 29.76%,
+  #f05a28 33.69%,
+  #f05628 38.27%,
+  #ef4b27 42.42%,
+  #ee3926 46.41%,
+  #ec1f24 50.27%,
+  #ec1c24 50.67%,
+  #e81e27 54.36%,
+  #dd2531 57.7%,
+  #cb3040 60.91%,
+  #b14057 64.05%,
+  #8f5573 67.12%,
+  #666e97 70.15%,
+  #368cbf 73.09%,
+  #00adee 75.97%,
+  #01a9eb 80.68%,
+  #059ee3 84.95%,
+  #0c8cd5 89.05%,
+  #1672c2 93.05%,
+  #2251a9 96.93%,
+  #2e3191 100%
+  );
+  width: 100%;
+  height: 2px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  }
+  .borderAfterText {
+  font-size: 19px;
+  line-height: 20px;
+  font-weight: 400;
+  }
+  p {
+  font-family: 'Poppins', sans-serif;
+  }
+  @media (max-width: 1280px) {
+  padding-left: 40px;
+  padding-right: 40px;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  }
+  @media (max-width: 1029px) {
+  display: none;
+  }
+  }
+  
+  .mobileMessage {
+  display: none;
+  margin-top: 1rem;
+  margin-left: 30px;
+  margin-right: 30px;
+  @media (max-width: 1029px) {
+  display: block;
+  color: #fcfcfd;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10px;
+  }
+  .buttonwrap {
+  margin: 1rem auto;
+  }
+  }
+  
+  .inputContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.4rem 0rem 0.4rem 1rem;
+  background-color: #d1d1d1;
+  border-radius: 5.5rem;
+  width: 30%;
+  margin-left: 1rem;
+  @media (max-width: 1200px) {
+  width: 300px;
+  margin: 0 auto;
+  }
+  @media (max-width: 400px) {
+  width: 250px;
+  }
+  button {
+  border: none;
+  background-color: #00000000;
+  height: 35px;
+  cursor: pointer;
+  }
+  input {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  width: 80%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  }
+  }
+  .limitedEditionBadge {
+  position: absolute;
+  right: 6rem;
+  bottom: -9.8rem;
+  @media (max-width: 1280px) {
+  bottom: -10.8rem;
+  }
+  img {
+  max-width: 210px;
+  width: 100%;
+  }
+  
+  p {
+  margin: 0;
+  position: relative;
+  color: #fcfcfd;
+  font-weight: bold;
+  font-size: 13px;
+  width: 66%;
+  max-width: 630px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  bottom: 9.2rem;
+  left: 2rem;
+  span {
+  color: #f6921e;
+  }
+  }
+  }
+  .mediaContainer {
+  position: absolute;
+  right: -44%;
+  @media (max-width: 1280px) {
+  right: 0;
+  transform: translateY(-35%);
+  }
+  top: 50%;
+  transform: translateY(-50%);
+  img {
+  height: 20rem;
+  }
+  }
+  }

@@ -1,0 +1,172 @@
+@mixin background($value) {
+  background: linear-gradient(
+    $value,
+    #ffdd15 0%,
+    #ffd915 3.83%,
+    #fdce17 7.3%,
+    #fbbc19 10.64%,
+    #f8a21c 13.88%,
+    #f6921e 15.52%,
+    #f68e1f 20.65%,
+    #f48321 25.3%,
+    #f27124 29.76%,
+    #f05a28 33.69%,
+    #f05628 38.27%,
+    #ef4b27 42.42%,
+    #ee3926 46.41%,
+    #ec1f24 50.27%,
+    #ec1c24 50.67%,
+    #e81e27 54.36%,
+    #dd2531 57.7%,
+    #cb3040 60.91%,
+    #b14057 64.05%,
+    #8f5573 67.12%,
+    #666e97 70.15%,
+    #368cbf 73.09%,
+    #00adee 75.97%,
+    #01a9eb 80.68%,
+    #059ee3 84.95%,
+    #0c8cd5 89.05%,
+    #1672c2 93.05%,
+    #2251a9 96.93%,
+    #2e3191 100%
+  );
+}
+
+.DropCardSection {
+  background-color: #000000;
+  padding-top: 11rem;
+  @media (min-width: 1145px) and (max-width: 1500px) {
+    padding-top: 10rem;
+  }
+  @media (min-width: 945px) and (max-width: 1145px) {
+    padding-top: 25rem;
+  }
+  .cardsDataSection {
+    margin: 0 auto;
+    max-width: 1400px;
+    margin-top: 4rem;
+    padding: 0 7rem;
+    display: grid;
+    justify-content: flex-start;
+    @media (max-width: 1200px) {
+      justify-content: space-evenly;
+    }
+    grid-template-columns: repeat(auto-fit, 15rem);
+    @media (min-width: 1900px) {
+      gap: 3rem;
+    }
+  }
+}
+
+.DropCard {
+  position: relative;
+  text-align: center;
+  margin-bottom: 3rem;
+  .dropBadge {
+    position: absolute;
+    background: rgba(48, 48, 48, 0.9);
+    padding: 0.1rem 0.44rem;
+    text-align: center;
+    border-radius: 100%;
+    left: 15.4%;
+    top: 2.4%;
+    img {
+      height: 18px;
+      margin-top: 0.24rem;
+      margin-right: 0.1rem;
+    }
+  }
+  .nftImage {
+    height: 13rem;
+    width: 13rem;
+    border-radius: 15px;
+  }
+  .dataSection {
+    margin-top: 0.4rem;
+    text-align: center;
+    p {
+      color: #fff;
+      margin: 0;
+      margin-bottom: 0.18rem;
+      &:last-of-type {
+        margin-top: 0.7rem;
+      }
+    }
+    .artName {
+      font-weight: bold;
+      font-size: 21px;
+    }
+    a {
+      text-decoration: none;
+      background-color: #f6921e;
+      color: #111111;
+      font-size: 18px;
+      font-weight: bold;
+      padding: 0.7rem 0;
+      border-radius: 20px;
+      width: 60%;
+      margin: 0 auto;
+      margin-top: 1rem;
+      display: inline-block;
+    }
+  }
+}
+
+.RegisterContainer {
+  @include background(24deg);
+  .Main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 8rem;
+    max-width: 1300px;
+    margin: 0 auto;
+    .EverscapesTitle {
+      .border {
+        @include background(90deg);
+        height: 4px;
+        width: 100%;
+      }
+    }
+    p {
+      color: #fcfcfd;
+      font-weight: bold;
+      font-size: 26px;
+      margin: 0;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 29px;
+      /* or 112% */
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+
+      /* Neutrals/8 */
+
+      color: #fcfcfd;
+    }
+    .inputContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.4rem 0.6rem;
+      background-color: #d1d1d1;
+      border-radius: 80px;
+      width: 30%;
+      input {
+        border: none;
+        outline: none;
+        width: 80%;
+        background: none;
+        color: #777e90;
+        &::placeholder {
+          color: #858b99;
+        }
+      }
+    }
+  }
+}

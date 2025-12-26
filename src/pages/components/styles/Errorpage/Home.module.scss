@@ -1,0 +1,21 @@
+.outerwrap {
+  background: linear-gradient(180deg, #363636 0%, #111111 100%);
+  .errorImg {
+    text-align: center;
+    padding: 70px 10px;
+    img {
+      max-width: 550px;
+      margin: 40px auto;
+      display: block;
+      width: 100%;
+    }
+    .Errortext {
+      font-size: 50px;
+      color: #fff;
+      font-weight: bold;
+    }
+    .textdetail {
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,230 @@
+.BannerContainer {
+  margin: 0 auto;
+  .HeavyMetalContainer {
+    padding-top: 2rem;
+    text-align: center;
+    .imgContainer {
+      .RiseText {
+        @media (max-width: 992px) {
+          max-width: 70% !important;
+        }
+        @media (max-width: 585px) {
+          max-width: 65%;
+        }
+      }
+    }
+  }
+
+  .mainContainer {
+    background: linear-gradient(180deg, #181818 0%, #111111 100%);
+    .bannerBottomTextContainer {
+      padding-top: 4rem;
+      padding-bottom: 50px;
+      @media (max-width: 1300px) {
+        padding-bottom: 4rem;
+      }
+      @media (max-width: 1200px) {
+        padding-bottom: 4rem;
+      }
+      @media (max-width: 768px) {
+        padding-bottom: 4rem;
+        padding-top: 2rem;
+      }
+      h1 {
+        font-size: 54px;
+        color: #ffff;
+        font-weight: 800;
+        line-height: 64.5px;
+        @media (max-width: 768px) {
+          font-size: 36px;
+          line-height: 50px;
+        }
+      }
+      p {
+        font-size: 19px;
+        color: #fff;
+        font-weight: 300;
+        line-height: 34px;
+      }
+      .bannerBottomSecondHead {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 39px;
+        color: #fff;
+      }
+    }
+  }
+
+  .topTextContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 2.5rem;
+    right: 9rem;
+    @media (max-width: 450px) {
+      img {
+        height: 100vh;
+      }
+    }
+    @media (max-width: 450px) {
+      display: none;
+    }
+    @media (min-width: 1600px) {
+      right: 21%;
+    }
+
+    @media (min-width: 2000px) {
+      right: 23%;
+    }
+    @media (min-width: 2200px) {
+      right: 25%;
+    }
+    @media (min-width: 2500px) {
+      right: 28%;
+    }
+    @media (min-width: 2800px) {
+      right: 31%;
+    }
+    @media (min-width: 3000px) {
+      right: 32%;
+    }
+    .borderBottom {
+      background: linear-gradient(
+        90deg,
+        #ffdd15 0%,
+        #ffd915 3.83%,
+        #fdce17 7.3%,
+        #fbbc19 10.64%,
+        #f8a21c 13.88%,
+        #f6921e 15.52%,
+        #f68e1f 20.65%,
+        #f48321 25.3%,
+        #f27124 29.76%,
+        #f05a28 33.69%,
+        #f05628 38.27%,
+        #ef4b27 42.42%,
+        #ee3926 46.41%,
+        #ec1f24 50.27%,
+        #ec1c24 50.67%,
+        #e81e27 54.36%,
+        #dd2531 57.7%,
+        #cb3040 60.91%,
+        #b14057 64.05%,
+        #8f5573 67.12%,
+        #666e97 70.15%,
+        #368cbf 73.09%,
+        #00adee 75.97%,
+        #01a9eb 80.68%,
+        #059ee3 84.95%,
+        #0c8cd5 89.05%,
+        #1672c2 93.05%,
+        #2251a9 96.93%,
+        #2e3191 100%
+      );
+      height: 4px;
+      width: 100%;
+      margin-top: 0.4rem;
+    }
+  }
+
+  .bottomTextContainer {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    width: 420px;
+    text-align: right;
+    bottom: 4.5rem;
+    right: 9rem;
+    line-height: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    @media (max-width: 769px) {
+      right: 3rem;
+      bottom: 2rem;
+    }
+    @media (max-width: 450px) {
+      display: none;
+    }
+    @media (min-width: 1600px) {
+      right: 21%;
+    }
+
+    @media (min-width: 2000px) {
+      right: 23%;
+    }
+    @media (min-width: 2200px) {
+      right: 25%;
+    }
+    @media (min-width: 2500px) {
+      right: 28%;
+    }
+    @media (min-width: 2800px) {
+      right: 31%;
+    }
+    @media (min-width: 3000px) {
+      right: 32%;
+    }
+  }
+}
+
+.mobilePaper {
+  height: 100vh;
+  margin: -9rem 0;
+  .newText {
+    top: 60%;
+    width: 70%;
+    @media (max-width: 375px) {
+      top: 56%;
+    }
+  }
+
+  @media (width: 375px) and (height: 812px) {
+    margin: -7.9rem 0;
+    height: 90vh;
+  }
+  @media (width: 411px) and (height: 823px) {
+    margin: -10.5rem 0;
+  }
+  @media (min-width: 450px) {
+    display: none;
+  }
+
+  p {
+    font-size: 24px;
+    width: 87%;
+    position: absolute;
+    top: 58%;
+    right: 7%;
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
+    color: #fff;
+    font-weight: bold;
+    @media (max-width: 375px) {
+      top: 54%;
+    }
+  }
+}
+
+.mobileCarouselContainer {
+  display: none;
+  @media (max-width: 450px) {
+    display: block;
+  }
+  .mobilePaper {
+    height: 22rem;
+    margin: 0;
+    background-size: cover !important;
+  }
+  .mblslider {
+    height: 22rem;
+  }
+  .newText {
+    width: 250px;
+    font-size: 20px;
+    top: unset;
+    bottom: 2rem;
+  }
+}

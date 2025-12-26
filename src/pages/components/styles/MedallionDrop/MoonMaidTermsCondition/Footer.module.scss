@@ -1,0 +1,19 @@
+.footerWrapper {
+  margin-top: 30px;
+  background: #232323;
+  padding: 30px 0;
+  margin-top: 30px;
+  .bottomLinksWrapper {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    .linkItem {
+      text-decoration: none;
+      color: #ffffff;
+      font-size: 15px;
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.modal {
+  color: white !important;
+  * {
+    font-family: 'Open Sans';
+  }
+}
+
+.errorIcon {
+  font-size: 8rem !important;
+  color: white !important;
+
+  @media screen and (max-width: 600px) {
+    font-size: 5rem !important;
+  }
+}
+
+.title {
+  font-weight: 600 !important;
+  margin: 1rem 0 1.5rem 0 !important;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.6rem !important;
+  }
+}
+
+.errorMessage {
+  margin-bottom: 1rem;
+  overflow-wrap: anywhere;
+}
+
+.description {
+  margin-bottom: 1rem;
+  @media screen and (max-width: 600px) {
+    font-size: 0.8rem !important;
+  }
+}
+
+.cross {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: #111111;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    max-width: 14px;
+  }
+  @media screen and (max-width: 767px) {
+    display: flex;
+  }
+}
+
+.retryBtn {
+  outline: none;
+  padding: 0.5rem 1rem;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 1.3rem;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  background: #f68e1f !important ;
+  cursor: pointer;
+  text-transform: none;
+  &:hover {
+    background: #f68e1f !important;
+  }
+}

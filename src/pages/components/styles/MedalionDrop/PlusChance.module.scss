@@ -1,0 +1,25 @@
+.collectionSection {
+  background: linear-gradient(180deg, #363636 0%, #111111 100%);
+  padding: 2rem 0rem;
+  .collectionContainer {
+    text-align: center;
+    .headingWrap {
+      font-size: 56px;
+      line-height: 54px;
+      font-weight: 700;
+      color: #fcfcfd;
+      font-family: Trajan Pro;
+      padding: 3rem 0rem;
+    }
+    .descWrap {
+      font-size: 10px;
+      line-height: 16px;
+      font-weight: 400;
+      color: #fff;
+      padding: 0rem 4rem 2rem 4rem;
+    }
+  }
+}
+.pluslink {
+  color: #fff;
+}

@@ -1,0 +1,49 @@
+.border {
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(90deg, #00e6f0 0%, #b35aff 100%);
+}
+.headerMain {
+  padding: 2rem 0rem;
+  background: linear-gradient(0deg, #363636 -30%, #111111 100%);
+  .containerWrap {
+    padding: 0rem 5rem;
+    @media (max-width: 470px) {
+      padding: 0rem 2rem;
+    }
+    @media (max-width: 375px) {
+      text-align: center;
+    }
+    .flexWrapper {
+      display: flex;
+      align-items: center;
+      @media (max-width: 470px) {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      @media (max-width: 375px) {
+        align-items: center;
+      }
+      .welcomeText {
+        font-size: 30px;
+        line-height: 26px;
+        font-weight: 700;
+        color: #fff;
+      }
+      .artefyLogo {
+        .logoNew {
+          width: 115px;
+          padding-left: 10px;
+          margin-bottom: -5px;
+        }
+      }
+    }
+    .welcomeDesc {
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #ffffff;
+      padding: 1rem 0rem;
+    }
+  }
+}

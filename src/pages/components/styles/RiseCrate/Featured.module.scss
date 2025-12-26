@@ -1,0 +1,190 @@
+.Featured {
+  background: linear-gradient(180deg, #363636 0%, #111111 100%);
+  padding: 4rem 0rem 8rem;
+
+  .Main {
+    @media (max-width: 1920px) {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
+    @media (max-width: 1200px) {
+      margin-left: 0px !important;
+      margin-right: 0px !important;
+    }
+
+    .carouselContainer {
+      .imgBgEffect {
+        background: url(https://artefy.io/assets/images/risebg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto;
+        img {
+          border-radius: 20px;
+          margin: auto;
+          max-width: 250px;
+          width: 100%;
+          height: 330px;
+          background: url(https://artefy.io/assets/images/riseimgbg.png);
+          background-size: cover;
+        }
+      }
+      .cardText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1.5rem;
+        h1 {
+          font-family: Gotham;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 23px;
+          letter-spacing: -0.01em;
+          text-align: center;
+          color: white;
+          padding: 0rem 2rem 0rem 2rem;
+        }
+        .first {
+          font-size: 14px;
+          color: #fff;
+          font-weight: 600;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+  .secondMain {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 6rem;
+    position: relative;
+    flex: 25%;
+    flex-wrap: wrap;
+    &::after {
+      content: url(https://artefy.io/assets/images/bloodspot.png);
+      position: absolute;
+      bottom: -35%;
+      left: -8%;
+    }
+    @media (max-width: 1300px) {
+      flex: 0 0 25%;
+      flex-wrap: wrap;
+      justify-content: center;
+      &::after {
+        display: none;
+      }
+    }
+
+    .redBgEffect {
+      background: url(https://artefy.io/assets/icons/redcirclebg.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 300px;
+      width: 300px;
+      position: relative;
+      @media (max-width: 1300px) {
+        margin: 1rem;
+      }
+      .bgimg {
+        position: absolute;
+        right: -30px;
+        top: -50px;
+        height: 260px;
+        @media (max-width: 992px) {
+          height: 220px;
+        }
+        @media (max-width: 400px) {
+          height: 206px;
+          right: 0;
+        }
+      }
+      .bgimg2 {
+        position: absolute;
+        right: -75px;
+        height: 270px;
+        bottom: -15px;
+        @media (max-width: 992px) {
+          height: 220px;
+          right: -20px;
+        }
+      }
+      .bgimg3 {
+        position: absolute;
+        right: -15px;
+        height: 220px;
+        bottom: 30px;
+        @media (max-width: 992px) {
+          height: 220px;
+        }
+      }
+      .bgimg4 {
+        position: absolute;
+        right: -30px;
+        bottom: -10px;
+        height: 320px;
+        @media (max-width: 992px) {
+          height: 220px;
+          right: 15px;
+        }
+      }
+    }
+    .circleText {
+      position: absolute;
+      bottom: 50px;
+      left: 55px;
+      color: #fff;
+      line-height: 24px;
+      text-align: center;
+    }
+    .circleText2 {
+      position: absolute;
+      bottom: 80px;
+      left: 30px;
+      color: #fff;
+      line-height: 24px;
+      text-align: center;
+    }
+    .circleText3 {
+      position: absolute;
+      bottom: 50px;
+      left: 24px;
+      color: #fff;
+      line-height: 24px;
+      text-align: center;
+    }
+    .circleText4 {
+      position: absolute;
+      bottom: 100px;
+      left: 30px;
+      color: #fff;
+      line-height: 24px;
+      text-align: center;
+    }
+    h1 {
+      line-height: 30px;
+      text-align: center;
+    }
+    .circleThird {
+      line-height: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .Featured {
+    .Main {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .Featured {
+    .Main {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  }
+}

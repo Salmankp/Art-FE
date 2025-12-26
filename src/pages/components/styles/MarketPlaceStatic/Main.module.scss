@@ -1,0 +1,544 @@
+.wrap {
+  box-sizing: border-box;
+
+  max-width: 1120px;
+  margin: auto;
+  margin-top: 7rem;
+  display: flex;
+  margin-bottom: 2rem;
+  .first {
+    width: 45%;
+    .img {
+      background: linear-gradient(180deg, #111111 0%, #363636 100%);
+      border-radius: 20px;
+      padding: 13px;
+      font-size: 0px;
+
+      img {
+        width: 100%;
+        border-radius: 20px;
+        height: 450px;
+        object-fit: cover;
+      }
+    }
+  }
+  .second {
+    width: 55%;
+    // padding-top: 2.5rem;
+    padding-left: 2rem;
+    .topcontainer {
+      display: flex;
+      justify-content: space-between;
+
+      .titlewrap {
+        .title1 {
+          font-size: 17px;
+          font-family: 'Open Sans';
+          color: white;
+          font-weight: 700;
+        }
+        .title2 {
+          font-size: 24px;
+          font-family: 'Open Sans';
+          color: white;
+          font-weight: 700;
+        }
+        .title3 {
+          font-size: 20px;
+          font-family: 'Open Sans';
+          color: white;
+          font-weight: 700;
+        }
+        .title4 {
+          font-size: 14px;
+          font-family: 'Open Sans';
+          color: white;
+          font-weight: 400;
+        }
+      }
+      .badgeswrap {
+        .badge1 {
+          font-size: 24px;
+          font-family: 'Open Sans';
+          color: white;
+          font-weight: 400;
+          display: flex;
+          align-items: center;
+          img {
+            max-width: 27px;
+            margin-right: 6px;
+          }
+        }
+        .badge2 {
+          cursor: pointer;
+          margin-top: 1.3rem;
+          margin-bottom: 1rem;
+          font-size: 16px;
+          font-family: 'Open Sans';
+          color: white;
+          font-weight: 400;
+          display: flex;
+          align-items: center;
+          max-width: 198px;
+          height: 40px;
+          background-color: #4b4b4b;
+          border-radius: 20px;
+          justify-content: center;
+          img {
+            max-width: 24px;
+            margin-right: 10px;
+          }
+        }
+        .badge3 {
+          button {
+            cursor: pointer;
+            font-size: 16px;
+            font-family: 'Open Sans';
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            max-width: 198px;
+            width: 100%;
+            height: 40px;
+            background-color: #3fb5f5;
+            border-radius: 20px;
+            justify-content: center;
+            border: 0px;
+          }
+        }
+      }
+    }
+    .editionline {
+      margin-top: 4rem;
+      margin-bottom: 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .editions {
+        font-size: 14px;
+        font-family: 'Open Sans';
+        font-weight: 700;
+        color: white;
+        width: 120px;
+      }
+      .line {
+        border-top: 2px solid #353945;
+        width: calc(100% - 120px);
+      }
+    }
+    .overviewwrap {
+      padding-top: 1rem;
+      .oeditionline {
+        // margin-top: 4rem;
+        // margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .oeditions {
+          font-size: 14px;
+          font-family: 'Open Sans';
+          font-weight: 700;
+          color: white;
+          width: 175px;
+        }
+        .oline {
+          border-top: 2px solid #353945;
+          width: calc(100% - 175px);
+        }
+      }
+    }
+    .detailwrap {
+      display: flex;
+      color: white;
+      font-size: 14px;
+      font-weight: 400;
+      font-family: 'Open Sans';
+      margin-top: 1rem;
+      justify-content: space-between;
+      @media (max-width: 1200px) {
+        flex-direction: column;
+      }
+      .editionOverview {
+        flex: 0 0 50%;
+        padding: 10px;
+        .prt {
+          width: 100%;
+          .dataline {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.2rem;
+            div:nth-child(1) {
+              width: 60%;
+            }
+            div:nth-child(2) {
+              padding-left: 1rem;
+              width: 40%;
+            }
+          }
+        }
+        .badge2 {
+          cursor: pointer;
+          font-size: 16px;
+          font-family: 'Open Sans';
+          color: white;
+          font-weight: 400;
+          display: flex;
+          align-items: center;
+          max-width: 198px;
+          height: 40px;
+          background-color: #4b4b4b;
+          border-radius: 20px;
+          justify-content: center;
+          margin-top: 1.5rem;
+        }
+        .badgeall {
+          cursor: pointer;
+          font-size: 16px;
+          font-family: 'Open Sans';
+          color: #8f8b8b;
+          font-weight: 400;
+          display: flex;
+          align-items: center;
+          max-width: 198px;
+          height: 40px;
+          background-color: #212121;
+          border-radius: 20px;
+          justify-content: center;
+          margin-top: 1rem;
+        }
+      }
+      .dropCard {
+        .prt {
+          width: 100%;
+          .badge2 {
+            cursor: pointer;
+            margin-top: 1.3rem;
+            margin-bottom: 1rem;
+            font-size: 16px;
+            font-family: 'Open Sans';
+            color: white;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            max-width: 198px;
+            height: 40px;
+            background-color: #4b4b4b;
+            border-radius: 20px;
+            justify-content: center;
+          }
+          .badgeall {
+            cursor: pointer;
+            margin-top: 1.3rem;
+            margin-bottom: 1rem;
+            font-size: 16px;
+            font-family: 'Open Sans';
+            color: #8f8b8b;
+            font-weight: 400;
+            display: flex;
+            align-items: center;
+            max-width: 198px;
+            height: 40px;
+            background-color: #212121;
+            border-radius: 20px;
+            justify-content: center;
+          }
+          .dataline {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.2rem;
+            div:nth-child(1) {
+              width: 60%;
+            }
+            div:nth-child(2) {
+              padding-left: 1rem;
+              width: 40%;
+            }
+          }
+          .ownerBatch {
+            width: 265px;
+            // height: 355px;
+            background-color: #111111;
+            border-radius: 20px;
+            padding: 0rem 1rem 1rem 1rem;
+            margin-inline: auto;
+            @media (max-width: 767px) {
+              width: auto;
+              height: auto;
+            }
+            .avatarRow {
+              display: flex;
+              justify-content: space-between;
+              padding: 0.4rem 0rem 1rem 0rem;
+              align-items: center;
+              border-bottom: 1px solid #353945;
+              .avatarWrap {
+                display: flex;
+                align-items: center;
+                .avatarText {
+                  font-size: 12px;
+                  font-weight: 700;
+                  line-height: 18px;
+                  margin-left: 5px;
+                  .assetText {
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 15px;
+                  }
+                }
+              }
+              .rightText {
+                color: #3fb5f5;
+                font-size: 47px;
+                padding-top: 5px;
+                font-weight: 600;
+              }
+              .rightSmall {
+                font-size: 18px;
+                line-height: 32px;
+                font-weight: 600;
+                color: #3fb5f5;
+                display: flex;
+                justify-content: end;
+                margin-top: -10px;
+              }
+            }
+            .avatarRow2 {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 0px 0px 4px 0px;
+              .avatarWrap {
+                display: flex;
+                align-items: center;
+                .avatarText {
+                  font-size: 12px;
+                  font-weight: 700;
+                  line-height: 18px;
+                  margin-left: 5px;
+                  .assetText {
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 15px;
+                  }
+                }
+              }
+              .rightText {
+                color: #f68e1f;
+                font-size: 47px;
+                padding-top: 5px;
+                font-weight: 600;
+              }
+              .rightSmall {
+                font-size: 18px;
+                line-height: 32px;
+                font-weight: 600;
+                color: #f68e1f;
+                display: flex;
+                justify-content: end;
+                margin-top: -10px;
+              }
+            }
+            .textRow {
+              // display: flex;
+              // justify-content: space-between;
+              padding: 1.5rem 0rem 1rem 0rem;
+              // align-items: center;
+              text-align: center;
+              .purchaseText {
+                font-size: 22px;
+                line-height: 32px;
+                font-weight: 600;
+              }
+              .dollarText {
+                font-size: 30px;
+                line-height: 31px;
+                font-weight: 700;
+                color: #fff;
+              }
+              .purchasebig {
+                font-size: 14px;
+                line-height: 32px;
+                font-weight: 600;
+                // display: flex;
+                // justify-content: end;
+              }
+            }
+            .rowWrapper {
+              // display: flex;
+              justify-content: space-between;
+              align-items: center;
+              padding: 5px 0px 5px 0px;
+              .watchlistWrap {
+                background-color: #252627;
+                padding: 0.2rem 4rem;
+                border-radius: 2rem;
+              }
+              .tagWrap {
+                font-size: 16px;
+                line-height: 28px;
+                font-weight: 400;
+                text-align: center;
+                padding: 2rem 0rem 0rem 0rem;
+              }
+              .buyButton {
+                background-color: #b05cff;
+                padding: 0.5rem 0.6rem;
+                border-radius: 2rem;
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: 700;
+                cursor: pointer;
+                width: 100%;
+                border: none;
+              }
+              .currentPriceWrap {
+                text-align: center;
+                border-radius: 5px;
+                padding: 0px 0px 11px 0px;
+                font-size: 0.8rem;
+              }
+              .amountBtn {
+                font-size: 24px;
+                line-height: 42px;
+                font-weight: 400;
+                border-radius: 2rem;
+                border: 1px solid grey;
+                padding: 0rem 1.5rem;
+                cursor: pointer;
+              }
+              .amountInput {
+                font-size: 24px;
+                line-height: 42px;
+                font-weight: 400;
+                border-radius: 2rem;
+                border: 1px solid grey;
+                padding: 0rem 1.5rem;
+                cursor: pointer;
+                background: black;
+                width: 65%;
+                font-size: 20px;
+                color: #fff;
+              }
+              .bidBtn {
+                background-color: #3fb5f5;
+                font-size: 21px;
+                line-height: 42px;
+                font-weight: 700;
+                padding: 0rem 2rem;
+                border-radius: 2rem;
+                cursor: pointer;
+              }
+            }
+            .bidRowWrapper {
+              display: flex;
+              justify-content: space-around;
+              align-items: center;
+              border-top: 1px solid grey;
+              padding: 5px 0px;
+              .currentBid {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 16px;
+                line-height: 25px;
+                font-weight: 600;
+              }
+            }
+            .buttonsWrap {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding-top: 1rem;
+
+              .marketplace {
+                background-color: #f68e1f;
+                font-size: 16px;
+                line-height: 16px;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                border: none;
+                outline: none;
+                padding: 1rem 2rem;
+                border-radius: 2rem;
+                cursor: pointer;
+              }
+              .gallery {
+                background-color: #b35aff;
+                font-size: 16px;
+                line-height: 16px;
+                font-weight: 700;
+                margin-bottom: 1rem;
+                border: none;
+                outline: none;
+                padding: 1rem 2rem;
+                border-radius: 2rem;
+                cursor: pointer;
+              }
+              .auction {
+                background-color: #4b4b4b;
+                font-size: 16px;
+                line-height: 28px;
+                border-radius: 2rem;
+                padding: 0rem 2rem;
+                border: none;
+                outline: none;
+                color: #fff;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .wrap {
+    margin-left: 40px;
+    margin-right: 40px;
+    .first {
+      width: 40%;
+    }
+    .second {
+      width: 60%;
+      padding-left: 1.5rem;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrap {
+    margin-top: 4rem;
+    margin-left: 30px;
+    margin-right: 30px;
+    flex-direction: column;
+    .first {
+      width: 100%;
+    }
+    .second {
+      width: 100%;
+      padding-left: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .wrap {
+    .second {
+      .topcontainer {
+        flex-direction: column;
+        .badgeswrap {
+          margin-top: 2rem;
+          .badge1 {
+            font-size: 20px;
+          }
+        }
+      }
+      .detailwrap {
+        flex-direction: column;
+        .prt {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

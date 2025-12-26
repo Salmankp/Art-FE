@@ -1,0 +1,300 @@
+.Grid {
+  display: flex;
+  justify-content: center;
+  margin-left: -2rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.griditem {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  max-width: 256px;
+  .gridimg:hover {
+    .overlay {
+      display: block !important;
+    }
+  }
+
+  &.active {
+    .gridimg {
+      border-radius: 14px;
+    }
+  }
+  .gridimg {
+    font-size: 0px;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px !important;
+
+    :global {
+      .react-player__preview {
+        border-radius: 14px !important;
+      }
+    }
+    .player {
+      width: 256px;
+      height: 370px;
+      border-radius: 14px;
+      position: relative;
+      .videoWrap {
+        width: 256px !important;
+        height: 370px !important;
+      }
+      video {
+        border-radius: 14px;
+        object-fit: cover;
+      }
+      .bufferingLoader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #ffffff8a;
+        border-radius: 50%;
+        padding: 1rem;
+      }
+    }
+    .ownedWrap {
+      position: absolute;
+      top: 0.9rem;
+      right: 0.94rem;
+      background: #33eb91;
+      border-radius: 5px;
+      padding: 0.3rem 0.4rem;
+      width: auto;
+      font-weight: 600;
+      font-size: 11px;
+      max-width: 74px;
+      text-align: center;
+    }
+
+    .overlay {
+      padding: 1.5rem;
+      display: none;
+      background: rgba(32, 34, 40, 0.91);
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 13px;
+      z-index: 99;
+      box-sizing: border-box;
+
+      .editionCount {
+        text-align: center;
+        font-family: 'Open Sans';
+        color: #f6921e;
+        font-size: 1.6rem;
+        line-height: 24px;
+        font-weight: 600;
+      }
+
+      .ownerWrap {
+        text-align: center;
+        margin-top: 0.4rem;
+        .key,
+        .value {
+          color: white;
+          font-size: 0.9rem;
+        }
+        .key {
+          font-weight: bold;
+        }
+        .value {
+          .userImg {
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+          }
+        }
+      }
+
+      .price {
+        color: white;
+        font-size: 1.7rem;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 0.6rem;
+      }
+      .buyNowBtnWrap {
+        text-align: center;
+        margin-block: 1rem;
+        .buyNowBtn {
+          padding: 0.5rem 1.7rem;
+          border-radius: 20px;
+          background-color: #b05cff;
+          color: white;
+          font-family: 'Open Sans';
+          font-size: 1rem;
+          font-weight: 700;
+          cursor: pointer;
+          border: none;
+        }
+      }
+
+      .currentBid {
+        text-align: center;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+
+      .actionWrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .inputWrap {
+          .input {
+            max-width: 5rem;
+            color: white;
+            border: 1px solid white;
+            border-radius: 0.3rem;
+            background: transparent;
+            outline: none;
+            padding: 0.5rem 0.4rem;
+          }
+        }
+        .bidBtn {
+          padding: 0.5rem 1.7rem;
+          border-radius: 20px;
+          color: white;
+          background-color: #3fb5f5;
+          font-family: 'Open Sans';
+          font-size: 1rem;
+          font-weight: 700;
+          cursor: pointer;
+          border: none;
+        }
+      }
+    }
+    .badgewrap {
+      position: absolute;
+      top: 0.8rem;
+      left: 0.8rem;
+      display: flex;
+      align-items: center;
+      .logoo {
+        height: 28px;
+        width: 28px;
+        border-radius: 50%;
+        background: rgba(58, 62, 72, 0.7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          max-width: 14px;
+          border-radius: unset;
+        }
+        z-index: 9;
+      }
+      .txt {
+        font-size: 8px;
+        color: white;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        height: 21px;
+        background: rgba(58, 62, 72, 0.7);
+        border-radius: 20px;
+        margin-left: -18px;
+        padding-left: 13px;
+      }
+    }
+
+    .paintingImg {
+      height: 360px;
+      width: 256px;
+      border-radius: 14px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+
+  .titleWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .editionId {
+      font-family: 'Open Sans';
+      color: #f6921e;
+      font-size: 1.6rem;
+      line-height: 24px;
+      font-weight: 600;
+    }
+
+    .bidBuyItemWrap {
+      .buyItem,
+      .bidItem {
+        .key,
+        .value {
+          color: #fff;
+          font-size: 0.9rem;
+          line-height: 12px;
+          font-weight: 700;
+        }
+      }
+
+      .buyItem {
+        margin-bottom: 0.1rem;
+        .value {
+          color: #b05cff;
+        }
+      }
+      .bidItem {
+        .value {
+          color: #3fb5f5;
+        }
+      }
+    }
+    .bid {
+      font-size: 14px;
+      line-height: 12px;
+      font-weight: 700;
+      color: #fff;
+      span {
+        color: #3fb5f5;
+        margin-left: 2px;
+      }
+    }
+  }
+  .actionWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    button {
+      padding: 0.5rem 1.7rem;
+      border-radius: 20px;
+      background-color: #f6921e;
+      font-family: 'Open Sans';
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      border: none;
+    }
+  }
+}
+
+.videoIcons {
+  position: absolute;
+  right: 0.7rem;
+  bottom: 0.7rem;
+}
+.playerIcon {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  svg {
+    font-size: 1.2rem;
+    color: white !important;
+  }
+}

@@ -1,0 +1,251 @@
+.wrap {
+  max-width: 1120px;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 20px;
+  margin-top: 2.5rem;
+  background: linear-gradient(180deg, #111111 0%, #363636 100%);
+  box-sizing: border-box;
+  position: relative;
+
+  .heading {
+    color: white;
+    font-family: 'Open Sans';
+    font-size: 42px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+
+  .desc {
+    display: flex;
+    color: white;
+    .imgandcontent {
+      display: flex;
+      padding-right: 1rem;
+      .content {
+        padding-left: 2.5rem;
+        position: relative;
+        .title {
+          font-size: 18px;
+          font-family: 'Open Sans';
+          font-weight: 700;
+          color: #f8a21c;
+          text-transform: uppercase;
+        }
+        .text {
+          margin-top: 1rem;
+          font-size: 14px;
+          font-family: 'Open Sans';
+          font-weight: 400;
+        }
+        .franklogo {
+          position: absolute;
+          max-width: 120px;
+          top: -25%;
+          right: 0;
+        }
+      }
+      img {
+        max-width: 420px;
+        border-radius: 20px;
+      }
+    }
+  }
+  .featurewrap {
+    margin-top: 4rem;
+    .featureTitle {
+      margin-bottom: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .line {
+        border-top: 2px solid #353945;
+        width: 33%;
+      }
+      .featureHeading {
+        font-size: 24px;
+        font-family: 'Open Sans';
+        font-weight: 600;
+        color: white;
+      }
+    }
+    .featureGrid {
+      display: flex;
+      justify-content: center;
+      margin-left: -2rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+      .griditem {
+        margin-top: 2rem;
+        margin-left: 2rem;
+        max-width: 240px;
+        .gridimg {
+          font-size: 0px;
+          margin-bottom: 1.5rem;
+          img {
+            width: 100%;
+            border-radius: 20px;
+            max-height: 302px;
+            object-fit: cover;
+          }
+        }
+        .title1 {
+          color: white;
+          font-size: 14px;
+          font-family: 'Open Sans';
+          font-weight: 600;
+          display: flex;
+          justify-content: space-between;
+          .edition {
+            font-weight: 400;
+            color: #e6e8ec;
+            display: none;
+          }
+        }
+        .title2 {
+          font-family: 'Open Sans';
+          color: white;
+          font-size: 20px;
+          font-weight: 700;
+        }
+        .title3 {
+          font-family: 'Open Sans';
+          color: white;
+          font-size: 14px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .wrap {
+    margin-left: 40px;
+    margin-right: 40px;
+    .desc {
+      .imgandcontent {
+        img {
+          max-width: 320px;
+        }
+        .content {
+          padding-left: 2rem;
+          .franklogo {
+            top: -30%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .wrap {
+    .desc {
+      .imgandcontent {
+        img {
+          max-width: 250px;
+        }
+        .content {
+          .franklogo {
+            max-width: 100px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .wrap {
+    margin-left: 30px;
+    margin-right: 30px;
+    .heading {
+      font-size: 25px;
+    }
+    .desc {
+      flex-direction: column;
+      .imgandcontent {
+        border-right: 0px;
+        width: 100%;
+        margin-right: 0px;
+        padding-right: 0px;
+        flex-direction: column;
+        align-items: center;
+        .img {
+          text-align: center;
+          img {
+            max-width: 500px;
+            width: 100%;
+          }
+        }
+        .content {
+          padding-left: 0rem;
+          margin-top: 2rem;
+          max-width: 500px;
+          .franklogo {
+            max-width: 80px;
+            top: -13%;
+          }
+        }
+      }
+    }
+  }
+  .wrap {
+    .featurewrap {
+      .featureTitle {
+        .line {
+          width: 25%;
+        }
+        .featureHeading {
+          font-size: 18px;
+        }
+      }
+      .featureGrid {
+        margin-bottom: 1rem;
+        .griditem {
+          max-width: 220px !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrap {
+    .desc {
+      .imgandcontent {
+        flex-direction: column;
+        .content {
+          padding-left: 0px;
+          margin-top: 1rem;
+          .text {
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+
+    .featurewrap {
+      .featureTitle {
+        .line {
+          width: 10%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 380px) {
+  .wrap {
+    .desc {
+      .imgandcontent {
+        .content {
+          .franklogo {
+            top: -20%;
+          }
+        }
+      }
+    }
+  }
+}

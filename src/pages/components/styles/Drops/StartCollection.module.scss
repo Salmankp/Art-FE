@@ -1,0 +1,72 @@
+.StartCollectionContainer {
+  background-color: #0b1426;
+  .Main {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 5rem 0;
+    .header {
+      text-align: center;
+      p {
+        margin: 0;
+        color: #fff;
+        margin-top: 1rem;
+        font-size: 18px;
+        font-family: "Poppins", sans-serif;
+      }
+      .heading {
+        font-size: 40px;
+        color: #fcfcfd;
+        margin: 0;
+        font-family: "Gotham Light", sans-serif;
+        span {
+          color: #fdce17;
+        }
+      }
+    }
+    .collectionSection {
+      display: flex;
+      width: 81%;
+      margin: 0 auto;
+      padding-top: 4rem;
+    }
+    .btnContainer {
+      display: flex;
+      justify-content: space-between;
+      width: 54%;
+      margin: 0 auto;
+      margin-top: 8rem;
+    }
+  }
+}
+
+.CollectionOption {
+  text-align: center;
+  margin-right: 3rem;
+  &:last-of-type {
+    margin: 0;
+  }
+  .itemHeader {
+    color: #fdce17;
+    font-family: "Gotham", sans-serif;
+    font-size: 27px;
+    font-weight: bold;
+  }
+  .description {
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    font-size: 15px;
+  }
+}
+
+.Collectionbtn {
+  border: none;
+  outline: none;
+  width: 40%;
+  padding: 1rem 0;
+  border-radius: 40px;
+  background-color: #fdce17;
+  color: #000;
+  font-family: "DM Sans", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+}

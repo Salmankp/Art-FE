@@ -1,0 +1,41 @@
+.grid {
+  position: absolute;
+  top: 1150px;
+  display: flex;
+  flex-wrap: wrap;
+  left: 31%;
+  .card {
+    margin-left: 60px;
+  }
+}
+.links {
+  position: absolute;
+  top: 1050px;
+  display: flex;
+  flex-wrap: wrap;
+  left: 32%;
+  div {
+    width: 148px;
+    margin-left: 40px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    /* identical to box height, or 114% */
+
+    color: #777e91;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+
+    background: transparent;
+  }
+  .active {
+    background: #f4f5f6;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}

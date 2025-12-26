@@ -1,0 +1,134 @@
+.tabContainerWrapper {
+  max-width: 1500px !important;
+  .tabswrap {
+    color: white;
+    margin-top: -4rem;
+    margin-bottom: 2rem;
+    .tabheader {
+      display: flex;
+      justify-content: center;
+      .tabhead {
+        background-color: #353535;
+        max-width: 290px;
+        font-weight: 400;
+        font-size: 1rem;
+        font-family: 'Open Sans';
+        padding: 0.5rem;
+        padding-bottom: 2rem;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        flex: 1;
+        justify-content: center;
+        display: flex;
+        cursor: pointer;
+        text-align: center;
+        br {
+          display: none;
+        }
+      }
+      .tabheadactive {
+        max-width: 290px;
+        text-align: center;
+        cursor: pointer;
+        justify-content: center;
+        display: flex;
+        font-weight: 700;
+        font-size: 1rem;
+        font-family: 'Open Sans';
+        background-color: #111111;
+        padding: 0.5rem;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        flex: 1;
+        br {
+          display: none;
+        }
+      }
+    }
+    .body {
+      .tabcontent {
+        display: none;
+      }
+      .tabcontentactive {
+        display: block;
+        background: linear-gradient(180deg, #111111 0%, #363636 100%);
+        border-radius: 20px;
+        padding: 1rem;
+        font-size: 14px;
+        color: white;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        margin-top: -1.5rem;
+        position: relative;
+      }
+      .tabcontentactive2 {
+        display: block;
+        background-color: #111111;
+        border-radius: 20px;
+        font-size: 14px;
+        color: white;
+        font-family: 'Open Sans';
+        font-weight: 400;
+        margin-top: -1.5rem;
+        position: relative;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .tabswrap {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .tabswrap {
+    .body {
+      .tabcontentactive {
+        font-size: 13px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .tabswrap {
+    margin-left: 30px;
+    margin-right: 30px;
+    .tabheader {
+      .tabhead {
+        font-size: 16px;
+        br {
+          display: block;
+        }
+      }
+      .tabheadactive {
+        font-size: 0.8rem;
+
+        br {
+          display: block;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .tabswrap {
+    margin-left: 0px;
+    margin-right: 0px;
+    .tabheader {
+      .tabhead {
+        line-height: 14px;
+        span {
+          font-size: 0.7rem;
+        }
+      }
+      .tabheadactive {
+        line-height: 14px;
+        span {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}

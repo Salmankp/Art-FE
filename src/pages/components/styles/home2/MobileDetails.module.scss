@@ -1,0 +1,203 @@
+.root {
+  margin-top: 30px;
+  .image {
+    margin-top: 37px;
+  }
+  .img_container {
+    position: relative;
+    .comingSoon {
+      position: absolute;
+      left: 0;
+    }
+  }
+  transform: translateY(-30px);
+  background: linear-gradient(180deg, #363636 0%, #111111 100%);
+  padding-bottom: 8px;
+  margin-bottom: -30px;
+  .first,
+  .second {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .first {
+    .matter {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 32px;
+      line-height: 57px;
+      color: white;
+      img {
+        margin-top: 19px;
+        margin-bottom: 19px;
+      }
+      h2:first-child {
+        padding-top: 38px;
+      }
+      h2 {
+        // padding-top: 38px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 36px;
+        /* or 120% */
+        text-align: center;
+      }
+      .blue {
+        color: rgba(0, 230, 240, 1);
+        margin-bottom: 1rem;
+        // transform: translateY(-20px);
+      }
+      p {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 40px;
+        padding: 0rem 1rem;
+        /* or 233% */
+      }
+      h3 {
+        font-size: 20px;
+        line-height: 28px;
+        color: rgba(0, 230, 240, 1);
+      }
+    }
+  }
+  .matter_text {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+    text-align: center;
+    margin-top: 10px;
+    h3 {
+      line-height: 25px;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 20px;
+      /* or 143% */
+      margin-top: 30px;
+      text-align: center;
+    }
+  }
+  .gridItem {
+    margin-top: -8px;
+    background: linear-gradient(180deg, #363636 0%, #111111 100%);
+    padding: 3rem 1rem;
+    .center {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: 26px;
+      /* or 87% */
+      text-align: center;
+
+      color: #ffffff;
+      margin-bottom: 30px;
+    }
+    .gridTitle {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 42px;
+      line-height: 36px;
+      color: white;
+      margin-bottom: 50px;
+      display: flex;
+      .center {
+        align-items: center;
+      }
+      .center img {
+        content: ' ';
+        margin-right: 15px;
+        transform: translateY(12px);
+      }
+      .grid_img {
+        position: relative;
+        .topImg {
+          position: absolute;
+        }
+      }
+    }
+    .description {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 20px;
+      /* or 143% */
+      text-align: center;
+      letter-spacing: -0.02em;
+      margin-top: 44px;
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+    .btnContainer {
+      margin: 9px auto;
+      padding: 0.4rem;
+      border-radius: 10px;
+      width: 336px;
+      display: flex;
+      justify-content: center;
+      margin-top: 25px;
+      @media screen and (max-width: 384px) {
+        max-width: 240px !important;
+      }
+    }
+
+    .greenbtnContainer {
+      margin: 49px auto;
+      padding: 0.4rem;
+      border-radius: 10px;
+      width: 336px;
+      display: flex;
+      justify-content: center;
+      margin-top: 25px;
+      @media screen and (max-width: 384px) {
+        max-width: 240px !important;
+      }
+    }
+    .button {
+      background: linear-gradient(#000, #333);
+      font-size: 28px;
+      color: white;
+      width: 100%;
+      justify-content: center;
+      font-weight: bold;
+      border-radius: 40px;
+      padding: 1.2rem 2rem;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 26px;
+      /* or 104% */
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: -0.04em;
+      border: none;
+      cursor: pointer;
+      transition-duration: 15ms;
+
+      @media screen and (max-width: 900px) {
+        min-width: 240px;
+        font-size: 24px;
+      }
+      @media screen and (max-width: 384px) {
+        width: auto;
+        max-width: 240px !important;
+      }
+    }
+    .button:hover {
+      background: transparent;
+    }
+  }
+}

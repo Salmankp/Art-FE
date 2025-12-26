@@ -1,0 +1,187 @@
+@mixin common-para-styles {
+  color: #3fb5f5;
+  font-weight: 700;
+  border-bottom: 3px solid #3fb5f5;
+}
+
+@mixin amount-container-styles {
+  display: flex;
+  justify-content: flex-end;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fcfcfd;
+  margin-bottom: 3rem;
+  p {
+    font-size: 24px;
+    font-family: "Gotham Light", sans-serif;
+    line-height: 48px;
+    &:last-of-type {
+      color: #f68e1f;
+      font-family: "Open Sans", sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      margin-left: 1rem;
+    }
+  }
+}
+
+@mixin purchase-complete-style {
+  text-align: center;
+  color: #fcfcfd;
+  font-size: 20px;
+  font-family: "Gotham Light", sans-serif;
+}
+
+@mixin btn-container-styles {
+  text-align: right;
+  p {
+    text-align: center;
+    color: #fcfcfd;
+    font-size: 16px;
+    font-family: "Gotham Light", sans-serif;
+    margin-bottom: 10px;
+    margin-top: 4rem;
+  }
+  button {
+    border: none;
+    outline: none;
+    padding: 0.4rem 2.8rem;
+    background: #f68e1f;
+    border-radius: 20px;
+    font-weight: 700;
+    line-height: 28px;
+  }
+}
+
+.ModalContainer {
+  position: fixed;
+  z-index: 100;
+  .backdrop {
+    background: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    width: 100vw;
+  }
+  .DataContainer {
+    position: absolute;
+    top: 5%;
+    padding: 2.5rem 3.5rem;
+    background: linear-gradient(180deg, #363636 0%, #111111 100%);
+    border-radius: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 60%;
+    max-width: 840px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    .leftContainer {
+      color: #fcfcfd;
+      p {
+        margin: 0;
+        font-weight: 400;
+        &:first-of-type {
+          line-height: 40px;
+          font-size: 25px;
+        }
+      }
+      .fractionalData {
+        max-width: 270px;
+      }
+      .bold {
+        font-weight: 700;
+        line-height: 40px;
+        font-size: 39px;
+        margin: 10px 0;
+        margin-top: 4px;
+      }
+      img {
+        width: 310px;
+        margin-top: 2.4rem;
+        height: 406px;
+      }
+    }
+    .rightContainer {
+      flex: 0.8;
+      height: 33.7rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .navContainer {
+        display: flex;
+        justify-content: flex-end;
+        p {
+          margin: 0;
+          font-family: "Gotham Book", sans-serif;
+          font-size: 23px;
+          color: #6c6666;
+          border-bottom: 1px solid #6c6666;
+          line-height: 48px;
+          margin-right: 4rem;
+          &:last-of-type {
+            margin: 0;
+          }
+          &:hover {
+            cursor: pointer;
+            @include common-para-styles();
+          }
+        }
+        .active {
+          @include common-para-styles();
+        }
+      }
+    }
+  }
+}
+
+.PayPalContainer {
+  .amountContainer {
+    @include amount-container-styles();
+  }
+  .purchaseCompleteText {
+    @include purchase-complete-style();
+  }
+  .btnContainer {
+    @include btn-container-styles();
+  }
+}
+
+.MaticContainer {
+  .balanceContainer {
+    p {
+      color: #b1b5c3;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .container {
+      margin-top: 10px;
+      border: 2px solid #e6e8ec;
+      border-radius: 20px;
+      width: 100%;
+      font-size: 13px;
+      max-width: 450px;
+      color: #fcfcfd;
+      font-family: "Gotham Book", sans-serif;
+      text-align: right;
+      padding: 7px 14px;
+      letter-spacing: -0.01em;
+    }
+  }
+  .amountContainer {
+    @include amount-container-styles();
+    margin-bottom: 1.7rem;
+    margin-top: 1.6rem;
+    p {
+      font-size: 20px;
+      &:last-of-type {
+        font-size: 24px;
+      }
+    }
+  }
+  .purchaseCompleteText {
+    @include purchase-complete-style();
+  }
+  .btnContainer {
+    @include btn-container-styles();
+  }
+}

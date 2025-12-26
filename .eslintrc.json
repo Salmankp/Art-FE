@@ -1,0 +1,145 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "env": {
+    "node": true,
+    "commonjs": true,
+    "browser": true
+  },
+  "globals": {
+    "JSX": true
+  },
+
+  "extends": [
+    "airbnb",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["@typescript-eslint", "react-app", "react-hooks", "prettier"],
+  "ignorePatterns": [
+    "src/serviceWorker.ts",
+    "src/enums.ts",
+    "node_modules/",
+    "dist/"
+  ],
+  "rules": {
+    "no-sequences": "off",
+    "@typescript-eslint/explicit-function-return-type": [
+      "off",
+      {
+        "allowExpressions": true,
+        "allowTypedFunctionExpressions": true
+      }
+    ],
+    "@typescript-eslint/consistent-type-assertions": ["warn"],
+    "@typescript-eslint/no-this-alias": ["warn"],
+    "import/extensions": "off",
+    "import/no-cycle": "off",
+    "new-cap": "warn",
+    "react/jsx-curly-brace-presence": "warn",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "react/self-closing-comp": "warn",
+    "react/prop-types": "off",
+    "react/jsx-one-expression-per-line": "warn",
+    "global-require": "off",
+    "react/destructuring-assignment": "off",
+    "react/display-name": "off",
+    "no-empty": "warn",
+    "no-shadow": "off",
+    "no-restricted-syntax": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "no-restricted-globals": "off",
+    "func-names": "off",
+    "no-console": "off",
+    "@typescript-eslint/camelcase": "off",
+    "consistent-return": "off",
+    "no-plusplus": "warn",
+    "react/jsx-wrap-multilines": "warn",
+    "react/jsx-indent": "off",
+    "react/jsx-filename-extension": "off",
+    "class-methods-use-this": "off",
+    "react/jsx-props-no-spreading": "off",
+    "no-continue": "off",
+    "no-nested-ternary": "off",
+    "@typescript-eslint/no-var-requires": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "react/state-in-constructor": "off",
+    "react/jsx-no-bind": "off",
+    "import/no-extraneous-dependencies": "off",
+    "react/static-property-placement": "off",
+    "react/jsx-curly-newline": "off",
+    "react/sort-comp": "off",
+    "no-return-assign": "warn",
+    "import/prefer-default-export": "off",
+    "react/forbid-prop-types": "off",
+    "react/require-default-props": "off",
+    "no-alert": "off",
+    "react/no-array-index-key": "off",
+    "import/no-unresolved": "off",
+    "import/no-named-as-default": "off",
+    "import/named": "off",
+    "no-underscore-dangle": "off",
+    "import/no-named-as-default-member": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "react/no-unescaped-entities": "off",
+    "react/jsx-closing-tag-location": "off",
+    "jsx-a11y/alt-text": "off",
+    "no-unused-expressions": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "no-return-await": "off",
+    "react/no-access-state-in-setstate": "off",
+    "react/no-danger": "off",
+    "no-constant-condition": "warn",
+    "@typescript-eslint/class-name-casing": "off",
+    "no-cond-assign": "warn",
+    "no-undef": "warn",
+    "no-irregular-whitespace": "warn",
+    "require-yield": "warn",
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "endOfLine": "auto"
+      }
+    ],
+    "react/button-has-type": "off",
+    "jsx-a11y/no-noninteractive-tabindex": "off",
+    "react/react-in-jsx-scope": "warn",
+    "camelcase": "warn",
+    "no-param-reassign": "off",
+    "no-useless-escape": "warn",
+    "no-use-before-define": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/label-has-associated-control": "warn",
+    "jsx-a11y/control-has-associated-label": "warn",
+    "default-case": "warn",
+    "react/jsx-key": "off",
+    "import/order": "warn",
+    "@typescript-eslint/ban-types": "warn",
+    "@typescript-eslint/no-use-before-define": "warn",
+    "react/no-unused-prop-types": "warn",
+    "radix": "warn"
+  },
+
+  "settings": {
+    "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}

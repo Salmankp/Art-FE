@@ -1,0 +1,108 @@
+.innerwrap {
+  max-width: 1200px;
+  margin: auto;
+  width: 100%;
+  position: relative;
+}
+
+.Signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0;
+  position: relative;
+
+  @media (max-width: 1029px) {
+    flex-direction: column;
+  }
+  background: url(https://artefy.io/assets/images/drawnow.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .messageContainer {
+    color: #416c7d;
+    font-size: 42px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Marcellus', sans-serif;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-family: 'Poppins', sans-serif;
+    }
+    @media (max-width: 1280px) {
+      padding-left: 40px;
+      padding-right: 40px;
+      flex-direction: column;
+      align-items: flex-start;
+      box-sizing: border-box;
+    }
+    @media (max-width: 1029px) {
+      display: none;
+    }
+  }
+}
+.btnDraw {
+  .drawButton {
+    color: #fff;
+    background-color: #31a3d0;
+    border-radius: 3rem;
+    padding: 0.5rem 4rem;
+    font-size: 31px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    @media (max-width: 1200px) {
+      padding: 0.6rem 2rem;
+      font-size: 20px;
+    }
+  }
+}
+.innerDont {
+  display: flex;
+  @media (max-width: 960px) {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+  .rightContent {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    column-gap: 100px;
+    .text {
+      color: #000000;
+      font-size: 42px;
+      font-family: 'Marcellus', sans-serif;
+      font-weight: normal;
+      @media (max-width: 1200px) {
+        padding-right: 20px;
+        font-size: 34px;
+      }
+    }
+  }
+  .dontMiss {
+    position: absolute;
+    top: -95px;
+    z-index: 9;
+    @media (max-width: 1200px) {
+      left: 30px;
+    }
+    @media (max-width: 960px) {
+      position: relative;
+      top: 0;
+      left: 0;
+    }
+  }
+  .rightContent {
+    font-size: 40px;
+    color: #fff;
+    @media (max-width: 960px) {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+}

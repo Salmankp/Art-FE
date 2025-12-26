@@ -1,0 +1,77 @@
+.border {
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #ffdd15 0%,
+    #ffd915 3.83%,
+    #fdce17 7.3%,
+    #fbbc19 10.64%,
+    #f8a21c 13.88%,
+    #f6921e 15.52%,
+    #f68e1f 20.65%,
+    #f48321 25.3%,
+    #f27124 29.76%,
+    #f05a28 33.69%,
+    #f05628 38.27%,
+    #ef4b27 42.42%,
+    #ee3926 46.41%,
+    #ec1f24 50.27%,
+    #ec1c24 50.67%,
+    #e81e27 54.36%,
+    #dd2531 57.7%,
+    #cb3040 60.91%,
+    #b14057 64.05%,
+    #8f5573 67.12%,
+    #666e97 70.15%,
+    #368cbf 73.09%,
+    #00adee 75.97%,
+    #01a9eb 80.68%,
+    #059ee3 84.95%,
+    #0c8cd5 89.05%,
+    #1672c2 93.05%,
+    #2251a9 96.93%,
+    #2e3191 100%
+  );
+}
+.termsCondition {
+  min-height: 260px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 920px) {
+    min-height: 400px;
+  }
+  &::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    position: absolute;
+    top: 0;
+  }
+  .innerContainer {
+    position: 'relative';
+    max-width: '1120px';
+    z-index: 1;
+    .innerArea {
+      color: white;
+      text-align: center;
+      z-index: 1;
+      .title {
+        font-size: 45px;
+        font-weight: 700;
+        margin-bottom: 25px;
+      }
+      .description {
+        font-size: 10px;
+        width: 72%;
+        margin: auto;
+        @media (max-width: 600px) {
+          min-height: 900px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.Container {
+  background: linear-gradient(180deg, #363636 0%, #111111 100%);
+  justify-content: center;
+  display: flex;
+  .DataContainer {
+    padding-bottom: 7rem;
+    .heading {
+      font-family: var(--font);
+      font-weight: 700;
+      font-size: 42px;
+      color: white;
+      margin: 0rem auto;
+      margin-bottom: 2.4rem;
+      padding-top: 5rem;
+      margin-bottom: 60px;
+      @media (max-width: 945px) {
+        font-size: 26px;
+        width: 100%;
+        padding-top: 1.5rem;
+      }
+    }
+  }
+  .extra {
+    margin-top: 30px;
+  }
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 400px;
+    align-items: center;
+    margin-bottom: 20px;
+    .value {
+      width: 80px;
+    }
+  }
+
+  .accordion {
+    color: white;
+    background-color: inherit;
+    box-shadow: none;
+    border-bottom: 1px solid #5c5c5c;
+    font-size: 17px;
+    .accHeading {
+      font-family: var(--font);
+      @media (max-width: 945px) {
+        font-size: 12px;
+      }
+    }
+    .answers {
+      font-family: var(--font);
+      font-size: 13px;
+      max-width: 70vw;
+      @media (max-width: 945px) {
+        font-size: 10px;
+      }
+    }
+    &:last-of-type {
+      border: none;
+    }
+    .expandIcon {
+      font-size: 17px;
+      color: white;
+      margin: 0;
+    }
+  }
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .data {
+    max-width: 400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: Open Sans;
+    font-weight: 600;
+    font-size: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #3fb5f5;
+    @media screen and (max-width: 600px) {
+      max-width: 300px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+
+  .ruler {
+    border-top: 2px solid #353945;
+    width: 35%;
+    height: 0px;
+    @media screen and (max-width: 600px) {
+      width: 23%;
+    }
+  }
+}
+
+.ContainerSmol {
+  background: linear-gradient(180deg, #363636 0%, #111111 100%);
+  .DataContainerSmol {
+    margin: 0 auto;
+    max-width: 1150px;
+    width: 80%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    .heading {
+      width: 100%;
+      text-align: center;
+      font-size: 42px;
+      font-weight: 700;
+      color: #fff;
+      margin: 1.8rem auto;
+    }
+  }
+  .head {
+    font-size: 42px;
+    font-weight: 300;
+    color: white;
+  }
+  @media (max-width: 945px) {
+    display: none;
+  }
+}

@@ -1,0 +1,185 @@
+.border {
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #ffdd15 0%,
+    #ffd915 3.83%,
+    #fdce17 7.3%,
+    #fbbc19 10.64%,
+    #f8a21c 13.88%,
+    #f6921e 15.52%,
+    #f68e1f 20.65%,
+    #f48321 25.3%,
+    #f27124 29.76%,
+    #f05a28 33.69%,
+    #f05628 38.27%,
+    #ef4b27 42.42%,
+    #ee3926 46.41%,
+    #ec1f24 50.27%,
+    #ec1c24 50.67%,
+    #e81e27 54.36%,
+    #dd2531 57.7%,
+    #cb3040 60.91%,
+    #b14057 64.05%,
+    #8f5573 67.12%,
+    #666e97 70.15%,
+    #368cbf 73.09%,
+    #00adee 75.97%,
+    #01a9eb 80.68%,
+    #059ee3 84.95%,
+    #0c8cd5 89.05%,
+    #1672c2 93.05%,
+    #2251a9 96.93%,
+    #2e3191 100%
+  );
+}
+.banner {
+  min-height: 530px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  &::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.8);
+    position: absolute;
+  }
+  .innerArea {
+    // position: absolute;
+    padding: 40px 0;
+    color: white;
+    z-index: 1;
+    // top: 10%;
+    width: 100%;
+    .topLogoWrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      .headerText {
+        height: 60px;
+        object-fit: contain;
+      }
+      .vLogo {
+        height: 72px;
+        object-fit: contain;
+      }
+    }
+    .bannerTopAreaWrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      .bannerTitle {
+        color: #cbc4c4;
+        font-size: 35px;
+        font-weight: 700;
+      }
+    }
+    .bannerInformation {
+      background: linear-gradient(180deg, #363636 0%, #111111 100%);
+      border-radius: 20px;
+      padding: 20px 25px;
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      .infoTitle {
+        color: #f8a21c;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      .leftItem {
+        flex: 2;
+        border-right: 1px solid #353945;
+        padding-right: 20px;
+        .infoDescription {
+          font-size: 16px;
+          color: white;
+        }
+      }
+      .rightItem {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .infoList {
+          list-style-type: circle;
+          padding-left: 20px;
+          li {
+            font-size: 14px;
+          }
+        }
+        .bannerCircleLogo {
+          height: 140px;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .bottomActionWrapper {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+    .actionInfo {
+      font-size: 26px;
+      font-weight: 700;
+    }
+    .getStartedButton {
+      background-color: #fbbc19;
+      border-radius: 40px;
+      font-weight: 700;
+      font-size: 22px;
+      text-transform: capitalize;
+      width: 300px;
+    }
+  }
+}
+.borderBottom {
+  height: 3px;
+  width: 100%;
+  margin: 0 auto;
+  @media (max-width: 900px) {
+    width: 67%;
+    max-width: 300px;
+  }
+  background: linear-gradient(
+    90deg,
+    #ffdd15 0%,
+    #ffd915 3.83%,
+    #fdce17 7.3%,
+    #fbbc19 10.64%,
+    #f8a21c 13.88%,
+    #f6921e 15.52%,
+    #f68e1f 20.65%,
+    #f48321 25.3%,
+    #f27124 29.76%,
+    #f05a28 33.69%,
+    #f05628 38.27%,
+    #ef4b27 42.42%,
+    #ee3926 46.41%,
+    #ec1f24 50.27%,
+    #ec1c24 50.67%,
+    #e81e27 54.36%,
+    #dd2531 57.7%,
+    #cb3040 60.91%,
+    #b14057 64.05%,
+    #8f5573 67.12%,
+    #666e97 70.15%,
+    #368cbf 73.09%,
+    #00adee 75.97%,
+    #01a9eb 80.68%,
+    #059ee3 84.95%,
+    #0c8cd5 89.05%,
+    #1672c2 93.05%,
+    #2251a9 96.93%,
+    #2e3191 100%
+  );
+}

@@ -1,0 +1,120 @@
+.tabswrap {
+  color: white;
+  margin-top: 2rem;
+  .tabheader {
+    display: flex;
+    .tabhead:nth-child(1) {
+      background-color: #434343;
+    }
+    .tabhead:nth-child(2) {
+      background-color: #535353;
+    }
+    .tabhead:nth-child(3) {
+      background-color: #636262;
+    }
+    .tabhead:nth-child(4) {
+      background-color: #737272;
+    }
+    .tabhead {
+      font-weight: 400;
+      font-size: 13px;
+      font-family: 'Open Sans';
+      padding: 0.5rem;
+      padding-bottom: 2rem;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      flex: 1;
+      justify-content: center;
+      display: flex;
+      cursor: pointer;
+      text-align: center;
+      br {
+        display: none;
+      }
+    }
+    .tabheadactive {
+      text-align: center;
+      cursor: pointer;
+      justify-content: center;
+      display: flex;
+      font-weight: 700;
+      font-size: 13px;
+      font-family: 'Open Sans';
+      background-color: #272727;
+      padding: 0.5rem;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      flex: 1;
+      br {
+        display: none;
+      }
+    }
+  }
+  .body {
+    .tabcontent {
+      display: none;
+    }
+    .tabcontentactive {
+      display: block;
+      background-color: #272727;
+      border-radius: 20px;
+      padding: 1rem;
+      font-size: 14px;
+      color: white;
+      font-family: 'Open Sans';
+      font-weight: 400;
+      margin-top: -1.5rem;
+      position: relative;
+    }
+  }
+}
+@media screen and (max-width: 1100px) {
+  .tabswrap {
+    .tabheader {
+      div:nth-child(4) {
+        min-width: 105px;
+      }
+      .tabhead {
+        br {
+          display: block;
+        }
+      }
+      .tabheadactive {
+        br {
+          display: block;
+        }
+      }
+    }
+    .body {
+      .tabcontentactive {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tabswrap {
+    .tabheader {
+      div:nth-child(4) {
+        min-width: unset;
+      }
+      .tabhead {
+        span {
+          display: none;
+        }
+        br {
+          display: block;
+        }
+      }
+      .tabheadactive {
+        span {
+          display: none;
+        }
+        br {
+          display: block;
+        }
+      }
+    }
+  }
+}

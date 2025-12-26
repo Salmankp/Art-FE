@@ -1,0 +1,129 @@
+.root {
+  position: relative;
+  top: 0;
+  left: 0px;
+  max-height: 1600px;
+
+  .hero_img {
+    height: 482px;
+    width: 100vw;
+  }
+  .sidebar {
+    transform: translateY(-320px);
+    position: inherit;
+    height: 1081px;
+    width: 233px;
+    background: linear-gradient(180deg, #363636 0%, #111111 100%);
+    border-radius: 20px;
+    left: 163px;
+    z-index: 999;
+    // display: flex;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+    justify-content: start;
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+      .image {
+        display: flex;
+        justify-content: center;
+        padding-top: 27px;
+      }
+      & > span {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 18px;
+        /* or 150% */
+
+        color: #ffffff;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 5px;
+      }
+      p {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 27px;
+        line-height: 27px;
+        /* or 100% */
+
+        color: #fcfcfd;
+      }
+
+      h6 {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        /* or 129% */
+        transform: translateY(-22px);
+
+        color: #ffffff;
+      }
+      .row span {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        // line-height: 32px;
+        /* or 178% */
+        display: flex;
+        align-items: center;
+
+        color: #fcfcfd;
+      }
+      .rowItem {
+        display: flex;
+        justify-content: space-between;
+      }
+      hr {
+        height: 0px;
+        border-top: 1px solid rgba(53, 57, 69, 1);
+      }
+      .info {
+        h2 {
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          /* or 160% */
+
+          color: #fcfcfd;
+        }
+        p {
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 18px;
+          /* or 129% */
+
+          color: #ffffff;
+        }
+      }
+      .cta {
+        display: flex;
+        justify-content: center;
+        .button {
+          padding: 6px 50px;
+          border-radius: 20px;
+          margin-top: 30px;
+          background-color: #a764fe;
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 16px;
+          /* or 100% */
+          text-align: center;
+
+          color: #fcfcfd;
+        }
+      }
+    }
+  }
+}

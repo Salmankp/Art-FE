@@ -1,0 +1,71 @@
+.outerwrap {
+  background: url(https://artefy.io/assets/images/risecratevideobg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .wrap {
+    max-width: 1400px;
+    margin: auto;
+    padding: 4rem 4rem 4rem 20rem;
+    box-sizing: border-box;
+    @media (max-width: 768px) {
+      padding: 0rem;
+    }
+    .videowrap {
+      margin-top: 2rem;
+      overflow: hidden;
+      :global {
+        .video-react-big-play-button {
+          width: 100px !important;
+          height: 100px !important;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border: 8px solid #686868;
+        }
+        .video-react-big-play-button::before {
+          top: 23% !important;
+          color: #686868;
+          font-size: 60px;
+        }
+      }
+    }
+  }
+  .videoBottomText {
+    background: #bc172b;
+    text-align: center;
+    padding: 3rem 0rem 3rem 0rem;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 64.5px;
+    margin-top: 4rem;
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
+    @media (max-width: 767px) {
+      font-size: 30px;
+      padding: 0rem;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .outerwrap {
+    .wrap {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .outerwrap {
+    .wrap {
+      margin-left: 30px;
+      margin-right: 30px;
+      padding: 3rem 0rem;
+    }
+  }
+}

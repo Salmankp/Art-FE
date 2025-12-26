@@ -1,0 +1,92 @@
+stages:
+  - preview
+  - deploy
+artefy-live-preview:
+  only: 
+  - merge_requests
+  stage: preview
+  environment:
+    name: ${CI_MERGE_REQUEST_IID}.live-preview.artefy.io
+    url: https://${CI_MERGE_REQUEST_IID}.live-preview.artefy.io
+    on_stop: remove_artefy-live-preview
+  image: randomcitizen1705/node-aws:14
+  script:
+    - npm install
+    - npm run lint:fix
+    - CI=false && npm run build
+    - aws s3 sync build/ s3://artefy-live-previews/${CI_MERGE_REQUEST_IID}.live-preview.artefy.io
+
+remove_artefy-live-preview:
+  environment:
+    action: stop
+    name: ${CI_MERGE_REQUEST_IID}.live-preview.artefy.io
+  only: 
+  - merge_requests
+  stage: preview
+  image: randomcitizen1705/node-aws:14
+  when: manual
+  script:
+    - aws s3 rm s3://artefy-live-previews/${CI_MERGE_REQUEST_IID}.live-preview.artefy.io --recursive
+
+artefy_dev_frontend:
+  only:
+    - develop
+  stage: deploy
+  environment:
+    name: artefy_dev_frontend
+    url: https://dev.artefy.io/
+  image: randomcitizen1705/node-aws:14
+  script:
+    - npm install
+    - npm run lint:fix
+    - CI=false && npm run build
+    - aws s3 sync build/ s3://artefy-dev-frontend/
+
+
+artefy_staging_frontend:
+  only:
+    - staging
+  stage: deploy
+  environment:
+    name: artefy_staging_frontend
+    url: https://staging.artefy.io/
+  image: randomcitizen1705/node-aws:14
+  script:
+    - npm install
+    - npm run lint:fix
+    - CI=false && npm run build
+    - aws s3 sync build/ s3://artefy-staging-frontend/
+
+artefy_prod_frontend:
+  only:
+    - main
+  stage: deploy
+  environment:
+    name: artefy_prod_frontend
+    url: https://artefy.io/
+  image: randomcitizen1705/node-aws:14
+  script:
+    - npm install
+    - npm run lint:fix
+    - CI=false && npm run build
+    - aws s3 sync build/ s3://artefy-prod-frontend/
+
+
+
+pre_production_artefy_frontend:
+  stage: deploy
+  environment:
+    name: preprod_artefy_frontend
+    url: https://preprod.artefy.io/
+  before_script:
+    - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )"
+    - mkdir -p ~/.ssh
+    - eval $(ssh-agent -s)
+    - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+  script:
+    - echo "Deploy to Pre Prod server"
+    - ssh-add <(echo "$P_P_SSH_KEY")
+    - rm -rf .git
+    - ssh -o StrictHostKeyChecking=no artefy@13.239.122.85 "cd /var/www/html/artefy-frontend; git reset --hard; git pull origin pre-prodcution; npm install; npm run build; if [[ $? -ne 0 ]]; then echo "script failed with exit code $?" && exit; fi; cp -r build ../; exit"
+  only:
+    - pre-prodcution

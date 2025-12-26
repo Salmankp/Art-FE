@@ -1,0 +1,48 @@
+.wrapper {
+	padding: 50px 20px 30px 20px;
+	text-align: center;
+	.heading {
+		font-family: Poppins;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 32px;
+		line-height: 32px;
+		/* or 100% */
+		text-align: center;
+
+		color: white;
+		margin-top: 50px;
+	}
+	.text {
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 21px;
+		line-height: 28px;
+		/* or 133% */
+		text-align: center;
+
+		color: white;
+		margin-top: 20px;
+	}
+	button {
+		background: #f6921e;
+		border-radius: 20px;
+		border: 0px;
+		font-family: Open Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 32px;
+		/* or 160% */
+		display: flex;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 5px 130px 5px 130px;
+		margin-top: 70px;
+		align-items: center;
+		color: #000000;
+		text-align: center;
+	}
+}

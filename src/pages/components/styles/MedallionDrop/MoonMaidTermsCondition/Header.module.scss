@@ -1,0 +1,42 @@
+.moonmaidTermsContainer {
+  .moonmaidTermsConditionHeader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 100px;
+    @media (max-width: 1200px) {
+      width: 70%;
+    }
+    @media (max-width: 1100px) {
+      width: 60%;
+    }
+    @media (max-width: 992px) {
+      width: 60%;
+    }
+
+    .vLogo {
+      height: 63px;
+      object-fit: contain;
+    }
+    .irayettaFrenzy {
+      height: 140px;
+      object-fit: contain;
+    }
+    .circleLogo {
+      height: 96px;
+      object-fit: contain;
+    }
+    .moonmaidMain {
+      height: 480px;
+      max-width: 100%;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      @media (max-width: 992px) {
+        position: static;
+      }
+    }
+  }
+}

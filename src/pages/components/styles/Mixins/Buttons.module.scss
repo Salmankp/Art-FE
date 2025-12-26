@@ -1,0 +1,23 @@
+@import '../Variables/index.module.scss';
+
+@mixin orange-button {
+  border: none;
+  outline: none;
+  padding: 0.4rem 2.8rem;
+  background: $orange !important;
+  border-radius: 1.3rem;
+  font-weight: 700;
+  line-height: 1rem !important;
+  cursor: pointer;
+  margin-top: 1rem;
+  color: black !important;
+  text-transform: none;
+  > * {
+    color: black !important;
+  }
+  &:hover,
+  &:active,
+  &:focus {
+    background: $orange !important;
+  }
+}

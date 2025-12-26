@@ -1,0 +1,47 @@
+@import "./src/Styles.scss";
+
+.header {
+  background-color: black;
+  width: 100%;
+  z-index: 1999999;
+}
+.header_details {
+  display: flex;
+  height: 60px;
+  width: 100%;
+
+  align-items: center;
+  max-width: 1150px;
+  color: white;
+  font-weight: 300;
+  font-size: 11px;
+  padding-right: 10px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+
+  @media (max-width: 768px) {
+    .appbar {
+      width: 750px;
+    }
+  }
+  @media (max-width: 992px) {
+    .appbar {
+      width: 770px;
+    }
+  }
+  @media (max-width: 1400px) {
+    .appbar {
+      width: 1150px;
+    }
+  }
+
+  .header_details:first-child {
+    font-size: 17px;
+    line-height: 24px;
+  }
+  .text {
+    color: #00e6f0;
+  }
+}

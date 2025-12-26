@@ -1,0 +1,172 @@
+{
+  "data": [
+    {
+      "question": "What is Artefy? ",
+      "answer": "Artefy is an art gallery, a marketplace and a community all rolled into one. We are an innovative digital platform where you can discover environmentally friendly NFTs from the world’s greatest creators. We connect you to the brands and artists you love in ways you’ve never experienced. Artefy is digital collectables, done differently. "
+    },
+    {
+      "question": "What can I do on Artefy?",
+      "answer": "Anyone can make an account for free with Artefy. Here you can browse through the marketplace, check out different artists and collections and explore other users' virtual galleries. You can buy NFTs from our exclusive drops and either display your collection in our virtual galleries or list them for sale to other collectors on our marketplace."
+    },
+    {
+      "question": "What can I do with my NFTs on Artefy?",
+      "answer": "Art is made to be displayed and enjoyed not hidden in a digital account. Sure, you can look at them whenever you want, or re-sell them if you wish, but we felt it needed to be much more than that. Artefy galleries are the first way you can express who you are as a collector. You’ll be able to build your own virtual gallery to display your collection your way. Pick one of our classic gallery layouts or something more inline with your collection such as a dungeon or forest. Select different frames, designs and assets to add your personal style to your collection. You can then share your galleries with friends and other fans to come explore and update the styles and artworks as your collection grows. Artefy will even reward those who build collections and galleries that everyone wants to see."
+    },
+    {
+      "question": "What is EverScapes?",
+      "answer": "EverScapes is the digital home of Fantasy, Sci-Fi and Horror art and the first world built on the Artefy platform. Here you will find exclusive NFTs from the world’s greatest Fantasy, Sci-fi and Horror artists as well as a passionate community of fans."
+    },
+    {
+      "question": "Why are there different worlds on Artefy?",
+      "answer": "Digital collectables are as varied as the passions, lifestyles and hobbies from which they come. On other platforms you have to search through millions of NFTs to find ones you like or worse, sign up to many different limited platforms, each with their own wallets, currencies and rules. On Artefy you can easily find works, and communities that relate to your passions with one easy to set up account."
+    },
+    {
+      "question": "What’s the difference between EverScapes and Artefy?",
+      "answer": "EverScapes is the Fantasy, Horror and Sci-fi world built on the Artefy platform. "
+    },
+    {
+      "question": "What other worlds are on Artefy?",
+      "answer": "Currently EverScapes is the only world launched on Artefy, but many more worlds will be launching in the coming months. These are:"
+    },
+    {
+      "question": "Will I need to make a new account for different worlds?",
+      "answer": "You will only ever need one Artefy account. With this account you can browse all the different worlds, connect with whichever communities you want and buy and sell your NFTs. It’s one account, endless possibilities."
+    },
+    {
+      "question": "How does Artefy work?",
+      "answer": "The Artefy platform is built on blockchain technology. This means that the Non-Fungible Tokens (NFTs) and digital collectables we create are limited editions that are verified by the artists and creators,or their estates, to be 100% authentic collectables. You can learn more about"
+    },
+    {
+      "question": "What does environmentally friendly NFTs mean? ",
+      "answer": "When choosing a blockchain to help us create the Artefy platform, we looked at the different options very carefully. We chose the Polygon network for it’s Proof of Stake blockchain technology - which uses about 1000 times less energy than the majority of existing NFT platforms. This means the energy it takes to run is about the same as running your computer. This means we can leave our mark on the world through art, not the environment."
+    },
+    {
+      "question": "How does Artefy support artists? ",
+      "answer": "Many creatives (musicians, artists, photographers & more)  struggle to make money from their work. This is because it is so easy to reproduce works online with no need to pay or even credit the original artist. By working directly with the creators and using blockchain technology, Artefy is able to ensure that every copy of an artist’s work is legitimate, and that the artist will directly profit from every sale, including 2nd hand sales on our marketplace. We also give artists an opportunity to grow their networks (and customers) through our extensive communities of fans opening up new revenue streams for creators globally. "
+    },
+    {
+      "question": "Can I list my works for sale on Artefy?",
+      "answer": "We want to ensure that all works and collectables on Artefy are relevant to our collectors, no one can just upload their art without connecting with our team first.  If you think that your creations would suit our audience please get in touch with links to your work and we would love to chat."
+    }
+  ],
+  "data1": [
+    {
+      "question": "How do I make an account?",
+      "answer": "You can sign up for your free Artefy account here"
+    },
+    {
+      "question": "Does it cost anything to join Artefy?",
+      "answer": "No It's completely free! "
+    },
+    {
+      "question": "Can I connect to Artefy using MetaMask?",
+      "answer": "Yes, currently all Artefy accounts require MetaMask"
+    },
+    {
+      "question": "Do I need to have MetaMask to use Artefy?",
+      "answer": "Yes, currently all Artefy accounts require MetaMask, however we will have more wallet integrations coming soon."
+    },
+    {
+      "question": "Will you be adding additional wallet integrations?",
+      "answer": "Yes, there will be several other wallet integrations added over the coming weeks."
+    },
+    {
+      "question": "What is a digital/crypto wallet?",
+      "answer": "A crypto-wallet is a place where you can safely store all your cryptocurrencies and digital collectables."
+    },
+    {
+      "question": "What is MetaMask?",
+      "answer": "MataMask is a 3rd party digital wallet provider that is one of the most trusted and widely used digital wallets on the web. It is available as a browser extension and as a mobile app, MetaMask equips you with a key vault, secure login, token wallet, and token exchange—everything you need to manage your digital assets. To find out more about MetaMask you can watch their explainer <a href='https://youtu.be/YVgfHZMFFFQ'  style='color:deepskyblue' target='_blank'>video here</a> or <a href='https://metamask.io/index.html' style='color:deepskyblue' target='_blank'>visit their webpage here</a>."
+    },
+    {
+      "question": "Does it cost money to set up a MetaMask Account?",
+      "answer": "No, setting up a MetaMask account is free"
+    },
+    {
+      "question": "How do I set up a MetaMask Account?",
+      "answer": "<a href='https://metamask.io/index.html' style='color:deepskyblue' target='_blank'>Visit their webpage here</a> and follow the steps. If you are having troubles please jump into the <a href='https://discord.com/invite/WvsK5nwAxV' style='color:deepskyblue' target='_blank'>Artefy Discord here</a> and one of our team will help you out."
+    },
+    {
+      "question": "I am having trouble with my/setting up my MetaMask account, can you help?",
+      "answer": "The best place for help with MetaMask is their help page which can be <a href='https://metamask.io/faqs.html' style='color:deepskyblue' target='_blank'>found here</a>. You can also jump into the <a href='https://discord.com/invite/WvsK5nwAxV' style='color:deepskyblue' target='_blank'>Artefy Discord here</a> and one of our team will try help you as well."
+    },
+    {
+      "question": "Do I need to own cryptocurrencies to use Artefy?",
+      "answer": "No, you don’t need to own any cryptocurrency to use Artefy, we accept all major cards.  We also accept MATIC and will be adding more crypto currencies in the future."
+    },
+    {
+      "question": "How do I buy an NFT?",
+      "answer": "There are three different ways you can start collecting NFTs on Artefy, through drops, crates or the marketplace."
+    },
+    {
+      "question": "What are drops?",
+      "answer": "Whenever we launch a new limited edition NFT or digital collectible, it’s known as a “drop.” We’ll usually have a time and date for these in advance. Sometimes, a drop will be announced at short notice and you won’t want to miss it. Make sure you follow our social channels for any big announcements. Drops will often contain multiple NFTs from different artists. There are two different sale options, Auctions, where the NFT goes to the highest bidder or Direct Sale where there is a set price, first in, best dressed. "
+    },
+    {
+      "question": "What are crates?",
+      "answer": "Crates are the cheapest, fastest and most exciting way to build your digital collection. Each crate set is a themed collection of works from different artists. These have been carefully curated by the artefy team and put together into a crate set. When you open a crate you randomly receive a selection of NFTs from that collection. Crates contain either 5, 10 or 20 NFTs depending on their cost. These NFTs are then added to your wallet and you can either display them in your gallery or list them for sale on the Artefy marketplace. Once all the crates in that collection have been opened then that’s it they are sold. From that point you will have to check the marketplace to complete your collection. "
+    },
+    {
+      "question": "How does the marketplace work?",
+      "answer": "Once you have an NFT, you can choose to list it for sale on the Artefy marketplace. Here you can either set a sale price or put it up for auction to the highest bidder. "
+    },
+    {
+      "question": "What are collections?",
+      "answer": "Collections are different themed sets of NFTs. Complete collections to unlock exclusive platform rewards. Each NFT is only part of one collection. All editions of that NFT are in the same collection. It does not matter which edition of an NFT you own to complete a collection. "
+    },
+    {
+      "question": "What are editions?",
+      "answer": "The edition number is how many versions of that collectible exist. 1 of 1 edition means that only one of that NFT will ever be made, 1 of 100 means that there are only 100 of that NFT. The smaller the edition number the rarer the NFT which often means higher prices. Creating multiple editions allows more than one person to own that piece in the same manner that many artists will do a limited run of some of their most popular prints."
+    },
+    {
+      "question": "What is rarity?",
+      "answer": "The rarity of an NFT is determined by the number of editions. It is an easy way for collectors to understand how exclusive an NFT is. The rarity levels are as follows"
+    },
+    {
+      "question": "What is a virtual gallery?",
+      "answer": "A virtual gallery is your chance to show off your collection. You can add all of your NFTs to your gallery or just a certain selection. There are 5 different gallery themes you can choose from, with many more being added in the future. You can choose how your collection is displayed, select from an ever growing collection of different frames, sizes and layouts. Each gallery has its own unique URL that you can share with friends and other fans. This is also a great way to find buyers for your works. The more people that visit your gallery, the more Artefy will reward you over time."
+    },
+    {
+      "question": "What does it cost to create an virtual gallery?",
+      "answer": "Nothing. All artefy account holders can create galleries for free. What you fill it with is up to you."
+    }
+  ],
+  "data2": [
+    {
+      "question": "What does (non) fungible mean?",
+      "answer": "If something is non-fungible it means it is unique, and can not be directly replaced by anything else. Money is a fungible asset, one $2 coin can be swapped for any other $2 coin. Artwork (or music or trading cards) are non-fungible, one painting can not be swapped for another even if they are created by the same artist."
+    },
+    {
+      "question": "What is an NFT/ digital collectable?",
+      "answer": "An NFT or Non-Fungible Token is a digital asset that represents objects like art, music, in-game items and videos. Each unique Artefy NFT is stored on the blockchain, so whenever you buy one rest assured that it’s a 100% official licensed collectable from your favourite artist or creator. Each NFT has its own unique identifying code that can never be changed which means that ownership and rarity are fully verifiable. Over time there will be 1000’s of NFTs (or digital collectables) on Artefy and each will have its own complete history authenticity stored in the code."
+    },
+    {
+      "question": "What is blockchain?",
+      "answer": "A blockchain is a publicly accessible online ledger or database that is not owned by any central authority. Once anything is set in this ledger, it cannot be modified or censored by any single authority. This gives Blockchain technology several key features that give authority and security to digital collecting:"
+    },
+    {
+      "question": "What is a wallet?",
+      "answer": "A wallet is where you access your digital currency and assets. There are 100s of different wallets both online and there are also hardware versions. When you set up your Artefy account you have the choice of connecting to your existing MetaMask wallet or we can create a new Artefy wallet for you. "
+    },
+    {
+      "question": "How do I know the art is real/ authentic/ approved by the artist?",
+      "answer": "Unlike many other NFT platforms, Artefy does not allow anyone to upload their own creations onto the Artefy platform. We work closely with the artists or their representatives to ensure every NFT on our platform is part of that artist’s vision for their work.  With the Artefy brand on an NFT, you can be guaranteed these are 100% authentic digital limited editions, endorsed by the creator."
+    },
+    {
+      "question": "What is to stop Artefy making more copies?",
+      "answer": "All Artefy digital collectables are special limited editions. By setting the edition number into the uneditable blockchain you will always know how many editions of an NFT will ever exist. "
+    },
+    {
+      "question": "How do I know my collection will be safe and secure?",
+      "answer": "It’s vitally important to protect your Artefy wallet like you would any personal accounts online. NFTs that you own on your Artefy Wallet are all managed by you so keep your passwords safe and don’t share them with anyone."
+    },
+    {
+      "question": "I’ve bought an NFT, but what do I actually own?",
+      "answer": "You're buying a limited edition digital creation, designed and approved by the creator, verifiable on the blockchain. Basically you are buying the right to use, distribute and display the creation for non-commercial purposes. Since you own this unique creation, you can also re-sell the same non-commercial use rights, to the creation, on the secondary marketplace."
+    },
+    {
+      "question": "How does an artist benefit from joining Artefy?",
+      "answer": "In addition to opening up artists to a huge global community of new fans (and buyers) blockchain technology also means that the artists will profit from all future sales as long as they are sold on the Artefy marketplace. A commission of all future sales go back to the original artist meaning that should an artist’s work become more desirable (and valuable) over time (as is normally the case) they will see the financial benefits. This ongoing royalty payment from their past work is one of the biggest advantages for artists in joining the digital art space."
+    }
+  ]
+}

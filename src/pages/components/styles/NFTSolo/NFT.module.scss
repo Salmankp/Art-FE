@@ -1,0 +1,102 @@
+.wrap {
+  max-width: 1120px;
+  margin: auto;
+  padding-bottom: 4rem;
+  .nftiframe {
+    // background: linear-gradient(180deg, #111111 0%, #363636 100%);
+    border-radius: 20px;
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    height: 40em;
+    max-width: 997px;
+    margin: auto;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    margin-top: 0rem;
+
+    img {
+      max-width: 390px;
+      width: 100%;
+    }
+  }
+  .contentwrap {
+    max-width: 600px;
+    margin: auto;
+    .content {
+      display: flex;
+      justify-content: space-between;
+      .left {
+        padding-left: 1rem;
+        .artist {
+          color: #fcfcfd;
+          font-size: 17px;
+          font-weight: 700;
+          font-family: 'Open Sans';
+        }
+        .nftname {
+          color: #fcfcfd;
+          font-size: 24px;
+          font-weight: 700;
+          font-family: 'Open Sans';
+        }
+        .coltitle {
+          color: #fcfcfd;
+          font-size: 20px;
+          font-weight: 700;
+          font-family: 'Open Sans';
+        }
+        .colnames {
+          margin-top: 0.5rem;
+          color: #fcfcfd;
+          font-size: 14px;
+          font-weight: 400;
+          font-family: 'Open Sans';
+        }
+      }
+      .right {
+        display: flex;
+        align-items: flex-end;
+        .badge {
+          color: #fcfcfd;
+          font-size: 20px;
+          font-weight: 400;
+          font-family: 'Open Sans';
+          text-transform: uppercase;
+          display: flex;
+          align-items: center;
+          img {
+            max-width: 20px;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .wrap {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wrap {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .wrap {
+    .contentwrap {
+      .content {
+        flex-direction: column;
+        .right {
+          margin-top: 0.5rem;
+          padding-left: 1rem;
+        }
+      }
+    }
+  }
+}

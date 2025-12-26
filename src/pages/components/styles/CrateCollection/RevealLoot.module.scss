@@ -1,0 +1,17 @@
+.videowrap {
+  overflow: hidden;
+  :global {
+    .video-react-big-play-button {
+      width: 60px !important;
+      height: 60px !important;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .video-react-big-play-button::before {
+      top: 12% !important;
+    }
+  }
+}

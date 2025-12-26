@@ -1,0 +1,100 @@
+@import "src/Styles.scss";
+
+.root {
+  color: white;
+  gap: 30px;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  // background-color: rgb(44, 50, 58);
+  background: var(--background-white-inv);
+  img {
+    margin-bottom: 40px;
+  }
+  @media screen and (max-width: 1200px) {
+    text-align: center;
+  }
+  .container {
+    justify-content: center !important;
+    display: flex;
+
+    justify-content: space-between;
+    @media screen and (max-width: 404px) {
+      flex-wrap: wrap;
+    }
+  }
+  .grid {
+    // max-width: 1230px;
+    display: flex;
+    max-width: 200px;
+  }
+  .copy {
+    max-width: 1150px;
+    font-family: var(--font), monospace;
+    font-weight: 600;
+    @media (max-width: 1110px) {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 7px;
+      line-height: 16px;
+      /* or 229% */
+      text-align: center;
+
+      color: #ffffff;
+
+      margin-top: 40px;
+      padding-bottom: 90px;
+    }
+  }
+  .button {
+    margin: 10 10px;
+    max-width: 1230px;
+    font-family: var(--font), monospace;
+    padding-right: 72px;
+    // text-align: center;
+    @media (max-width: 900px) {
+      margin: 0;
+      font-size: 9px;
+      font-weight: 600;
+      padding-right: 10px;
+    }
+  }
+  .gridItemsContainer1 {
+    display: flex;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 16px;
+    /* or 160% */
+  }
+  .gridItemsContainer2 {
+    display: flex;
+    justify-content: flex-start;
+    .button {
+      min-width: 130px;
+      display: flex;
+      justify-content: flex-start;
+      float: left;
+    }
+    .button:first-child {
+      transform: translateX(2px);
+    }
+    .button:last-child {
+      transform: translateX(-3px);
+    }
+  }
+  .gridContainer {
+    // width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: auto auto auto;
+    justify-content: flex-start;
+    @media screen and (max-width: 404px) {
+      justify-content: center;
+    }
+    // gap: 0.4rem;
+    // padding-right: 0.1rem;
+  }
+}

@@ -1,0 +1,81 @@
+.MoonMaidTermsConditionPageWrapper {
+  background-color: #000000;
+  position: relative;
+  padding-top: 30px;
+  min-height: 100vh;
+  .titleWrapper {
+    background: linear-gradient(180deg, #083216 0%, #02220d 100%);
+    padding: 30px 0;
+    .title {
+      color: #ffffff;
+      font-size: 39px;
+      font-family: Trajan Pro;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+  .sectionTitle {
+    color: #ffffff;
+    font-family: Trajan Pro;
+    font-size: 22px;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+  .scheduleSection {
+    margin-bottom: 50px;
+    .scheduleRow {
+      border-bottom: 1px solid #5c5c5c;
+      padding-bottom: 7px;
+      margin-bottom: 7px;
+      display: flex;
+      flex-wrap: wrap;
+      &:last-of-type {
+        border-bottom: 0;
+      }
+      .rowTitle {
+        flex: 1;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 10px;
+        color: #ffffff;
+        white-space: pre-line;
+      }
+      .rowDescription {
+        flex: 2;
+        font-size: 10px;
+        font-weight: 300;
+        color: #ffffff;
+        line-height: 16px;
+        white-space: pre-line;
+        font-family: 'Open Sans';
+      }
+    }
+  }
+  .descriptionWrapper {
+    margin-top: 100px;
+    .pointsContainer {
+      border-bottom: 1px solid #5c5c5c;
+      padding-bottom: 50px;
+      .termsPoints {
+        color: #ffffff;
+        padding-left: 15px;
+        li {
+          margin-bottom: 20px;
+          font-size: 10px;
+          white-space: pre-line;
+        }
+      }
+    }
+  }
+  .moonmaidWinnersWrapper{
+    margin-top: 150px;
+  }
+  .moonmaidSubTitle{
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'Trajan Pro';
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+}

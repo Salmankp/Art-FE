@@ -1,0 +1,32 @@
+.paddingWrap {
+  padding: 2rem 0rem 2rem 0rem;
+  .heading {
+    color: #609db5;
+    font-size: 36px;
+    font-family: 'Marcellus', sans-serif;
+    padding: 4rem 0rem 2rem;
+    text-align: center;
+  }
+  .tableMain {
+    max-height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border: 1px solid #4e4e4e;
+    @media (max-width: 768px) {
+      overflow: auto;
+    }
+  }
+}
+table {
+  color: #fff;
+  width: 100%;
+  padding: 30px;
+  @media (max-width: 768px) {
+    min-width: 700px;
+    overflow: auto;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,109 @@
+.imgSection {
+  background: linear-gradient(180deg, #363636 0%, #111111 100%);
+  padding: 3rem 0rem;
+  .frenzyContainer {
+    .frenzyWrap {
+      display: flex;
+      @media (max-width: 1380px) {
+        flex-direction: column;
+        text-align: center;
+      }
+      .bearImgWrap {
+        flex: 0 0 50%;
+        text-align: center;
+        // .bearImg {
+        //   width: 100%;
+        // }
+      }
+      .bearTextWrap {
+        .frenzyTextWrap {
+          font-size: 27px;
+          line-height: 41px;
+          font-weight: 400;
+          color: #fff;
+          padding-bottom: 2rem;
+          @media (max-width: 1380px) {
+            padding-top: 1rem;
+          }
+          .frenzyHead {
+            font-size: 45px;
+            line-height: 41px;
+            font-weight: 400;
+            color: #fff;
+          }
+        }
+        .mapImgWrap {
+          .mapimg {
+            @media (max-width: 992px) {
+              width: 100%;
+            }
+          }
+        }
+        .plusWrapper {
+          text-align: center;
+          padding: 1rem;
+        }
+      }
+    }
+    .cardWrap {
+      display: flex;
+      padding-top: 2rem;
+      @media (max-width: 1380px) {
+        padding-top: 0rem;
+        flex-direction: column;
+      }
+      .leftCardText {
+        flex: 0 0 36%;
+        padding-left: 11rem;
+        padding-top: 4rem;
+        @media (max-width: 1024px) {
+          order: 2;
+          padding-left: 0rem;
+        }
+        .LeftHead {
+          font-size: 45px;
+          line-height: 47px;
+          font-weight: 400;
+          color: #fff;
+          text-align: right;
+          @media (max-width: 1024px) {
+            text-align: center;
+          }
+        }
+        .primaryText {
+          font-size: 15px;
+          line-height: 18px;
+          font-weight: 400;
+          color: #fff;
+          text-align: right;
+          padding-top: 4px;
+          @media (max-width: 1024px) {
+            text-align: center;
+          }
+          .secondaryText {
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 400;
+            color: rgb(68, 68, 68);
+            text-align: right;
+            @media (max-width: 1024px) {
+              text-align: center;
+            }
+          }
+        }
+      }
+      .cardImgWrap {
+        flex: 0 0 52%;
+        text-align: center;
+        .cardsImg {
+          @media (max-width: 575px) {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+.linkts {
+  color: #fff;
+}

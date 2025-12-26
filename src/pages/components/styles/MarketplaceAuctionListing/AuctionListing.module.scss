@@ -1,0 +1,28 @@
+.listingWrap {
+  background-color: #111111;
+  padding: 1rem 2rem 2rem 2rem;
+  border-radius: 20px;
+  .tbHead {
+    .tableCell {
+      color: #fff;
+      text-align: center;
+      font-size: 14px !important;
+      border-bottom: none !important;
+    }
+  }
+  .tbRow {
+    .tableCell {
+      color: #fff;
+      text-align: center;
+      font-size: 14px !important;
+      border-bottom: 1px solid #353945 !important;
+    }
+    .tableCell2 {
+      color: #fff;
+      text-align: center;
+      font-size: 14px !important;
+      font-weight: 700;
+      border-bottom: 1px solid #353945 !important;
+    }
+  }
+}

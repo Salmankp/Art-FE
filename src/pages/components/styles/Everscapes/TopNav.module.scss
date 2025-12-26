@@ -1,0 +1,44 @@
+.TopNav {
+  background-color: #000;
+  .Main {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1120px;
+    margin: auto;
+    align-items: center;
+    height: 50px;
+    p {
+      font-family: 'Gotham Book', sans-serif;
+      font-size: 11px;
+      margin-right: 0.5rem;
+      margin-top: 4px;
+      color: #fcfcfd;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    img {
+      height: 1.8rem;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .TopNav {
+    .Main {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .TopNav {
+    .Main {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  }
+}

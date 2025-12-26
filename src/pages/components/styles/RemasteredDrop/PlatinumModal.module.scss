@@ -1,0 +1,83 @@
+.modal {
+  overflow: scroll;
+  display: flex;
+  .popupwrap {
+    margin: 5rem auto 2rem auto !important;
+    box-sizing: border-box;
+    background: #000;
+    border-radius: 20px;
+    max-width: 700px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    height: 450px;
+    @media (max-width: 750px) {
+      margin: 2rem auto 2rem auto !important;
+      height: unset;
+    }
+    .cross {
+      position: absolute;
+      right: -12px;
+      top: -12px;
+      background-color: #fff;
+      border-radius: 50%;
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+      //   display: none;
+      @media screen and (max-width: 767px) {
+        display: flex;
+      }
+      @media (max-width: 580px) {
+        right: 10px;
+        top: 10px;
+      }
+    }
+    .flexWrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1rem;
+      @media (max-width: 725px) {
+        flex-direction: column;
+      }
+      .remasterTextWrap {
+        color: #fff;
+        @media (max-width: 725px) {
+          text-align: center;
+        }
+        .artistName {
+          text-align: center;
+          font-size: 18px;
+          font-weight: 600;
+        }
+        .artworkName {
+          text-align: center;
+          font-size: 18px;
+          font-weight: 700;
+          border-bottom: 2px solid #a6a0a0;
+          @media (max-width: 725px) {
+            width: 70%;
+            margin: auto;
+          }
+        }
+        .edition {
+          text-align: center;
+          font-size: 20px;
+          font-weight: 600;
+          color: #a6a0a0;
+        }
+        .remasterText {
+          color: #a6a0a0;
+          font-size: 16px;
+          padding: 1rem 0rem;
+        }
+      }
+    }
+  }
+}

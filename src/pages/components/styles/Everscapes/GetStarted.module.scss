@@ -1,0 +1,107 @@
+.border {
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #ffdd15 0%,
+    #ffd915 3.83%,
+    #fdce17 7.3%,
+    #fbbc19 10.64%,
+    #f8a21c 13.88%,
+    #f6921e 15.52%,
+    #f68e1f 20.65%,
+    #f48321 25.3%,
+    #f27124 29.76%,
+    #f05a28 33.69%,
+    #f05628 38.27%,
+    #ef4b27 42.42%,
+    #ee3926 46.41%,
+    #ec1f24 50.27%,
+    #ec1c24 50.67%,
+    #e81e27 54.36%,
+    #dd2531 57.7%,
+    #cb3040 60.91%,
+    #b14057 64.05%,
+    #8f5573 67.12%,
+    #666e97 70.15%,
+    #368cbf 73.09%,
+    #00adee 75.97%,
+    #01a9eb 80.68%,
+    #059ee3 84.95%,
+    #0c8cd5 89.05%,
+    #1672c2 93.05%,
+    #2251a9 96.93%,
+    #2e3191 100%
+  );
+}
+.getStarted {
+  .imgOverlayWrap {
+    position: relative;
+    text-align: center;
+    .featurebg {
+      height: 150px;
+      margin-bottom: -5px;
+      position: relative;
+      width: 100%;
+    }
+    .overlayNew {
+      position: absolute;
+      background: black;
+      height: 150px;
+      width: 100%;
+      top: 0;
+      z-index: 9;
+      opacity: 0.85;
+    }
+    .messageContainer {
+      position: absolute;
+      top: 30%;
+      width: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      font-size: 22px;
+      line-height: 29px;
+      align-items: center;
+      font-weight: 700;
+      color: #fff;
+      z-index: 9;
+      @media (max-width: 1200px) {
+        justify-content: space-evenly;
+      }
+      @media (max-width: 767px) {
+        top: 20%;
+        flex-direction: column;
+      }
+      .buttonwrap {
+        max-width: 330px;
+        width: 100%;
+        margin-left: 2rem;
+        @media (max-width: 1280px) {
+          margin-left: 0rem;
+          margin-top: 1rem;
+        }
+        @media (max-width: 500px) {
+          width: 70%;
+        }
+        button {
+          cursor: pointer;
+          font-size: 18px;
+          font-weight: 700;
+          font-family: DM Sans;
+          max-width: 330px;
+          cursor: pointer;
+          width: 100%;
+          height: 50px;
+          color: black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 40px;
+          background-color: #fbbc19;
+          border: 0px;
+        }
+      }
+    }
+  }
+}
